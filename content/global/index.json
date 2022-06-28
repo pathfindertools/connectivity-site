@@ -2,7 +2,7 @@
   "siteUrl": "microgen.vercel.app",
   "gtmId": "",
   "favicon": "https://res.cloudinary.com/protocolai/image/upload/v1649882296/filecoin-favicon_rn3bfm.png",
-  "desktopWidth": "1200",
+  "desktopWidth": "1028",
   "colors": {
     "primary": "#0090FF",
     "accent1": "#0E4465",
@@ -54,8 +54,8 @@
     "color": "white"
   },
   "logo": {
-    "logoType": "",
-    "logoTypeStyle": "text-white undefined text-base undefined font-bold",
+    "logoType": "LibP2P",
+    "logoTypeStyle": "text-white undefined text-xl mb-1.5 font-bold",
     "image": "",
     "imageWidth": "48",
     "imageHeight": "48",
@@ -81,7 +81,7 @@
         "contentOrder": "labelHeadingsContent"
       },
       "background": {
-        "fillStyles": "bg-primary"
+        "fillStyles": "bg-black"
       },
       "label": "",
       "headline": "",

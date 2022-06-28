@@ -207,6 +207,19 @@ export const textCardsBlockSchema: TinaTemplate = {
       },
       fields: [
         {
+          label: "Type",
+          name: "cardType",
+          type: "string",
+          ui: {
+            component: "selectField",
+          },
+          options: [
+            { label: "Basic", value: "basic" },
+            { label: "Pullquote", value: "pullquote" },
+            { label: "Code", value: "code" },
+          ],
+        },
+        {
           type: "string",
           label: "Title",
           name: "headline",

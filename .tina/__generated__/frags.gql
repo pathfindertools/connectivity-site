@@ -265,6 +265,7 @@ fragment GlobalParts on Global {
       }
       items {
         __typename
+        cardType
         headline
         subhead
         text
@@ -659,6 +660,7 @@ fragment PagesParts on Pages {
       }
       items {
         __typename
+        cardType
         headline
         subhead
         text

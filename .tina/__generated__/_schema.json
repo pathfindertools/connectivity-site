@@ -10759,6 +10759,35 @@
                   },
                   "fields": [
                     {
+                      "label": "Type",
+                      "name": "cardType",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Basic",
+                          "value": "basic"
+                        },
+                        {
+                          "label": "Pullquote",
+                          "value": "pullquote"
+                        },
+                        {
+                          "label": "Code",
+                          "value": "code"
+                        }
+                      ],
+                      "namespace": [
+                        "global",
+                        "blocks",
+                        "textCards",
+                        "items",
+                        "cardType"
+                      ]
+                    },
+                    {
                       "type": "string",
                       "label": "Title",
                       "name": "headline",
@@ -16342,6 +16371,35 @@
                     "component": "itemListField"
                   },
                   "fields": [
+                    {
+                      "label": "Type",
+                      "name": "cardType",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Basic",
+                          "value": "basic"
+                        },
+                        {
+                          "label": "Pullquote",
+                          "value": "pullquote"
+                        },
+                        {
+                          "label": "Code",
+                          "value": "code"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "items",
+                        "cardType"
+                      ]
+                    },
                     {
                       "type": "string",
                       "label": "Title",

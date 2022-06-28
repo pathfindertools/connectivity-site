@@ -4368,6 +4368,21 @@
           "kind": "FieldDefinition",
           "name": {
             "kind": "Name",
+            "value": "cardType"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
             "value": "headline"
           },
           "arguments": [],
@@ -9874,6 +9889,21 @@
         "value": "PagesBlocksTextCardsItems"
       },
       "fields": [
+        {
+          "kind": "FieldDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "cardType"
+          },
+          "arguments": [],
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
         {
           "kind": "FieldDefinition",
           "name": {
@@ -16400,6 +16430,20 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
+            "value": "cardType"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
             "value": "headline"
           },
           "type": {
@@ -21306,6 +21350,20 @@
         "value": "PagesBlocksTextCardsItemsMutation"
       },
       "fields": [
+        {
+          "kind": "InputValueDefinition",
+          "name": {
+            "kind": "Name",
+            "value": "cardType"
+          },
+          "type": {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "String"
+            }
+          }
+        },
         {
           "kind": "InputValueDefinition",
           "name": {
