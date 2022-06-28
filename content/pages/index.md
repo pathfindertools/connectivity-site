@@ -6,7 +6,7 @@ blocks:
       minHeight: min-h-0
       padding: pt-40 pb-20 pr-20 pl-20
       contentWidth: w-full
-      columns: '1'
+      columns: '2'
       labelStyles: 'text-white font-1 text-base mb-0 '
       headlineStyles: 'text-white font-2 text-2xl mb-1 '
       subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
@@ -56,7 +56,7 @@ blocks:
       minHeight: min-h-0
       padding: pt-0 pb-20 pr-20 pl-20
       contentWidth: w-full
-      columns: '1'
+      columns: '2'
       labelStyles: 'text-white font-1 text-base mb-0 '
       headlineStyles: 'text-white font-2 text-2xl mb-1 '
       subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
@@ -344,8 +344,7 @@ blocks:
         headline: Get involved
         text: >
           Specification:
-          [https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412
-          "")
+          [https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412)
     navigationLabel: WebRTC
     _template: textCards
 meta:
