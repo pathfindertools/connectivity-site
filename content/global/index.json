@@ -12,14 +12,14 @@
     "white": "#FFFFFF",
     "grayLight": "#E8E8EF",
     "gray": "#B0B0BF",
-    "grayDark": "#7B7A80",
+    "grayDark": "#2C2C32",
     "black": "#000000"
   },
   "fonts": {
-    "font1": "Inter:wght@400;700",
-    "font2": "Archivo:wght@400;700",
-    "font3": "Rufina:wght@400;700",
-    "font4": "IBM Plex Mono:wght@400;700"
+    "font1": "Book",
+    "font2": "Medium",
+    "font3": "Halbfett",
+    "font4": "JetBrains Mono:wght@400;700"
   },
   "sizeLeading": {
     "textXs": "12/20",
@@ -54,20 +54,14 @@
     "color": "white"
   },
   "logo": {
-    "logoType": "Microgen",
+    "logoType": "",
     "logoTypeStyle": "text-white undefined text-base undefined font-bold",
-    "image": "http://res.cloudinary.com/protocolai/image/upload/v1646088242/cryptonet/protocol-logo_ewn4sv.png",
+    "image": "",
     "imageWidth": "48",
     "imageHeight": "48",
     "imageMargin": "24"
   },
   "nav": {
-    "navItems": [
-      {
-        "label": "Nav Item",
-        "link": "/"
-      }
-    ],
     "navAlignment": "text-right",
     "navTypeStyle": "text-white font-1 text-base mb-0 ",
     "navBackgroundColor": "from-primary to-accent2 bg-gradient-to-br",

@@ -117,9 +117,6 @@ export const Layout = ({
               .markdown ol li {
                 margin-bottom: .5rem;
               }
-              .markdown a {
-                text-decoration: underline;
-              }
             `,
             }}
           />

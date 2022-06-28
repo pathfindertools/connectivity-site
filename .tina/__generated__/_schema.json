@@ -477,6 +477,10 @@
                   "value": "Bodoni Moda:wght@400;700"
                 },
                 {
+                  "label": "Book",
+                  "value": "Book"
+                },
+                {
                   "label": "Bree Serif",
                   "value": "Bree Serif:wght@400"
                 },
@@ -791,6 +795,10 @@
                 {
                   "label": "Glegoo",
                   "value": "Glegoo:wght@400;700"
+                },
+                {
+                  "label": "Halbfett",
+                  "value": "Halbfett"
                 },
                 {
                   "label": "Heebo Extra Light",
@@ -1167,6 +1175,10 @@
                 {
                   "label": "Maven Pro",
                   "value": "Maven Pro:wght@400;700"
+                },
+                {
+                  "label": "Medium",
+                  "value": "Medium"
                 },
                 {
                   "label": "Merriweather Heavy",
@@ -1759,10 +1771,6 @@
                 {
                   "label": "Suez One",
                   "value": "Suez One:wght@400"
-                },
-                {
-                  "label": "Suisse Intl",
-                  "value": "Suisse Intl"
                 },
                 {
                   "label": "Syne Mono",
@@ -2204,6 +2212,10 @@
                   "value": "Bodoni Moda:wght@400;700"
                 },
                 {
+                  "label": "Book",
+                  "value": "Book"
+                },
+                {
                   "label": "Bree Serif",
                   "value": "Bree Serif:wght@400"
                 },
@@ -2518,6 +2530,10 @@
                 {
                   "label": "Glegoo",
                   "value": "Glegoo:wght@400;700"
+                },
+                {
+                  "label": "Halbfett",
+                  "value": "Halbfett"
                 },
                 {
                   "label": "Heebo Extra Light",
@@ -2894,6 +2910,10 @@
                 {
                   "label": "Maven Pro",
                   "value": "Maven Pro:wght@400;700"
+                },
+                {
+                  "label": "Medium",
+                  "value": "Medium"
                 },
                 {
                   "label": "Merriweather Heavy",
@@ -3486,10 +3506,6 @@
                 {
                   "label": "Suez One",
                   "value": "Suez One:wght@400"
-                },
-                {
-                  "label": "Suisse Intl",
-                  "value": "Suisse Intl"
                 },
                 {
                   "label": "Syne Mono",
@@ -3931,6 +3947,10 @@
                   "value": "Bodoni Moda:wght@400;700"
                 },
                 {
+                  "label": "Book",
+                  "value": "Book"
+                },
+                {
                   "label": "Bree Serif",
                   "value": "Bree Serif:wght@400"
                 },
@@ -4245,6 +4265,10 @@
                 {
                   "label": "Glegoo",
                   "value": "Glegoo:wght@400;700"
+                },
+                {
+                  "label": "Halbfett",
+                  "value": "Halbfett"
                 },
                 {
                   "label": "Heebo Extra Light",
@@ -4621,6 +4645,10 @@
                 {
                   "label": "Maven Pro",
                   "value": "Maven Pro:wght@400;700"
+                },
+                {
+                  "label": "Medium",
+                  "value": "Medium"
                 },
                 {
                   "label": "Merriweather Heavy",
@@ -5213,10 +5241,6 @@
                 {
                   "label": "Suez One",
                   "value": "Suez One:wght@400"
-                },
-                {
-                  "label": "Suisse Intl",
-                  "value": "Suisse Intl"
                 },
                 {
                   "label": "Syne Mono",
@@ -5658,6 +5682,10 @@
                   "value": "Bodoni Moda:wght@400;700"
                 },
                 {
+                  "label": "Book",
+                  "value": "Book"
+                },
+                {
                   "label": "Bree Serif",
                   "value": "Bree Serif:wght@400"
                 },
@@ -5972,6 +6000,10 @@
                 {
                   "label": "Glegoo",
                   "value": "Glegoo:wght@400;700"
+                },
+                {
+                  "label": "Halbfett",
+                  "value": "Halbfett"
                 },
                 {
                   "label": "Heebo Extra Light",
@@ -6348,6 +6380,10 @@
                 {
                   "label": "Maven Pro",
                   "value": "Maven Pro:wght@400;700"
+                },
+                {
+                  "label": "Medium",
+                  "value": "Medium"
                 },
                 {
                   "label": "Merriweather Heavy",
@@ -6940,10 +6976,6 @@
                 {
                   "label": "Suez One",
                   "value": "Suez One:wght@400"
-                },
-                {
-                  "label": "Suisse Intl",
-                  "value": "Suisse Intl"
                 },
                 {
                   "label": "Syne Mono",

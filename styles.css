@@ -1,26 +1,38 @@
 @font-face {
-  font-family: 'Suisse Intl';
+  font-family: 'Book';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/SuisseIntl-Regular-WebM.woff') format('woff');
+  src: url('/fonts/Book.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Suisse Intl';
-  font-style: italic;
-  font-weight: 400;
-  src: url('/fonts/SuisseIntl-RegularItalic-WebM.woff') format('woff');
-}
-@font-face {
-  font-family: 'Suisse Intl';
+  font-family: 'Book';
   font-style: normal;
   font-weight: 700;
-  src: url('/fonts/SuisseIntl-Bold-WebM.woff') format('woff');
+  src: url('/fonts/Book.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Suisse Intl';
-  font-style: italic;
+  font-family: 'Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Medium';
+  font-style: normal;
   font-weight: 700;
-  src: url('/fonts/SuisseIntl-BoldItalic-WebM.woff') format('woff');
+  src: url('/fonts/Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Halbfett';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Halbfett.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Halbfett';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/Halbfett.woff2') format('woff2');
 }
 
 .markdown p:not(:last-child) {
