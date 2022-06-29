@@ -295,6 +295,53 @@ blocks:
           value in a DNS TXT record. The server thereby proves that it can
           modify the DNS records for that domain. DNS challenges are the only
           way to obtain wildcard certificates.
+      - cardType: basic
+        text: >
+          There are a couple of problems with this approach:
+
+
+          1.  libp2p nodes still need to possess a domain name.
+
+          2.  Using the HTTP / TLS challenge requires starting a webserver on
+          port 80 or 443. On Linux, a non-privileged user is not able to bind to
+          port smaller than 1024. It might also conflict with other processes
+          that are listening on said ports.
+
+          3.  The DNS challenge requires (programmatic) access to the DNS
+          records for the domain. This is not possible without special
+          configuration.
+      - cardType: pullquote
+        headline: Get involved!
+        text: >
+          There are solutions to assign certificates to a fleet of nodes, see
+          for example
+          [https://words.filippo.io/how-plex-is-doing-https-for-all-its-users/](https://words.filippo.io/how-plex-is-doing-https-for-all-its-users/).
+
+
+
+
+          Another option would be using IP certificates. They’re quite rare, and
+          not a lot of CAs support generating them, but this might be worth
+          investigating.
+      - cardType: pullquote
+        headline: Support
+        text: |
+          go-libp2p: ✔
+
+
+          rust-libp2p: ✔
+
+
+          node.js-libp2p: ???
+
+
+          Chrome: ✔
+
+
+          Firefox: ✔
+
+
+          Safari: ✔
     navigationLabel: WebSocket
     _template: textCards
   - style:
