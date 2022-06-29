@@ -51,7 +51,7 @@
     "minorRounded": "rounded-none"
   },
   "links": {
-    "color": "white"
+    "color": "primary"
   },
   "logo": {
     "logoType": "LibP2P",
