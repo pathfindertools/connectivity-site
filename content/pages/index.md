@@ -269,9 +269,35 @@ blocks:
           The browser first establishes an HTTP/3 connection to the server. It
           then opens a new HTTP stream, and sends an Extended CONNECT request.
 
-          HEADERS :method: CONNECT :protocol: webtransport :scheme: https
-          :authority: https://chat.example.com :path: /chat Origin:
-          mywebsite.com
+
+
+
+
+          **HEADERS
+
+          **
+
+
+          *   method: CONNECT
+
+
+          *   protocol: webtransport
+
+
+          *   scheme: https
+
+
+          *   authority: https://chat.example.com
+
+
+          *   path: /chat
+
+
+          *   Origin: mywebsite.com
+
+
+
+
 
           The server can accept the upgrade by sending a HTTP 200 response. Both
           endpoints can now open streams associated with this WebTransport
