@@ -302,6 +302,25 @@ blocks:
           The server can accept the upgrade by sending a HTTP 200 response. Both
           endpoints can now open streams associated with this WebTransport
           session.
+      - cardType: basic
+        text: >
+          Similar to how QUIC shines over TCP, WebTransport should be preferred
+          over WebSocket. But for libp2p, there’s one more reason to use
+          WebTransport instead of WebSocket. As we’ve seen above, browsers
+          enforce secure WebSocket connections when the website is loaded via
+          HTTPS, and this is no different when using WebTransport.
+
+
+          When using WebTransport, browsers allow another way than relying on
+          CAs to verify a certificate: If the hash of the certificate is known
+          in advance, the certificate can be trusted as well. This is ideal for
+          libp2p: We already have a way to communicate addresses with multi
+          components, multiaddresses. We can just attach the hash of the
+          certificate to the address:
+
+
+
+          &#x20;/ip4/1.2.3.4/udp/8765/quic/webtransport/certhash/\<hash>.
     navigationLabel: WebTransport
     _template: textCards
   - style:
