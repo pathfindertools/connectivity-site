@@ -4,7 +4,7 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: 'pt-48 pb-20 pr-20 pl-20 sm:pt-24 sm:pb-10 sm:pr-10 sm:pl-10'
+      padding: 'pt-48 pb-10 pr-20 pl-20 sm:pt-24 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '2'
       labelStyles: 'text-white font-1 text-base mb-0 '
@@ -75,7 +75,7 @@ blocks:
     background:
       fillStyles: bg-black
     label: ''
-    headline: QUIC
+    headline: ''
     subhead: ''
     body: >
       QUIC is a new transport protocol which is always encrypted (using TLS 1.3)
@@ -103,7 +103,7 @@ blocks:
       - cardType: pullquote
         headline: Support
         text: "*   go-libp2p: ✔\n*   rust-libp2p: ⏱\_([work in progress](https://github.com/libp2p/rust-libp2p/pull/2289))\n*   node.js-libp2p: ❌\n*   Chrome: ❌\_(not possible)\n*   Firefox: ❌\_(not possible)\n*   Safari: ❌\_(not possible)\n"
-    navigationLabel: Quic
+    navigationLabel: ''
     _template: textCards
   - style:
       textAlignment: text-left
@@ -352,7 +352,7 @@ blocks:
     navigationLabel: WebRTC
     _template: textCards
 meta:
-  pageTitle: Microgen
-  pageDescription: Make modern web 3.0 ready websites with a real-time visual editor.
+  pageTitle: LibP2P
+  pageDescription: Publicly reachable nodes
 ---
 
