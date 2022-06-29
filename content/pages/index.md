@@ -256,6 +256,27 @@ blocks:
           WebSocket Secure is Websocket that doesn’t use HTTP, but HTTPS, to do
           the Upgrade request. That means that in addition to the 5 round trips
           listed above, there’ll be another roundtrip for the TLS handshake.
+      - cardType: pullquote
+        headline: How does TLS verification work in the browser?
+        text: >
+          When establishing a connection to a web server, the client asks the
+          server for a TLS certificate. Conceptually, the TLS certificate says
+          “the domain [libp2p.io](http://libp2p.io/) belongs to the owner of
+          this certificate”, together with a (cryptographic) signature.
+
+
+
+          Of course, the browser can’t just trust any signature. If an attacker
+          wants to impersonate libp2p.io, she can just sign her own certificate.
+          Browsers are shipped with a list of signatories, called Certificate
+          Authorities (CA) that they trust. The most widely used CA on the
+          internet is LetsEncrypt.
+      - cardType: basic
+        text: >
+          This is a problem for libp2p. Most nodes on the network don’t even
+          have a domain name, let alone a (CA-signed) certificate. Nodes that do
+          can already configure WebSocket Secure in their libp2p node, but only
+          very few nodes.
     navigationLabel: WebSocket
     _template: textCards
   - style:
