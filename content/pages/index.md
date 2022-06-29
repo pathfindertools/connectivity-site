@@ -270,33 +270,21 @@ blocks:
           then opens a new HTTP stream, and sends an Extended CONNECT request.
 
 
+          HEADERS
 
-
-
-          **HEADERS
-
-          **
 
 
           *   method: CONNECT
 
-
           *   protocol: webtransport
-
 
           *   scheme: https
 
-
           *   authority: https://chat.example.com
-
 
           *   path: /chat
 
-
           *   Origin: mywebsite.com
-
-
-
 
 
           The server can accept the upgrade by sending a HTTP 200 response. Both
@@ -317,7 +305,6 @@ blocks:
           libp2p: We already have a way to communicate addresses with multi
           components, multiaddresses. We can just attach the hash of the
           certificate to the address:
-
 
 
           &#x20;/ip4/1.2.3.4/udp/8765/quic/webtransport/certhash/\<hash>.
