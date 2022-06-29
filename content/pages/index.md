@@ -227,6 +227,22 @@ blocks:
 
           The server can accept this upgrade request by sending a HTTP 200
           response. All bytes sent on the TCP connection after this are now
+      - cardType: code
+        headline: Code
+        text: |
+          const socket = new WebSocket('ws://chat.example.com/chat');
+          // TODO: show how to send some and receive some data
+      - cardType: basic
+        headline: 'This is how it plays out in libp2p:'
+        text: |
+          1.  TCP handshake (1 RTT)
+          2.  WebSocket Upgrade Request (1 RTT)
+
+              .   Multistream security protocol negotiation (1 RTT)
+              .   Security Handshake (Noise or TLS, 1 RTT)
+              .   Multistream stream multiplexer negotiation (1 RTT)
+
+          5 round trips is quite a long time for setting up a connection.
     navigationLabel: WebSocket
     _template: textCards
   - style:
@@ -271,7 +287,6 @@ blocks:
 
 
           HEADERS
-
 
 
           *   method: CONNECT
