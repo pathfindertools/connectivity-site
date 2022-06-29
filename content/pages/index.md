@@ -277,6 +277,24 @@ blocks:
           have a domain name, let alone a (CA-signed) certificate. Nodes that do
           can already configure WebSocket Secure in their libp2p node, but only
           very few nodes.
+      - cardType: pullquote
+        headline: ACME to the rescue?
+        text: >
+          The ACME protocol allows a server to obtain a certificate from a CA
+          fully automatically. To be able to issue the certificate, the CA needs
+          to verify that the server actually controls the domain. There are 2
+          ways:
+
+
+          1.  HTTP / TLS challenge: The CA instructs the server to publish a
+          (pseudo-) random value on the website. It then makes a request to that
+          website, and checks the value. The server is only able to publish the
+          value if it actually controls the contents of the website.
+
+          2.  DNS challenge: The CA instructs the server to publish the random
+          value in a DNS TXT record. The server thereby proves that it can
+          modify the DNS records for that domain. DNS challenges are the only
+          way to obtain wildcard certificates.
     navigationLabel: WebSocket
     _template: textCards
   - style:
