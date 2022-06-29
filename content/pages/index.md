@@ -411,17 +411,50 @@ blocks:
           WebTransport instead of WebSocket. As we’ve seen above, browsers
           enforce secure WebSocket connections when the website is loaded via
           HTTPS, and this is no different when using WebTransport.
+      - cardType: code
+        headline: Code
+        text: >
+          const conf = \{
+
+          &#x20;   "serverCertificateHashes": \[
+
+          &#x20;       \{
+
+          &#x20;           "algorithm": "sha-256",
+
+          &#x20;           "value": hash1,
+
+          &#x20;       }
+
+          &#x20;   ]
+
+          }
 
 
-          When using WebTransport, browsers allow another way than relying on
-          CAs to verify a certificate: If the hash of the certificate is known
-          in advance, the certificate can be trusted as well. This is ideal for
-          libp2p: We already have a way to communicate addresses with multi
-          components, multiaddresses. We can just attach the hash of the
-          certificate to the address:
+
+          const transport = new WebTransport('https://chat.example.com/chat',
+          conf)
 
 
-          &#x20;/ip4/1.2.3.4/udp/8765/quic/webtransport/certhash/\<hash>.
+
+          // TODO: show how to open / accept streams and how to send data
+      - cardType: basic
+        headline: Securing the WebTransport Connection
+        text: >
+          What does the certificate hash secure? By itself, not much. In
+          particular, the server doesn’t have any way to know the client’s peer
+          ID.
+
+
+          We therefore run a Noise handshake on top of the first WebTransport
+          stream. This handshake does two things:
+
+
+          1.  It exchanges and cryptographically verifies the peer IDs of the
+          endpoints.
+
+          2.  It binds the certificate hash to the WebTransport session, making
+          sure there’s no MITM attack.
     navigationLabel: WebTransport
     _template: textCards
   - style:
