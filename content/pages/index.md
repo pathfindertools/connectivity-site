@@ -438,7 +438,7 @@ blocks:
 
 
           // TODO: show how to open / accept streams and how to send data
-      - cardType: basic
+      - cardType: pullquote
         headline: Securing the WebTransport Connection
         text: >
           What does the certificate hash secure? By itself, not much. In
@@ -455,6 +455,35 @@ blocks:
 
           2.  It binds the certificate hash to the WebTransport session, making
           sure there’s no MITM attack.
+      - cardType: basic
+        headline: Counting Round Trips
+        text: >
+          1.  QUIC Handshake (1 RTT)
+
+          2.  WebTransport Upgrade (1 RTT)
+
+          3.  Noise Handshake (1 RTT)
+
+
+
+          This is a lot faster than the WebSocket handshake. Step 2 and 3 can
+          potentially be run in parallel, although a bug in Chrome’s
+          WebTransport implementation currently forces sequential execution.
+      - cardType: pullquote
+        headline: Get Involved
+        text: >
+          This is a very new protocol, and we can use your help.
+
+
+          Specification:
+          [https://github.com/libp2p/specs/pull/404](https://github.com/libp2p/specs/pull/404)
+
+
+          Go implementation:
+          [https://github.com/marten-seemann/webtransport-go](https://github.com/marten-seemann/webtransport-go)
+      - cardType: pullquote
+        headline: Support
+        text: "go-libp2p: ⏱\_(work in progress)\n\nrust-libp2p: ❌\n\nnode.js-libp2p: ❌\n\nChrome: ✔️\_\n\nFirefox: ⏱\_(work in progress, TODO: link to issue)\n\nSafari: ❌\_(status unknown)\n"
     navigationLabel: WebTransport
     _template: textCards
   - style:
