@@ -4,7 +4,7 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-40 pb-20 pr-20 pl-20
+      padding: 'pt-40 pb-20 pr-20 pl-20 sm:pt-32 sm:pb-5 sm:pr-5 sm:pl-5'
       contentWidth: w-full
       columns: '2'
       labelStyles: 'text-white font-1 text-base mb-0 '
