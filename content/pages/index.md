@@ -298,7 +298,7 @@ blocks:
       headlineStyles: text-white font-2 text-lg mb-3 font-bold
       subheadStyles: 'text-white font-1 undefined mb-0 '
       textStyles: 'text-gray-light font-1 text-base mb-0 '
-      buttonType: primary
+      buttonType: secondary
     background:
       fillStyles: bg-black
     label: ''
@@ -329,22 +329,26 @@ blocks:
           *how* they are exchanged. This is left to the application.
       - cardType: pullquote
         headline: Securing the WebRTC Connection
+        subhead: ''
         text: >
           As WebRTC is built to facilitate video conferencing between browsers,
           browsers accept self-signed certificates by default. However, they
           don’t provide any way to encode anything into the certificate, thus
           libp2p nodes need to run a second handshake on top of a WebRTC stream,
           similar to WebTransport.
+        link: ''
+        buttonLabel: ''
       - cardType: pullquote
         headline: Hole Punching
         text: >
           WebRTC uses a different hole punching mechanism than libp2p. It uses
           the STUN protocol to determine its public IP addresses.
-      - cardType: pullquote
+      - cardType: basic
         headline: Get involved
-        text: >
-          Specification:
-          [https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412)
+        text: |
+          &#x20;
+        link: 'https://github.com/libp2p/specs/pull/412'
+        buttonLabel: Specification
     navigationLabel: WebRTC
     _template: textCards
 meta:
