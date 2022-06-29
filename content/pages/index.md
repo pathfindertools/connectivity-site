@@ -232,7 +232,7 @@ blocks:
         text: |
           const socket = new WebSocket('ws://chat.example.com/chat');
           // TODO: show how to send some and receive some data
-      - cardType: basic
+      - cardType: pullquote
         headline: 'This is how it plays out in libp2p:'
         text: |
           1.  TCP handshake (1 RTT)
@@ -243,6 +243,19 @@ blocks:
               .   Multistream stream multiplexer negotiation (1 RTT)
 
           5 round trips is quite a long time for setting up a connection.
+      - cardType: basic
+        text: >
+          Unfortunately, this is not the whole story. In recent years, the web
+          has moved towards ubiquitous encryption, and browsers have started
+          enforcing that web content is loaded via encrypted connection.
+          Specifically, when on a website loaded via HTTPS, browsers will block
+          plaintext WebSocket connections, and require a WebSocket Secure (wss)
+          connection.
+
+
+          WebSocket Secure is Websocket that doesn’t use HTTP, but HTTPS, to do
+          the Upgrade request. That means that in addition to the 5 round trips
+          listed above, there’ll be another roundtrip for the TLS handshake.
     navigationLabel: WebSocket
     _template: textCards
   - style:
