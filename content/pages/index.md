@@ -4,7 +4,7 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: 'pt-40 pb-20 pr-20 pl-20 sm:pt-32 sm:pb-5 sm:pr-5 sm:pl-5'
+      padding: 'pt-48 pb-20 pr-20 pl-20 sm:pt-24 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '2'
       labelStyles: 'text-white font-1 text-base mb-0 '
@@ -54,7 +54,7 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-0 pb-20 pr-20 pl-20
+      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '2'
       labelStyles: 'text-white font-1 text-base mb-0 '
@@ -108,7 +108,7 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-0 pb-20 pr-20 pl-20
+      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '1'
       labelStyles: 'text-white font-1 text-base mb-0 '
@@ -140,7 +140,7 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-0 pb-20 pr-20 pl-20
+      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '1'
       labelStyles: 'text-white font-1 text-base mb-0 '
@@ -187,7 +187,7 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-0 pb-20 pr-20 pl-20
+      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '1'
       labelStyles: 'text-white font-1 text-base mb-0 '
@@ -232,7 +232,7 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-0 pb-20 pr-20 pl-20
+      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '1'
       labelStyles: 'text-white font-1 text-base mb-0 '
@@ -281,7 +281,7 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-0 pb-20 pr-20 pl-20
+      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '1'
       labelStyles: 'text-white font-1 text-base mb-0 '

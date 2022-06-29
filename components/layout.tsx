@@ -106,6 +106,9 @@ export const Layout = ({
               html {
                 scroll-behavior: smooth;
               }
+              body {
+                background: #000;
+              }
               .markdown a:not(.button) {
                 color: var(--${globalData?.links?.color}-color);
               }
