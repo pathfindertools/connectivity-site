@@ -23,11 +23,15 @@ blocks:
       textStyles: 'text-white font-1 text-sm mb-0 '
       buttonType: primary
     label: ''
-    headline: no headline
+    headline: ''
     subhead: ''
     body: >
       Nodes in different positions in the network use different technology to
       connect to each other.
+
+
+      Learn more about how libp2p achieves universal connectivity across
+      networks.
     buttons:
       - label: Chat with Developers →
         link: 'https://filecoin.io/slack'
