@@ -90,6 +90,25 @@ blocks:
           TCP is a solid option, works in all networks (home and private).
           However, setting up a the libp2p takes quite a few network roundtrips.
       - cardType: pullquote
+        headline: Counting Round Trips
+        text: >+
+          1.  TCP Handshake
+
+          2.  Multistream Negotiation of the Security Protocol
+
+          3.  Security Handshake (TLS 1.3 or Noise)
+
+          4.  Multistream Negotiation of the Stream Multiplexer
+
+
+          This is the most optimistic assumption. In case the peer doesn’t
+          support the protocol suggested in a Multistream Negotiation step, this
+          will incur additional round trips.
+
+
+
+
+      - cardType: pullquote
         headline: Support
         subhead: ''
         text: "*   go-libp2p: ✔\n*   rust-libp2p: ✔\n*   node.js-libp2p: ✔\n*   Chrome: ❌\_(not possible)\n*   Firefox: ❌\_(not possbile)\n*   Safari: ❌\_(not possible)\n"
