@@ -224,7 +224,6 @@ blocks:
           request, and then waits for a response.
 
 
-
           libp2p on the other hand deals with streams. A stream is more flexible
           than a request-response scheme: it allows continuous bidirectional
           communication, both parties can send and receive data at any time.
@@ -283,12 +282,29 @@ blocks:
         text: >
           1.  TCP handshake (1 RTT)
 
-          2.  WebSocket Upgrade Request (1 RTT).   Multistream security protocol
-          negotiation (1 RTT)
-              .   Security Handshake (Noise or TLS, 1 RTT)
-              .   Multistream stream multiplexer negotiation (1 RTT)
+          2.  WebSocket Upgrade Request (1 RTT).
+
+          3.  Multistream security protocol negotiation (1 RTT)
+
+          4.  Security Handshake (Noise or TLS, 1 RTT)
+
+          5.  Multistream stream multiplexer negotiation (1 RTT)
+
 
           5 round trips is quite a long time for setting up a connection.
+
+
+          Unfortunately, this is not the whole story. In recent years, the web
+          has moved towards ubiquitous encryption, and browsers have started
+          enforcing that web content is loaded via encrypted connection.
+          Specifically, when on a website loaded via HTTPS, browsers will block
+          plaintext WebSocket connections, and require a WebSocket Secure (wss)
+          connection.
+
+
+          WebSocket Secure is Websocket that doesn’t use HTTP, but HTTPS, to do
+          the Upgrade request. That means that in addition to the 5 round trips
+          listed above, there’ll be another roundtrip for the TLS handshake.
       - cardType: basic
         text: >
           Unfortunately, this is not the whole story. In recent years, the web
@@ -360,8 +376,7 @@ blocks:
         text: >
           There are solutions to assign certificates to a fleet of nodes, see
           for example
-          [https://words.filippo.io/how-plex-is-doing-https-for-all-its-users/](https://words.filippo.io/how-plex-is-doing-https-for-all-its-users/
-          "this article describing how Plex does HTTPS for all its users").
+          [https://words.filippo.io/how-plex-is-doing-https-for-all-its-users/](https://words.filippo.io/how-plex-is-doing-https-for-all-its-users/).
 
 
           Another option would be using IP certificates. They’re quite rare, and
