@@ -596,9 +596,11 @@ blocks:
           the STUN protocol to determine its public IP addresses.
       - cardType: pullquote
         headline: Get involved
-        text: |
-          &#x20;
-        link: 'https://github.com/libp2p/specs/pull/412'
+        text: >
+          &#x20;\*
+          [https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412
+          "Specification")
+        link: ''
         buttonLabel: Specification
     navigationLabel: WebRTC
     _template: textCards
