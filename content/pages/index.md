@@ -413,9 +413,11 @@ blocks:
     subhead: ''
     body: >
       While WebSockets allows the browser to “hijack” a TCP connection,
-      WebTransport does the same thing with a QUIC connection. The protocol is
-      brand-new, in fact, there’s not even an RFC yet: It’s still under
-      development by the IETF WebTransport Working Group and the W3C
+      WebTransport does the same thing with a QUIC connection.
+
+
+      The protocol is brand-new, in fact, there’s not even an RFC yet: It’s
+      still under development by the IETF WebTransport Working Group and the W3C
       WebTransport Working Group.
     items:
       - cardType: pullquote
