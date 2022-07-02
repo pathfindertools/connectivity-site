@@ -26,6 +26,9 @@ blocks:
     headline: ''
     subhead: ''
     body: >
+      \<header image>
+
+
       Nodes in different positions in the network use different technology to
       connect to each other.
 
