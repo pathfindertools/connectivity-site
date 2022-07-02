@@ -126,8 +126,12 @@ blocks:
 
 
       Whenever possible, QUIC should be preferred over TCP. For more benefits of
-      using QUIC, see #holepunching. But: UDP (which QUIC runs on top of) is
-      blocked in ~1% of networks.
+      using QUIC, see #holepunching.&#x20;
+
+
+      However: UDP (which QUIC runs on top of) is blocked in ~1% of networks.
+      Not all libp2p implementations support QUIC yet, therefore TCP is still
+      needed as a fallback.
     items:
       - cardType: pullquote
         headline: QUIC in libp2p
