@@ -278,7 +278,7 @@ blocks:
           const socket = new WebSocket('ws://chat.example.com/chat');
           // TODO: show how to send some and receive some data
       - cardType: pullquote
-        headline: 'This is how it plays out in libp2p:'
+        headline: WebSocket in libp2p
         text: >
           1.  TCP handshake (1 RTT)
 
