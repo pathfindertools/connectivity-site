@@ -25,11 +25,15 @@ blocks:
     background:
       fillStyles: bg-black
     label: ''
-    headline: Publicly reachable nodes
-    subhead: 'TCP, or even better QUIC'
+    headline: Public nodes
+    subhead: TCP
     body: >
+      Public nodes is any node running in a data centers, or on a dedicated
+      connection without any router / NAT / firewall in between.
+
+
       Full nodes (e.g. go-libp2p, rust-libp2p, node.js-libp2p) use TCP and QUIC
-      to connect to each other. Imagine two servers running in data centers.
+      to connect to each other.&#x20;
     items:
       - cardType: pullquote
         headline: TCP in libp2p
@@ -234,11 +238,11 @@ blocks:
           // TODO: show how to send some and receive some data
       - cardType: pullquote
         headline: 'This is how it plays out in libp2p:'
-        text: |
+        text: >
           1.  TCP handshake (1 RTT)
-          2.  WebSocket Upgrade Request (1 RTT)
 
-              .   Multistream security protocol negotiation (1 RTT)
+          2.  WebSocket Upgrade Request (1 RTT).   Multistream security protocol
+          negotiation (1 RTT)
               .   Security Handshake (Noise or TLS, 1 RTT)
               .   Multistream stream multiplexer negotiation (1 RTT)
 
@@ -263,7 +267,6 @@ blocks:
           server for a TLS certificate. Conceptually, the TLS certificate says
           “the domain [libp2p.io](http://libp2p.io/) belongs to the owner of
           this certificate”, together with a (cryptographic) signature.
-
 
 
           Of course, the browser can’t just trust any signature. If an attacker
@@ -318,8 +321,6 @@ blocks:
           [https://words.filippo.io/how-plex-is-doing-https-for-all-its-users/](https://words.filippo.io/how-plex-is-doing-https-for-all-its-users/).
 
 
-
-
           Another option would be using IP certificates. They’re quite rare, and
           not a lot of CAs support generating them, but this might be worth
           investigating.
@@ -328,18 +329,13 @@ blocks:
         text: |
           go-libp2p: ✔
 
-
           rust-libp2p: ✔
-
 
           node.js-libp2p: ???
 
-
           Chrome: ✔
 
-
           Firefox: ✔
-
 
           Safari: ✔
     navigationLabel: WebSocket
@@ -431,10 +427,8 @@ blocks:
           }
 
 
-
           const transport = new WebTransport('https://chat.example.com/chat',
           conf)
-
 
 
           // TODO: show how to open / accept streams and how to send data
@@ -463,7 +457,6 @@ blocks:
           2.  WebTransport Upgrade (1 RTT)
 
           3.  Noise Handshake (1 RTT)
-
 
 
           This is a lot faster than the WebSocket handshake. Step 2 and 3 can
