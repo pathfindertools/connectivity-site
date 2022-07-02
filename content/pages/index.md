@@ -496,7 +496,7 @@ blocks:
 
           2.  It binds the certificate hash to the WebTransport session, making
           sure there’s no MITM attack.
-      - cardType: basic
+      - cardType: pullquote
         headline: Counting Round Trips
         text: >
           1.  QUIC Handshake (1 RTT)
@@ -506,9 +506,12 @@ blocks:
           3.  Noise Handshake (1 RTT)
 
 
-          This is a lot faster than the WebSocket handshake. Step 2 and 3 can
-          potentially be run in parallel, although a bug in Chrome’s
-          WebTransport implementation currently forces sequential execution.
+          This is a lot faster than the WebSocket handshake!
+
+
+          Step 2 and 3 can potentially be run in parallel, although a bug in
+          Chrome’s WebTransport implementation currently forces sequential
+          execution.
       - cardType: pullquote
         headline: Get Involved
         text: >
