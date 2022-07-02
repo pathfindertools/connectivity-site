@@ -119,7 +119,7 @@ blocks:
       fillStyles: bg-black
     label: ''
     headline: ''
-    subhead: ''
+    subhead: QUIC
     body: >
       QUIC is a new transport protocol which is always encrypted (using TLS 1.3)
       and provides native stream multiplexing.
