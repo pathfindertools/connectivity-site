@@ -359,17 +359,6 @@ blocks:
           records for the domain. This is not possible without special
           configuration.
       - cardType: pullquote
-        headline: Get involved!
-        text: >
-          There are solutions to assign certificates to a fleet of nodes, see
-          for example
-          [https://words.filippo.io/how-plex-is-doing-https-for-all-its-users/](https://words.filippo.io/how-plex-is-doing-https-for-all-its-users/).
-
-
-          Another option would be using IP certificates. They’re quite rare, and
-          not a lot of CAs support generating them, but this might be worth
-          investigating.
-      - cardType: pullquote
         headline: Support
         text: |
           go-libp2p: ✔
@@ -383,6 +372,17 @@ blocks:
           Firefox: ✔
 
           Safari: ✔
+      - cardType: pullquote
+        headline: Get involved!
+        text: >
+          There are solutions to assign certificates to a fleet of nodes, see
+          for example
+          [https://words.filippo.io/how-plex-is-doing-https-for-all-its-users/](https://words.filippo.io/how-plex-is-doing-https-for-all-its-users/).
+
+
+          Another option would be using IP certificates. They’re quite rare, and
+          not a lot of CAs support generating them, but this might be worth
+          investigating.
     navigationLabel: WebSocket
     _template: textCards
   - style:
