@@ -306,7 +306,7 @@ blocks:
           the Upgrade request. That means that in addition to the 5 round trips
           listed above, there’ll be another roundtrip for the TLS handshake.
       - cardType: pullquote
-        headline: How does TLS verification work in the browser?
+        headline: TLS Certificate Verification in the Browser
         text: >
           When establishing a connection to a web server, the client asks the
           server for a TLS certificate. Conceptually, the TLS certificate says
