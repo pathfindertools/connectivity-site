@@ -17,10 +17,10 @@ blocks:
       padding: pt-4 pb-4 pr-4 pl-4
       type: solid
       borderStyles: border-gray undefined-0
-      labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: 'text-black font-1 text-2xl mb-0 '
-      subheadStyles: 'text-black font-1 undefined mb-0 '
-      textStyles: 'text-black font-1 text-sm mb-0 '
+      labelStyles: 'text-white font-1 text-sm mb-0 '
+      headlineStyles: 'text-white font-1 text-2xl mb-0 '
+      subheadStyles: 'text-white font-1 undefined mb-0 '
+      textStyles: 'text-white font-1 text-sm mb-0 '
       buttonType: primary
     label: ''
     headline: no headline
