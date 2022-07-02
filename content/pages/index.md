@@ -41,11 +41,11 @@ blocks:
         text: >
           1.  establish a TCP connection to the remote node
 
-          2.  They then negotiate a security protocol (Noise, TLS) and perform a
+          2.  negotiate a security protocol (Noise or TLS 1.3), perform a
           cryptographic handshake. The connection is now encrypted and the peer
           IDs have been verified.
 
-          3.  They then apply a stream multiplexer (mplex, yamux).
+          3.  apply a stream multiplexer (yamux or mplex).
 
 
           TCP is a solid option, works in all networks (home and private).
