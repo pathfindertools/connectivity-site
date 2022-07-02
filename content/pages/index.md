@@ -153,6 +153,25 @@ blocks:
       needed as a fallback.
     items:
       - cardType: pullquote
+        headline: Counting Round Trips
+        subhead: ''
+        text: >+
+          1.  QUIC handshake
+
+
+          That’s all there is. QUIC verifies the client’s address (that’s what
+          TCP’s 3-way handshake is there for) and performs the TLS 1.3 handshake
+          in parallel. And since QUIC comes with transport-level stream
+          multiplexing, we don’t need to set up a separate stream multiplexer.
+
+
+          For resumed connections, QUIC even supports a 0-RTT handshake,
+          although we’re currently not (yet) making use of that in libp2p.
+
+
+
+
+      - cardType: pullquote
         headline: QUIC in libp2p
         subhead: ''
         text: >
