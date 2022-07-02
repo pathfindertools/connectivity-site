@@ -600,8 +600,12 @@ blocks:
           *  
           &#x20;[https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412
           "Specification")
+
+          *   Go implementation
+
+          *   Rust implementation
         link: ''
-        buttonLabel: Specification
+        buttonLabel: ''
     navigationLabel: WebRTC
     _template: textCards
 meta:
