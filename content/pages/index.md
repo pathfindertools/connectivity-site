@@ -597,8 +597,8 @@ blocks:
       - cardType: pullquote
         headline: Get involved
         text: >
-          &#x20;\*
-          [https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412
+          *  
+          &#x20;[https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412
           "Specification")
         link: ''
         buttonLabel: Specification
