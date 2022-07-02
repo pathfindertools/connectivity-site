@@ -4,6 +4,45 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
+      padding: pt-20 pr-20 pb-20 pl-20
+      contentWidth: w-full
+      columns: '3'
+      labelStyles: text-black font-1 text-sm mb-0
+      headlineStyles: text-black font-1 text-5xl mb-0
+      subheadStyles: text-black font-1 text-3xl mb-0
+      textStyles: text-black font-1 text-md mb-0
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      fillStyles: bg-gray
+      padding: pt-4 pr-4 pb-4 pl-4
+      borderStyles: border-gray
+      labelStyles: text-black font-1 text-sm mb-0
+      headlineStyles: text-black font-1 text-2xl mb-0
+      subheadStyles: text-black font-1 text-md mb-0
+      textStyles: text-black font-1 text-sm mb-0
+    label: ''
+    headline: This is a headline
+    subhead: Here is a subhead
+    body: >
+      Nodes in different positions in the network use different technology to
+      connect to each other.
+    items:
+      - headline: Here's Another Card
+        subhead: ''
+        text: |
+          This is a rich text component you can add hyperlinks, etc.
+      - headline: Here's Another Card
+        subhead: ''
+        text: |
+          This is a rich text component you can add hyperlinks, etc.
+      - headline: Here's Another Card
+        subhead: ''
+        text: |
+          This is a rich text component you can add hyperlinks, etc.
+    _template: textCards
+  - style:
+      textAlignment: text-left
+      minHeight: min-h-0
       padding: 'pt-48 pb-10 pr-20 pl-20 sm:pt-24 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '2'
