@@ -138,8 +138,8 @@ blocks:
         subhead: ''
         text: >
           Under most conditions, QUIC provides superior performance to TCP: The
-          libp2p handshake is (at least) 3 network round-trips faster, and
-          provides better performance in shaky network conditions.
+          libp2p handshake is (at least!) 3 network round-trips faster, and
+          provides better performance in unstable network conditions.
 
 
           To verify the remote’s peer ID, it is [added to the TLS
@@ -223,12 +223,11 @@ blocks:
           HTTP is a request-response scheme. The client (browser) sends a
           request, and then waits for a response.
 
+
+
           libp2p on the other hand deals with streams. A stream is more flexible
           than a request-response scheme: it allows continuous bidirectional
           communication, both parties can send and receive data at any time.
-
-          Nevertheless, we’ve been thinking how about how to make libp2p more
-          compatible with request-response schemes (see below).
     navigationLabel: Browsers
     _template: textCards
   - style:
