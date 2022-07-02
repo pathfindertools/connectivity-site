@@ -340,6 +340,21 @@ blocks:
           value in a DNS TXT record. The server thereby proves that it can
           modify the DNS records for that domain. DNS challenges are the only
           way to obtain wildcard certificates.
+
+
+          There are a couple of problems with this approach:
+
+
+          *   libp2p nodes still need to possess a domain name.
+
+          *   Using the HTTP / TLS challenge requires starting a webserver on
+          port 80 or 443. On Linux, a non-privileged user is not able to bind to
+          port smaller than 1024. It might also conflict with other processes
+          that are listening on said ports.
+
+          *   The DNS challenge requires (programmatic) access to the DNS
+          records for the domain. This is not possible without special
+          configuration.
       - cardType: basic
         text: >
           There are a couple of problems with this approach:
