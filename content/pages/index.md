@@ -594,7 +594,7 @@ blocks:
         text: >
           WebRTC uses a different hole punching mechanism than libp2p. It uses
           the STUN protocol to determine its public IP addresses.
-      - cardType: basic
+      - cardType: pullquote
         headline: Get involved
         text: |
           &#x20;
