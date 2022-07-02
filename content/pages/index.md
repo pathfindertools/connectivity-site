@@ -39,13 +39,13 @@ blocks:
         headline: TCP in libp2p
         subhead: ''
         text: >
-          *   First a node establishes a TCP connection to another node.
+          1.  establish a TCP connection to the remote node
 
-          *   They then negotiate a security protocol (Noise, TLS) and perform a
+          2.  They then negotiate a security protocol (Noise, TLS) and perform a
           cryptographic handshake. The connection is now encrypted and the peer
           IDs have been verified.
 
-          *   They then apply a stream multiplexer (mplex, yamux).
+          3.  They then apply a stream multiplexer (mplex, yamux).
 
 
           TCP is a solid option, works in all networks (home and private).
