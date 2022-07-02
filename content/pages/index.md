@@ -21,11 +21,15 @@ blocks:
       subheadStyles: text-black font-1 text-md mb-0
       textStyles: text-black font-1 text-sm mb-0
     label: ''
-    headline: This is a headline
-    subhead: Here is a subhead
+    headline: no headline
+    subhead: ''
     body: >
       Nodes in different positions in the network use different technology to
       connect to each other.
+    buttons:
+      - label: Chat with Developers →
+        link: 'https://filecoin.io/slack'
+        type: primary
     items:
       - headline: Here's Another Card
         subhead: ''
