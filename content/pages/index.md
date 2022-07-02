@@ -513,6 +513,9 @@ blocks:
           Chrome’s WebTransport implementation currently forces sequential
           execution.
       - cardType: pullquote
+        headline: Support
+        text: "go-libp2p: ⏱\_(work in progress)\n\nrust-libp2p: ❌\n\nnode.js-libp2p: ❌\n\nChrome: ✔️\_\n\nFirefox: ⏱\_(work in progress, TODO: link to issue)\n\nSafari: ❌\_(status unknown)\n"
+      - cardType: pullquote
         headline: Get Involved
         text: >
           This is a very new protocol, and we can use your help.
@@ -524,9 +527,6 @@ blocks:
 
           Go implementation:
           [https://github.com/marten-seemann/webtransport-go](https://github.com/marten-seemann/webtransport-go)
-      - cardType: pullquote
-        headline: Support
-        text: "go-libp2p: ⏱\_(work in progress)\n\nrust-libp2p: ❌\n\nnode.js-libp2p: ❌\n\nChrome: ✔️\_\n\nFirefox: ⏱\_(work in progress, TODO: link to issue)\n\nSafari: ❌\_(status unknown)\n"
     navigationLabel: WebTransport
     _template: textCards
   - style:
