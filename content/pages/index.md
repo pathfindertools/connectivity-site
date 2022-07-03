@@ -292,6 +292,12 @@ blocks:
           rust-libp2p
 
           js-libp2p
+      - cardType: pullquote
+        headline: Further Reading
+        text: |
+          Paper: \<link DINPS paper>
+
+          Spec: \<link circuit v2 spec>
     navigationLabel: Hole Punching
     _template: textCards
   - style:
