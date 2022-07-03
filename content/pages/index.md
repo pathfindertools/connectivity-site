@@ -725,7 +725,7 @@ blocks:
     navigationLabel: WebRTC
     _template: textCards
 meta:
-  pageTitle: LibP2P
-  pageDescription: Publicly reachable nodes
+  pageTitle: libp2p
+  pageDescription: Connectivity
 ---
 
