@@ -220,6 +220,11 @@ blocks:
       Not all nodes are located in a publicly reachable position. Most nodes are
       behind NATs or firewalls: in home networks, in corporate networks, and
       even on mobile devices (carrier-grade NATs).
+
+
+      Nodes behind firewalls / NATs can dial any node on the public internet,
+      but they cannot receive incoming connections from outside their local
+      network.
     navigationLabel: Hole Punching
     _template: textCards
   - style:
