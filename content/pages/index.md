@@ -284,6 +284,14 @@ blocks:
           worth it: Having a direct connection between two nodes makes sure that
           they are communicating with minimal latency possible, and can use the
           full bandwidth of the link.
+      - cardType: pullquote
+        headline: Support
+        text: |
+          go-libp2p
+
+          rust-libp2p
+
+          js-libp2p
     navigationLabel: Hole Punching
     _template: textCards
   - style:
