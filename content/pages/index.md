@@ -225,6 +225,34 @@ blocks:
       Nodes behind firewalls / NATs can dial any node on the public internet,
       but they cannot receive incoming connections from outside their local
       network.
+    items:
+      - cardType: pullquote
+        headline: Relay Server
+        text: >
+          When a libp2p boots up, one of the first things it does it determine
+          its position in the network: is it a public node, reachable from the
+          public internet, or is it a private node, located behind a firewall or
+          a NAT.
+
+
+
+
+
+          A private node will start looking for relay servers on the network,
+          and obtain a reservation with (at least) one of them. This entails
+          keeping a connection open to that relay. The relay will now forward
+          traffic from other nodes.
+
+
+
+
+
+          Conversely, a public node will start the relay service, offering relay
+          services to private nodes on the network. The relay service is
+          designed such that it’s very cheap to run (in terms of CPU, memory and
+          bandwith). This is achieved by limiting the number of reservations,
+          the connection time for relayed connections as well as their
+          bandwidth.
     navigationLabel: Hole Punching
     _template: textCards
   - style:
