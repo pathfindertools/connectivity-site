@@ -727,8 +727,27 @@ blocks:
       - cardType: pullquote
         headline: Counting Roundtrips
         text: >
-          1.  Establishing a relayed connection (only for the browser - browser
-          use case):&#x20;
+          For the browser to public node use case:
+
+
+          1.  Establishing the WebRTC connection: 1 RTT, plus the time STUN
+          takes
+
+          2.  libp2p handshake: 1 RTT
+
+
+          For the browser to browser use case:
+
+
+          1.  Establishing a connection to the relay: 2 - 3 RTTs (when using
+          WebTransport or WebRTC), 6 RTTs (when using WebSocket)
+
+          2.  Establishing a connection to the remote node via the relay: 1 RTT
+
+          3.  Establishing the WebRTC connection: 1 RTT, plus the time STUN
+          takes
+
+          4.  libp2p handshake: 1 RTT
       - cardType: pullquote
         headline: Support
         text: |
