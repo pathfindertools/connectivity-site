@@ -91,7 +91,7 @@ blocks:
           However, setting up a the libp2p takes quite a few network roundtrips.
       - cardType: pullquote
         headline: Counting Round Trips
-        text: >+
+        text: >
           1.  TCP Handshake
 
           2.  Multistream Negotiation of the Security Protocol
@@ -104,10 +104,6 @@ blocks:
           This is the most optimistic assumption. In case the peer doesn’t
           support the protocol suggested in a Multistream Negotiation step, this
           will incur additional round trips.
-
-
-
-
       - cardType: pullquote
         headline: Support
         subhead: ''
@@ -155,7 +151,7 @@ blocks:
       - cardType: pullquote
         headline: Counting Round Trips
         subhead: ''
-        text: >+
+        text: >
           1.  QUIC handshake
 
 
@@ -167,10 +163,6 @@ blocks:
 
           For resumed connections, QUIC even supports a 0-RTT handshake,
           although we’re currently not (yet) making use of that in libp2p.
-
-
-
-
       - cardType: pullquote
         headline: QUIC in libp2p
         subhead: ''
@@ -235,16 +227,10 @@ blocks:
           a NAT.
 
 
-
-
-
           A private node will start looking for relay servers on the network,
           and obtain a reservation with (at least) one of them. This entails
           keeping a connection open to that relay. The relay will now forward
           traffic from other nodes.
-
-
-
 
 
           Conversely, a public node will start the relay service, offering relay
@@ -260,9 +246,6 @@ blocks:
           all, relayed connections are limited both in terms of time and
           bandwidth. Nodes therefore use relayed connections exclusively to
           coordinate the establishment of a direct connection.
-
-
-
 
 
           We need to distinguish two situations here:
@@ -683,7 +666,7 @@ blocks:
       called WebRTC Data Channels.
     items:
       - cardType: pullquote
-        headline: WebRTC Connection Establishment
+        headline: Connection Establishment
         subhead: ''
         text: >
           In order to connect, two WebRTC nodes need to exchange SDP (Session
@@ -694,6 +677,36 @@ blocks:
 
           WebRTC specifies the format of this packet, but it doesn’t specify
           *how* they are exchanged. This is left to the application.
+
+
+          There are two distinct use cases here.
+
+
+          ## Browser to Public Node
+
+
+          This is useful in cases where WebSocket and WebTransport are not
+          available. In this case, we don't need to actually exchange the SDP,
+          but only *pretend* that we did that, and actually construct the SDP
+          from the node's advertised multiaddress(es). This saves one
+          round-trip.
+
+
+          ## Browser to Browser
+
+
+          Connection one browser to another browser usually requires hole
+          punching, as browsers are usually used by people in their home or
+          corporate networks (i.e. behind their home router or a corporate
+          firewall, respectively), or on mobile devices (i.e. behind a
+          carrier-grade NAT).
+
+
+          Fortunately, WebRTC was built exactly for this use case, and provides
+          hole-punching capabilites using the ICE protocol. The browser's WebRTC
+          stack will handle this for us, as long as we manage to exchange the
+          SDP in the first place. We use a special WebRTC coordination protocol
+          run over relayed connections to do that.
       - cardType: pullquote
         headline: Securing the WebRTC Connection
         subhead: ''
@@ -714,8 +727,7 @@ blocks:
         headline: Get involved
         text: >
           *  
-          &#x20;[https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412
-          "Specification")
+          &#x20;[https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412)
 
           *   Go implementation
 
