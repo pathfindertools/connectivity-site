@@ -707,6 +707,11 @@ blocks:
           stack will handle this for us, as long as we manage to exchange the
           SDP in the first place. We use a special WebRTC coordination protocol
           run over relayed connections to do that.
+
+
+          In order to establish a relayed connection, we first need to connect
+          to a relay node. Since the relay server will be a public node, we can
+          use WebSocket, WebTransport or WebRTC for that purpose.
       - cardType: pullquote
         headline: Securing the WebRTC Connection
         subhead: ''
