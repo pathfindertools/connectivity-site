@@ -720,6 +720,11 @@ blocks:
         link: ''
         buttonLabel: ''
       - cardType: pullquote
+        headline: Counting Roundtrips
+        text: >
+          1.  Establishing a relayed connection (only for the browser - browser
+          use case):&#x20;
+      - cardType: pullquote
         headline: Support
         text: |
           go-libp2p: working on the implementation
