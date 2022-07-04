@@ -719,10 +719,13 @@ blocks:
         link: ''
         buttonLabel: ''
       - cardType: pullquote
-        headline: Hole Punching
-        text: >
-          WebRTC uses a different hole punching mechanism than libp2p. It uses
-          the STUN protocol to determine its public IP addresses.
+        headline: Support
+        text: |
+          go-libp2p: working on the implementation
+
+          rust-libp2p: working on the implementation
+
+          js-libp2p: working on the implementation
       - cardType: pullquote
         headline: Get involved
         text: >
