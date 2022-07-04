@@ -713,9 +713,10 @@ blocks:
         text: >
           As WebRTC is built to facilitate video conferencing between browsers,
           browsers accept self-signed certificates by default. However, they
-          don’t provide any way to encode anything into the certificate, thus
-          libp2p nodes need to run a second handshake on top of a WebRTC stream,
-          similar to WebTransport.
+          don’t provide any way to encode any additional information (like the
+          libp2p peer identity) into the certificate, thus libp2p nodes need to
+          run a second handshake on top of a WebRTC stream, similar to
+          WebTransport.
         link: ''
         buttonLabel: ''
       - cardType: pullquote
