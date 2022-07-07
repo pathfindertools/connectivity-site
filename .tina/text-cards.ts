@@ -216,6 +216,7 @@ export const textCardsBlockSchema: TinaTemplate = {
           options: [
             { label: "Basic", value: "basic" },
             { label: "Pullquote", value: "pullquote" },
+            { label: "CTA", value: "cta" },
             { label: "Code", value: "code" },
           ],
         },

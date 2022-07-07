@@ -10775,6 +10775,10 @@
                           "value": "pullquote"
                         },
                         {
+                          "label": "CTA",
+                          "value": "cta"
+                        },
+                        {
                           "label": "Code",
                           "value": "code"
                         }
@@ -16386,6 +16390,10 @@
                         {
                           "label": "Pullquote",
                           "value": "pullquote"
+                        },
+                        {
+                          "label": "CTA",
+                          "value": "cta"
                         },
                         {
                           "label": "Code",

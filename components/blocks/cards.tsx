@@ -7,16 +7,18 @@ const Card = ({ data, index, cardstyle, parentField = ""  }) => {
   const backgroundClasses = {
     basic: ``,
     pullquote: `${cardstyle?.fillStyles}`,
+    cta: `bg-accent1`,
     code: `${cardstyle?.fillStyles}`,
   }
   const paddingClasses = {
     basic: ``,
     pullquote: `${cardstyle?.padding}`,
+    cta: `${cardstyle?.padding}`,
     code: `${cardstyle?.padding}`,
   }
 
   return (
-    <div className={`flex flex-col relative sm:mb-6 ${cardstyle?.borderStyles}`} data-tinafield={`${parentField}.${index}`}>
+    <div className={`flex flex-col relative sm:mb-6`} data-tinafield={`${parentField}.${index}`}>
       <div>
         {data.image && (
           <img

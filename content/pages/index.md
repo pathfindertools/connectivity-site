@@ -471,7 +471,7 @@ blocks:
           Firefox: ✔
 
           Safari: ✔
-      - cardType: pullquote
+      - cardType: cta
         headline: Get involved!
         text: >
           There are solutions to assign certificates to a fleet of nodes, see
