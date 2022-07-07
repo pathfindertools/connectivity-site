@@ -68,6 +68,12 @@ section > .text-right .markdown img {
   border-right: 1px solid rgb(225 221 236 / var(--tw-border-opacity));
 }
 
+/* Links in Wysiwyg */
+.with-toolbar .slate-a {
+  color: rgb(0 132 255);
+  text-decoration: underline;
+}
+
 /* Make global settings modal sidebar width and remove overlay */
 #modal-root > div > div > div {
   max-width: 450px;

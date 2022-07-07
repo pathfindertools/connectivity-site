@@ -58,6 +58,9 @@ fragment LayoutQueryFragment on Query {
         minorPadding
         minorRounded
       }
+      links {
+        color
+      }
       logo {
         logoType
         logoTypeStyle
