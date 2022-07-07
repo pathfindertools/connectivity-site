@@ -116,6 +116,12 @@ export const Layout = ({
                 list-style: disc;
                 margin-left: 1.5rem;
               }
+              .markdown ol {
+                margin-left: 1.5rem;
+                margin-bottom: 1.5rem;
+                list-style-type: decimal;
+                list-style-position: outside;
+              }
               .markdown ul li,
               .markdown ol li {
                 margin-bottom: .5rem;
