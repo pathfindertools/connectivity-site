@@ -10777,10 +10777,6 @@
                         {
                           "label": "CTA",
                           "value": "cta"
-                        },
-                        {
-                          "label": "Code",
-                          "value": "code"
                         }
                       ],
                       "namespace": [
@@ -10825,6 +10821,54 @@
                         "textCards",
                         "items",
                         "text"
+                      ]
+                    },
+                    {
+                      "label": "Code Language",
+                      "name": "language",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Javascript",
+                          "value": "javascript"
+                        },
+                        {
+                          "label": "Go",
+                          "value": "go"
+                        },
+                        {
+                          "label": "Rust",
+                          "value": "rust"
+                        },
+                        {
+                          "label": "HTML",
+                          "value": "html"
+                        }
+                      ],
+                      "namespace": [
+                        "global",
+                        "blocks",
+                        "textCards",
+                        "items",
+                        "language"
+                      ]
+                    },
+                    {
+                      "label": "Code",
+                      "name": "code",
+                      "type": "string",
+                      "ui": {
+                        "component": "textarea"
+                      },
+                      "namespace": [
+                        "global",
+                        "blocks",
+                        "textCards",
+                        "items",
+                        "code"
                       ]
                     },
                     {
@@ -16394,10 +16438,6 @@
                         {
                           "label": "CTA",
                           "value": "cta"
-                        },
-                        {
-                          "label": "Code",
-                          "value": "code"
                         }
                       ],
                       "namespace": [
@@ -16442,6 +16482,54 @@
                         "textCards",
                         "items",
                         "text"
+                      ]
+                    },
+                    {
+                      "label": "Code Language",
+                      "name": "language",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Javascript",
+                          "value": "javascript"
+                        },
+                        {
+                          "label": "Go",
+                          "value": "go"
+                        },
+                        {
+                          "label": "Rust",
+                          "value": "rust"
+                        },
+                        {
+                          "label": "HTML",
+                          "value": "html"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "items",
+                        "language"
+                      ]
+                    },
+                    {
+                      "label": "Code",
+                      "name": "code",
+                      "type": "string",
+                      "ui": {
+                        "component": "textarea"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "textCards",
+                        "items",
+                        "code"
                       ]
                     },
                     {

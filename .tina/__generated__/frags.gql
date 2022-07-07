@@ -269,6 +269,8 @@ fragment GlobalParts on Global {
         headline
         subhead
         text
+        language
+        code
         link
         buttonLabel
       }
@@ -664,6 +666,8 @@ fragment PagesParts on Pages {
         headline
         subhead
         text
+        language
+        code
         link
         buttonLabel
       }

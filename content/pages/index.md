@@ -372,9 +372,11 @@ blocks:
 
           The server can accept this upgrade request by sending a HTTP 200
           response. All bytes sent on the TCP connection after this are now
-      - cardType: code
+      - cardType: pullquote
         headline: Code
-        text: |
+        text: ''
+        language: javascript
+        code: |-
           const socket = new WebSocket('ws://chat.example.com/chat');
           // TODO: show how to send some and receive some data
       - cardType: pullquote
@@ -554,7 +556,7 @@ blocks:
           WebTransport instead of WebSocket. As we’ve seen above, browsers
           enforce secure WebSocket connections when the website is loaded via
           HTTPS, and this is no different when using WebTransport.
-      - cardType: code
+      - cardType: pullquote
         headline: Code
         text: >
           const conf = \{

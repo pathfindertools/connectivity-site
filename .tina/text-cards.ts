@@ -217,7 +217,6 @@ export const textCardsBlockSchema: TinaTemplate = {
             { label: "Basic", value: "basic" },
             { label: "Pullquote", value: "pullquote" },
             { label: "CTA", value: "cta" },
-            { label: "Code", value: "code" },
           ],
         },
         {
@@ -234,6 +233,28 @@ export const textCardsBlockSchema: TinaTemplate = {
           label: "Text",
           name: "text",
           type: "rich-text",
+        },
+        {
+          label: "Code Language",
+          name: "language",
+          type: "string",
+          ui: {
+            component: "selectField",
+          },
+          options: [
+            { label: "Javascript", value: "javascript" },
+            { label: "Go", value: "go" },
+            { label: "Rust", value: "rust" },
+            { label: "HTML", value: "html" },
+          ],
+        },
+        {
+          label: "Code",
+          name: "code",
+          type: "string",
+          ui: {
+            component: "textarea",
+          }
         },
         {
           type: "string",

@@ -351,6 +351,8 @@ type GlobalBlocksTextCardsItems {
   headline: String
   subhead: String
   text: JSON
+  language: String
+  code: String
   link: String
   buttonLabel: String
 }
@@ -824,6 +826,8 @@ type PagesBlocksTextCardsItems {
   headline: String
   subhead: String
   text: JSON
+  language: String
+  code: String
   link: String
   buttonLabel: String
 }
@@ -1383,6 +1387,8 @@ input GlobalBlocksTextCardsItemsMutation {
   headline: String
   subhead: String
   text: JSON
+  language: String
+  code: String
   link: String
   buttonLabel: String
 }
@@ -1844,6 +1850,8 @@ input PagesBlocksTextCardsItemsMutation {
   headline: String
   subhead: String
   text: JSON
+  language: String
+  code: String
   link: String
   buttonLabel: String
 }

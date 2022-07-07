@@ -1,6 +1,7 @@
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { Buttons } from "../buttons";
 import { CardGrid } from "../card-grid";
+import { CodeBlock, dracula } from "react-code-blocks";
 
 const Card = ({ data, index, cardstyle, parentField = ""  }) => {
   const wrapClasses =  data.link && data.buttonLabel ? 'pb-20' : '';
@@ -16,6 +17,8 @@ const Card = ({ data, index, cardstyle, parentField = ""  }) => {
     cta: `${cardstyle?.padding}`,
     code: `${cardstyle?.padding}`,
   }
+  const isCodeBlock = data.cardType === "code"
+  const isTextBlock = data.cardType != "code" && data.text
 
   return (
     <div className={`flex flex-col relative sm:mb-6`} data-tinafield={`${parentField}.${index}`}>
@@ -46,6 +49,9 @@ const Card = ({ data, index, cardstyle, parentField = ""  }) => {
           <div className={`markdown ${cardstyle?.textStyles}`} data-tinafield={`${parentField}.${index}.text`}>
             <TinaMarkdown content={data.text} />
           </div>
+        )}
+        {data.code && (
+          <CodeBlock text={data.code} language={data.language || "javascript"} theme={dracula} showLineNumbers={false} />
         )}
         {data.link && data.buttonLabel && (
           <Buttons buttons={[{
