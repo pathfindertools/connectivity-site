@@ -79,14 +79,14 @@ export const Header = ({
             <ul style={navStyles} className={`${nav.navTypeStyle} ${nav.navAlignment} flex-grow list-none sm:hidden`}>
               {navList(blocks)?.map(function (item, index) {
                 return (
-                  <li className="inline-block ml-10 first:ml-0" key={index}>
+                  <li className="inline-block ml-6 first:ml-0" key={index}>
                     <a className={"block no-underline"} href={`#${lowerDash(item)}`} onClick={ () => pageJump(item) }>{item}</a>
                   </li>
                 )
               })}
               {navItems && navItems.map(function (item, index) {
                 return (
-                  <li className="inline-block ml-10 first:ml-0" key={index}>
+                  <li className="inline-block ml-6 first:ml-0" key={index}>
                     <a style={linkStyles} className={"block no-underline"} href={item.link} target={linkTarget(item.link)} onClick={() => setNavOpen(!navOpen)}>{item.label}</a>
                   </li>
                 )

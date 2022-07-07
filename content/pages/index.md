@@ -4,13 +4,13 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-20 pb-20 pr-20 pl-20
+      padding: pt-40 pb-10 pr-20 pl-20
       contentWidth: w-full
       columns: '3'
       labelStyles: 'text-white font-1 text-sm mb-0 '
       headlineStyles: 'text-white font-1 text-5xl mb-0 '
       subheadStyles: 'text-white font-1 text-3xl mb-0 '
-      textStyles: 'text-white font-1 undefined mb-0 '
+      textStyles: 'text-white font-1 undefined mb-10 '
       contentOrder: labelHeadingsContent
     cardStyle:
       fillStyles: bg-gray
@@ -43,7 +43,7 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: 'pt-48 pb-10 pr-20 pl-20 sm:pt-24 sm:pb-10 sm:pr-10 sm:pl-10'
+      padding: 'pt-10 pb-10 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '2'
       labelStyles: 'text-white font-1 text-base mb-0 '
@@ -108,6 +108,7 @@ blocks:
         headline: Support
         subhead: ''
         text: "*   go-libp2p: ✔\n*   rust-libp2p: ✔\n*   node.js-libp2p: ✔\n*   Chrome: ❌\_(not possible)\n*   Firefox: ❌\_(not possbile)\n*   Safari: ❌\_(not possible)\n"
+    navigationLabel: TCP
     _template: textCards
   - style:
       textAlignment: text-left
@@ -180,7 +181,7 @@ blocks:
       - cardType: pullquote
         headline: Support
         text: "*   go-libp2p: ✔\n*   rust-libp2p: ⏱\_([work in progress](https://github.com/libp2p/rust-libp2p/pull/2289))\n*   node.js-libp2p: ❌\n*   Chrome: ❌\_(not possible)\n*   Firefox: ❌\_(not possible)\n*   Safari: ❌\_(not possible)\n"
-    navigationLabel: ''
+    navigationLabel: QUIC
     _template: textCards
   - style:
       textAlignment: text-left
@@ -326,7 +327,7 @@ blocks:
           libp2p on the other hand deals with streams. A stream is more flexible
           than a request-response scheme: it allows continuous bidirectional
           communication, both parties can send and receive data at any time.
-    navigationLabel: Browsers
+    navigationLabel: ''
     _template: textCards
   - style:
       textAlignment: text-left
