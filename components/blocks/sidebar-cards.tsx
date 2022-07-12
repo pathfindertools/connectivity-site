@@ -7,8 +7,8 @@ import { CodeBlock, dracula } from "react-code-blocks";
 import { BlockList } from "net";
 
 const Card = ({ block, index, cardstyle, isActive, parentField = ""  }) => {
-  const activeClass = !isActive ? 'hidden' : ''
-  const wrapClasses = block.link && block.buttonLabel ? 'pb-20' : ''
+  const activeClass = !isActive ? 'hidden sm:block' : ''
+  const wrapClasses = block.link && block.buttonLabel ? '' : ''
 
   return (
     <div className={`flex flex-col relative sm:mb-6 ${activeClass}`} data-tinafield={`${parentField}.${index}`}>
@@ -70,10 +70,10 @@ export const SidebarCards = ({ data, parentField = "" }) => {
           width = "w-full"
           parentField={parentField}
         />
-        <div className="flex gap-20">
+        <div className="flex gap-20 sm:block">
           {data.cards && (
             <>
-              <div className="w-60">
+              <div className="w-60 sm:w-full">
                 {data.imageSrc && (
                   <img
                     className="mb-10"
@@ -82,7 +82,7 @@ export const SidebarCards = ({ data, parentField = "" }) => {
                     data-tinafield={`${parentField}.image`}
                   />
                 )}
-                <ul>
+                <ul className="sm:hidden">
                 { data.cards.map(function (block, index) {
                   const backgroundClasses = index === activeCard ? 'bg-primary' : 'bg-gray-dark'
                   return <li key={index} className="font-2 uppercase text-sm">
