@@ -2,6 +2,33 @@
 draft: true
 blocks:
   - style:
+      alignment: 'flex-row-reverse text-left items-center items-start-vertical '
+      featureContent: 'w-1/2 min-h-0 '
+      padding: pt-60 pb-20 pr-10 pl-20
+      featureImage: 'object-center object-scale-down '
+      imagePadding: pt-60 pb-20 pr-20 pl-10
+      labelStyles: 'text-white font-1 text-sm mb-0 '
+      headlineStyles: text-white font-1 text-5xl mb-5 font-bold
+      subheadStyles: text-white font-1 text-base mb-5 font-bold
+      textStyles: 'text-white font-1 undefined mb-5 '
+      contentOrder: labelHeadingsContent
+    image:
+      src: >-
+        https://res.cloudinary.com/protocolai/image/upload/v1657648092/libp2p/libp2p-hero_hath9f.svg
+    label: ''
+    headline: Libp2p Landing
+    subhead: >-
+      Nodes in different positions in the network use different technology to
+      connect to each other.
+    body: >
+      Learn more about how libp2p achieves universal connectivity across
+      networks.
+    buttons:
+      - label: Chat With Developers
+        link: /
+        type: primary
+    _template: feature
+  - style:
       textAlignment: text-left
       minHeight: min-h-0
       padding: pt-40 pb-10 pr-20 pl-20
