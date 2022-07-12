@@ -31,45 +31,6 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-40 pb-10 pr-20 pl-20
-      contentWidth: w-full
-      columns: '3'
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: 'text-white font-1 text-5xl mb-0 '
-      subheadStyles: 'text-white font-1 text-3xl mb-0 '
-      textStyles: 'text-white font-1 undefined mb-10 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      fillStyles: bg-gray
-      padding: pt-4 pb-4 pr-4 pl-4
-      type: solid
-      borderStyles: border-gray undefined-0
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: 'text-white font-1 text-2xl mb-0 '
-      subheadStyles: 'text-white font-1 undefined mb-0 '
-      textStyles: 'text-white font-1 text-sm mb-0 '
-      buttonType: primary
-    label: ''
-    headline: ''
-    subhead: ''
-    body: >
-      \<header image>
-
-
-      Nodes in different positions in the network use different technology to
-      connect to each other.
-
-
-      Learn more about how libp2p achieves universal connectivity across
-      networks.
-    buttons:
-      - label: Chat with Developers →
-        link: 'https://filecoin.io/slack'
-        type: primary
-    _template: textCards
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
       padding: 'pt-10 pb-10 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '2'
