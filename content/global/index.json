@@ -6,7 +6,7 @@
   "colors": {
     "primary": "#0090FF",
     "accent1": "#062739",
-    "accent2": "#1BBF6E",
+    "accent2": "#CDDD40",
     "accent3": "#2DD0DB",
     "accent4": "#00D0DB",
     "white": "#FFFFFF",
@@ -16,8 +16,8 @@
     "black": "#000000"
   },
   "fonts": {
-    "font1": "Book",
-    "font2": "Medium",
+    "font1": "IBM Plex Mono:wght@400;700",
+    "font2": "IBM Plex Mono:wght@300;500",
     "font3": "Halbfett",
     "font4": "JetBrains Mono:wght@400;700"
   },
@@ -36,11 +36,11 @@
     "text8xl": "96/120"
   },
   "buttons": {
-    "primaryFill": "bg-primary",
+    "primaryFill": "bg-accent2",
     "primaryBorder": "border-accent3 border-r-0",
-    "primaryTypography": "text-white font-2 text-sm mb-0 font-bold",
+    "primaryTypography": "text-accent1 font-2 text-sm mb-0 font-bold",
     "primaryPadding": "pt-2.5 pb-2.5 pr-6 pl-6",
-    "primaryRounded": "rounded",
+    "primaryRounded": "rounded-full",
     "secondaryBorder": "border-white border-2",
     "secondaryTypography": "text-white undefined text-sm undefined font-bold",
     "secondaryPadding": "pt-2 pb-2 pr-6 pl-6",
