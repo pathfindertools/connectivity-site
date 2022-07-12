@@ -4,9 +4,9 @@ blocks:
   - style:
       alignment: 'flex-row-reverse text-left items-center items-start-vertical '
       featureContent: 'w-1/2 min-h-0 '
-      padding: pt-60 pb-20 pr-10 pl-20
+      padding: pt-52 pb-20 pr-10 pl-20
       featureImage: 'object-center object-scale-down '
-      imagePadding: pt-60 pb-20 pr-20 pl-10
+      imagePadding: pt-52 pb-20 pr-20 pl-10
       labelStyles: 'text-white font-1 text-sm mb-0 '
       headlineStyles: text-white font-1 text-5xl mb-5 font-bold
       subheadStyles: text-white font-1 text-base mb-5 font-bold
