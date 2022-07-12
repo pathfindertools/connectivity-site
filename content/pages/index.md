@@ -10,7 +10,7 @@ blocks:
       labelStyles: 'text-white font-1 text-sm mb-0 '
       headlineStyles: text-white font-1 text-5xl mb-5 font-bold
       subheadStyles: text-white font-1 text-base mb-5 font-bold
-      textStyles: 'text-white font-1 undefined mb-5 '
+      textStyles: 'text-white font-1 undefined mb-8 '
       contentOrder: labelHeadingsContent
     image:
       src: >-
