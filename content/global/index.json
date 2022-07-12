@@ -56,14 +56,14 @@
   "logo": {
     "logoType": "LibP2P",
     "logoTypeStyle": "text-white undefined text-xl mb-1.5 font-bold",
-    "image": "",
-    "imageWidth": "48",
-    "imageHeight": "48",
-    "imageMargin": "24"
+    "image": "https://res.cloudinary.com/protocolai/image/upload/v1657648316/libp2p/logo-libp2p_ddxwzy.svg",
+    "imageWidth": "33",
+    "imageHeight": "39",
+    "imageMargin": "20"
   },
   "nav": {
     "navAlignment": "text-right",
-    "navTypeStyle": "text-white font-1 text-base mb-0 ",
+    "navTypeStyle": "text-gray-light font-1 text-sm mb-0 ",
     "navBackgroundColor": "bg-gray-dark",
     "padding": "pt-10 pb-10 pr-20 pl-20 sm:pt-5 sm:pb-5 sm:pr-10 sm:pl-10"
   },
