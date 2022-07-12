@@ -329,57 +329,46 @@ blocks:
           communication, both parties can send and receive data at any time.
     navigationLabel: ''
     _template: textCards
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
-      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
-      contentWidth: w-full
-      columns: '1'
-      labelStyles: 'text-white font-1 text-base mb-0 '
-      headlineStyles: 'text-white font-2 text-2xl mb-1 '
-      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-white font-1 text-base mb-10 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      fillStyles: bg-gray-dark
-      padding: pt-8 pb-8 pr-8 pl-8
-      type: solid
-      borderStyles: border-gray undefined-0
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: text-white font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-white font-1 undefined mb-0 '
-      textStyles: 'text-gray-light font-1 text-base mb-0 '
+  - cardStyle:
+      padding: pt-0 pb-0 pr-0 pl-0
+      borderStyles: undefined undefined-0
+      labelStyles: 'text-white font-2 text-base mb-px '
+      headlineStyles: text-white font-2 text-xl mb-5 font-bold
+      subheadStyles: 'text-white font-2 text-base mb-px '
+      textStyles: 'text-white font-1 text-base mb-px '
       buttonType: primary
+    style:
+      labelStyles: 'undefined undefined undefined undefined '
+      headlineStyles: text-white font-2 text-5xl mb-0 font-bold
+      subheadStyles: 'undefined undefined undefined undefined '
+      textStyles: 'text-white undefined text-base mb-16 '
     background:
       fillStyles: bg-black
-    label: ''
+    imageSrc: >-
+      https://res.cloudinary.com/protocolai/image/upload/v1657642678/libp2p/logo-websocket_jjds6v.png
     headline: WebSocket
-    subhead: ''
     body: >
       WebSocket has been around for more than 10 years. It allows “hijacking” of
       a HTTP/1.1 connection (it was later also standardized for HTTP/2), giving
       the browser access to the underlying TCP connection.
-    items:
-      - cardType: pullquote
+    cards:
+      - cardType: basic
         headline: WebSocket Upgrade
-        subhead: ''
         text: >
           The browser first establishes the TCP connection and sends an HTTP
-          request:
-
-          GET /chat HTTP/1.1 Host: server.example.com Upgrade: websocket
-          Connection: Upgrade
-
-          The server can accept this upgrade request by sending a HTTP 200
-          response. All bytes sent on the TCP connection after this are now
-      - cardType: pullquote
+          request: GET /chat HTTP/1.1 Host: server.example.com Upgrade:
+          websocket Connection: Upgrade The server can accept this upgrade
+          request by sending a HTTP 200 response. All bytes sent on the TCP
+          connection after this are now
+        language: javascript
+      - cardType: basic
         headline: Code
         text: ''
         language: javascript
         code: |-
           const socket = new WebSocket('ws://chat.example.com/chat');
           // TODO: show how to send some and receive some data
-      - cardType: pullquote
+      - cardType: basic
         headline: WebSocket in libp2p
         text: >
           1.  TCP handshake (1 RTT)
@@ -407,27 +396,12 @@ blocks:
           WebSocket Secure is Websocket that doesn’t use HTTP, but HTTPS, to do
           the Upgrade request. That means that in addition to the 5 round trips
           listed above, there’ll be another roundtrip for the TLS handshake.
-      - cardType: pullquote
+        language: javascript
+      - cardType: basic
         headline: TLS Certificate Verification in the Browser
-        text: >
-          When establishing a connection to a web server, the client asks the
-          server for a TLS certificate. Conceptually, the TLS certificate says
-          “the domain [libp2p.io](http://libp2p.io/) belongs to the owner of
-          this certificate”, together with a (cryptographic) signature.
-
-
-          Of course, the browser can’t just trust any signature. If an attacker
-          wants to impersonate libp2p.io, she can just sign her own certificate.
-          Browsers are shipped with a list of signatories, called Certificate
-          Authorities (CA) that they trust. The most widely used CA on the
-          internet is LetsEncrypt.
-
-
-          This is a problem for libp2p. Most nodes on the network don’t even
-          have a domain name, let alone a (CA-signed) certificate. Nodes that do
-          can already configure WebSocket Secure in their libp2p node, but only
-          very few nodes.
-      - cardType: pullquote
+        text: "When establishing a connection to a web server, the client asks the server for a TLS certificate. Conceptually, the TLS certificate says “the domain\_[libp2p.io](http://libp2p.io/)\_belongs to the owner of this certificate”, together with a (cryptographic) signature.\n\nOf course, the browser can’t just trust any signature. If an attacker wants to impersonate libp2p.io, she can just sign her own certificate. Browsers are shipped with a list of signatories, called Certificate Authorities (CA) that they trust. The most widely used CA on the internet is LetsEncrypt.\n\nThis is a problem for libp2p. Most nodes on the network don’t even have a domain name, let alone a (CA-signed) certificate. Nodes that do can already configure WebSocket Secure in their libp2p node, but only very few nodes.\n"
+        language: javascript
+      - cardType: basic
         headline: ACME to the rescue?
         text: >
           The ACME protocol allows a server to obtain a certificate from a CA
@@ -460,6 +434,37 @@ blocks:
           *   The DNS challenge requires (programmatic) access to the DNS
           records for the domain. This is not possible without special
           configuration.
+        language: javascript
+    navigationLabel: WebSocket
+    _template: sidebarCards
+  - style:
+      textAlignment: text-left
+      minHeight: min-h-0
+      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
+      contentWidth: w-full
+      columns: '2'
+      labelStyles: 'text-white font-1 text-base mb-0 '
+      headlineStyles: 'text-white font-2 text-2xl mb-1 '
+      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
+      textStyles: 'text-white font-1 text-base mb-10 '
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      fillStyles: bg-gray-dark
+      padding: pt-8 pb-8 pr-8 pl-8
+      type: solid
+      borderStyles: border-gray undefined-0
+      labelStyles: 'text-white font-1 text-sm mb-0 '
+      headlineStyles: text-white font-2 text-lg mb-3 font-bold
+      subheadStyles: 'text-white font-1 undefined mb-0 '
+      textStyles: 'text-gray-light font-1 text-base mb-0 '
+      buttonType: primary
+    background:
+      fillStyles: bg-black
+    label: ''
+    headline: ''
+    subhead: ''
+    body: ''
+    items:
       - cardType: pullquote
         headline: Support
         text: |
@@ -485,34 +490,24 @@ blocks:
           Another option would be using IP certificates. They’re quite rare, and
           not a lot of CAs support generating them, but this might be worth
           investigating.
-    navigationLabel: WebSocket
+    navigationLabel: ''
     _template: textCards
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
-      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
-      contentWidth: w-full
-      columns: '1'
-      labelStyles: 'text-white font-1 text-base mb-0 '
-      headlineStyles: 'text-white font-2 text-2xl mb-1 '
-      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-white font-1 text-base mb-10 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      fillStyles: bg-gray-dark
-      padding: pt-8 pb-8 pr-8 pl-8
-      type: solid
-      borderStyles: border-gray undefined-0
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: text-white font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-white font-1 undefined mb-0 '
-      textStyles: 'text-gray-light font-1 text-base mb-0 '
+  - cardStyle:
+      padding: undefined undefined undefined undefined
+      borderStyles: undefined undefined-0
+      labelStyles: 'text-white font-2 text-sm undefined '
+      headlineStyles: 'text-white font-2 text-xl mb-5 '
+      subheadStyles: 'text-white font-2 text-base undefined '
+      textStyles: 'text-white font-2 text-base mb-8 '
       buttonType: primary
-    background:
-      fillStyles: bg-black
-    label: ''
+    style:
+      labelStyles: 'text-white undefined undefined undefined '
+      headlineStyles: text-white font-2 text-2xl mb-5 font-bold
+      subheadStyles: 'text-white undefined text-base undefined '
+      textStyles: 'text-white undefined text-base mb-16 '
+    imageSrc: >-
+      https://res.cloudinary.com/protocolai/image/upload/v1657642681/libp2p/logo-webtransport_q7bxby.png
     headline: WebTransport
-    subhead: ''
     body: >
       While WebSockets allows the browser to “hijack” a TCP connection,
       WebTransport does the same thing with a QUIC connection.
@@ -521,10 +516,9 @@ blocks:
       The protocol is brand-new, in fact, there’s not even an RFC yet: It’s
       still under development by the IETF WebTransport Working Group and the W3C
       WebTransport Working Group.
-    items:
-      - cardType: pullquote
+    cards:
+      - cardType: basic
         headline: WebTransport Upgrade
-        subhead: ''
         text: >
           The browser first establishes an HTTP/3 connection to the server. It
           then opens a new HTTP stream, and sends an Extended CONNECT request.
@@ -549,31 +543,19 @@ blocks:
           The server can accept the upgrade by sending a HTTP 200 response. Both
           endpoints can now open streams associated with this WebTransport
           session.
+        language: javascript
       - cardType: basic
+        headline: Code
         text: >
           Similar to how QUIC shines over TCP, WebTransport should be preferred
           over WebSocket. But for libp2p, there’s one more reason to use
           WebTransport instead of WebSocket. As we’ve seen above, browsers
           enforce secure WebSocket connections when the website is loaded via
           HTTPS, and this is no different when using WebTransport.
-      - cardType: pullquote
-        headline: Code
-        text: >
-          const conf = \{
-
-          &#x20;   "serverCertificateHashes": \[
-
-          &#x20;       \{
-
-          &#x20;           "algorithm": "sha-256",
-
-          &#x20;           "value": hash1,
-
-          &#x20;       }
-
-          &#x20;   ]
-
-          }
+        language: javascript
+        code: >-
+          const conf = { "serverCertificateHashes": [ { "algorithm": "sha-256",
+          "value": hash1, } ] }
 
 
           const transport = new WebTransport('https://chat.example.com/chat',
@@ -581,7 +563,7 @@ blocks:
 
 
           // TODO: show how to open / accept streams and how to send data
-      - cardType: pullquote
+      - cardType: basic
         headline: Securing the WebTransport Connection
         text: >
           What does the certificate hash secure? By itself, not much. In
@@ -598,7 +580,8 @@ blocks:
 
           2.  It binds the certificate hash to the WebTransport session, making
           sure there’s no MITM attack.
-      - cardType: pullquote
+        language: javascript
+      - cardType: basic
         headline: Counting Round Trips
         text: >
           1.  QUIC Handshake (1 RTT)
@@ -614,6 +597,37 @@ blocks:
           Step 2 and 3 can potentially be run in parallel, although a bug in
           Chrome’s WebTransport implementation currently forces sequential
           execution.
+        language: javascript
+    navigationLabel: WebTransport
+    _template: sidebarCards
+  - style:
+      textAlignment: text-left
+      minHeight: min-h-0
+      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
+      contentWidth: w-full
+      columns: '2'
+      labelStyles: 'text-white font-1 text-base mb-0 '
+      headlineStyles: 'text-white font-2 text-2xl mb-1 '
+      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
+      textStyles: 'text-white font-1 text-base mb-10 '
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      fillStyles: bg-gray-dark
+      padding: pt-8 pb-8 pr-8 pl-8
+      type: solid
+      borderStyles: border-gray undefined-0
+      labelStyles: 'text-white font-1 text-sm mb-0 '
+      headlineStyles: text-white font-2 text-lg mb-3 font-bold
+      subheadStyles: 'text-white font-1 undefined mb-0 '
+      textStyles: 'text-gray-light font-1 text-base mb-0 '
+      buttonType: primary
+    background:
+      fillStyles: bg-black
+    label: ''
+    headline: ''
+    subhead: ''
+    body: ''
+    items:
       - cardType: pullquote
         headline: Support
         text: "go-libp2p: ⏱\_(work in progress)\n\nrust-libp2p: ❌\n\nnode.js-libp2p: ❌\n\nChrome: ✔️\_\n\nFirefox: ⏱\_(work in progress, TODO: link to issue)\n\nSafari: ❌\_(status unknown)\n"
@@ -629,34 +643,24 @@ blocks:
 
           Go implementation:
           [https://github.com/marten-seemann/webtransport-go](https://github.com/marten-seemann/webtransport-go)
-    navigationLabel: WebTransport
+    navigationLabel: ''
     _template: textCards
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
-      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
-      contentWidth: w-full
-      columns: '1'
-      labelStyles: 'text-white font-1 text-base mb-0 '
-      headlineStyles: 'text-white font-2 text-2xl mb-1 '
-      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-white font-1 text-base mb-10 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      fillStyles: bg-gray-dark
-      padding: pt-8 pb-8 pr-8 pl-8
-      type: solid
-      borderStyles: border-gray undefined-0
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: text-white font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-white font-1 undefined mb-0 '
-      textStyles: 'text-gray-light font-1 text-base mb-0 '
-      buttonType: secondary
-    background:
-      fillStyles: bg-black
-    label: ''
+  - cardStyle:
+      padding: undefined undefined undefined undefined
+      borderStyles: undefined undefined-0
+      labelStyles: 'text-white undefined undefined undefined '
+      headlineStyles: 'text-white font-2 text-xl mb-5 '
+      subheadStyles: 'text-white undefined undefined undefined '
+      textStyles: 'text-white undefined undefined undefined '
+      buttonType: primary
+    style:
+      labelStyles: 'text-white font-2 undefined undefined '
+      headlineStyles: 'text-white font-2 text-2xl undefined '
+      subheadStyles: 'text-white font-2 undefined undefined '
+      textStyles: 'text-white font-1 text-base mb-16 '
+    imageSrc: >-
+      https://res.cloudinary.com/protocolai/image/upload/v1657642674/libp2p/logo-webrtc_okp1ki.svg
     headline: WebRTC
-    subhead: ''
     body: >
       Usually used for video conferencing, WebRTC is a suite of protocols that
       allows browsers to connect to servers, and to other browsers, and even
@@ -667,57 +671,13 @@ blocks:
       are sent using an unreliably transport), WebRTC also establishes
       stream-based communication on top of SCTP and exposes reliable streams,
       called WebRTC Data Channels.
-    items:
-      - cardType: pullquote
+    cards:
+      - cardType: basic
         headline: Connection Establishment
-        subhead: ''
-        text: >
-          In order to connect, two WebRTC nodes need to exchange SDP (Session
-          Description Protocol) packets. These packets contain all the
-          information that’s needed to establish the connection: (public) IP
-          addresses, supported WebRTC features, audio and video codecs etc.
-
-
-          WebRTC specifies the format of this packet, but it doesn’t specify
-          *how* they are exchanged. This is left to the application.
-
-
-          There are two distinct use cases here.
-
-
-          ## Browser to Public Node
-
-
-          This is useful in cases where WebSocket and WebTransport are not
-          available. In this case, we don't need to actually exchange the SDP,
-          but only *pretend* that we did that, and actually construct the SDP
-          from the node's advertised multiaddress(es). This saves one
-          round-trip.
-
-
-          ## Browser to Browser
-
-
-          Connection one browser to another browser usually requires hole
-          punching, as browsers are usually used by people in their home or
-          corporate networks (i.e. behind their home router or a corporate
-          firewall, respectively), or on mobile devices (i.e. behind a
-          carrier-grade NAT).
-
-
-          Fortunately, WebRTC was built exactly for this use case, and provides
-          hole-punching capabilites using the ICE protocol. The browser's WebRTC
-          stack will handle this for us, as long as we manage to exchange the
-          SDP in the first place. We use a special WebRTC coordination protocol
-          run over relayed connections to do that.
-
-
-          In order to establish a relayed connection, we first need to connect
-          to a relay node. Since the relay server will be a public node, we can
-          use WebSocket, WebTransport or WebRTC for that purpose.
-      - cardType: pullquote
+        text: "In order to connect, two WebRTC nodes need to exchange SDP (Session Description Protocol) packets. These packets contain all the information that’s needed to establish the connection: (public) IP addresses, supported WebRTC features, audio and video codecs etc.\n\nWebRTC specifies the format of this packet, but it doesn’t specify\_*how*\_they are exchanged. This is left to the application.\n\nThere are two distinct use cases here.\n\n**Browser to Public Node**\n\nThis is useful in cases where WebSocket and WebTransport are not available. In this case, we don't need to actually exchange the SDP, but only\_*pretend*\_that we did that, and actually construct the SDP from the node's advertised multiaddress(es). This saves one round-trip.\n\n**Browser to Browser**\n\nConnection one browser to another browser usually requires hole punching, as browsers are usually used by people in their home or corporate networks (i.e. behind their home router or a corporate firewall, respectively), or on mobile devices (i.e. behind a carrier-grade NAT).\n\nFortunately, WebRTC was built exactly for this use case, and provides hole-punching capabilites using the ICE protocol. The browser's WebRTC stack will handle this for us, as long as we manage to exchange the SDP in the first place. We use a special WebRTC coordination protocol run over relayed connections to do that.\n\nIn order to establish a relayed connection, we first need to connect to a relay node. Since the relay server will be a public node, we can use WebSocket, WebTransport or WebRTC for that purpose.\n"
+        language: javascript
+      - cardType: basic
         headline: Securing the WebRTC Connection
-        subhead: ''
         text: >
           As WebRTC is built to facilitate video conferencing between browsers,
           browsers accept self-signed certificates by default. However, they
@@ -725,9 +685,8 @@ blocks:
           libp2p peer identity) into the certificate, thus libp2p nodes need to
           run a second handshake on top of a WebRTC stream, similar to
           WebTransport.
-        link: ''
-        buttonLabel: ''
-      - cardType: pullquote
+        language: javascript
+      - cardType: basic
         headline: Counting Roundtrips
         text: >
           For the browser to public node use case:
@@ -751,6 +710,37 @@ blocks:
           takes
 
           4.  libp2p handshake: 1 RTT
+        language: javascript
+    navigationLabel: WebRTC
+    _template: sidebarCards
+  - style:
+      textAlignment: text-left
+      minHeight: min-h-0
+      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
+      contentWidth: w-full
+      columns: '2'
+      labelStyles: 'text-white font-1 text-base mb-0 '
+      headlineStyles: 'text-white font-2 text-2xl mb-1 '
+      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
+      textStyles: 'text-white font-1 text-base mb-10 '
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      fillStyles: bg-gray-dark
+      padding: pt-8 pb-8 pr-8 pl-8
+      type: solid
+      borderStyles: border-gray undefined-0
+      labelStyles: 'text-white font-1 text-sm mb-0 '
+      headlineStyles: text-white font-2 text-lg mb-3 font-bold
+      subheadStyles: 'text-white font-1 undefined mb-0 '
+      textStyles: 'text-gray-light font-1 text-base mb-0 '
+      buttonType: secondary
+    background:
+      fillStyles: bg-black
+    label: ''
+    headline: ''
+    subhead: ''
+    body: ''
+    items:
       - cardType: pullquote
         headline: Support
         text: |
@@ -770,7 +760,7 @@ blocks:
           *   Rust implementation
         link: ''
         buttonLabel: ''
-    navigationLabel: WebRTC
+    navigationLabel: ''
     _template: textCards
 meta:
   pageTitle: libp2p

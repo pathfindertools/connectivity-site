@@ -1066,7 +1066,67 @@ type PagesBlocksTailwindCards {
   navigationLabel: String
 }
 
-union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner | PagesBlocksEmbed | PagesBlocksTailwindFeature | PagesBlocksTailwindCards
+type PagesBlocksSidebarCardsCardStyle {
+  fillStyles: String
+  padding: String
+  borderStyles: String
+  typographyTitle: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
+  buttonTitle: String
+  buttonType: String
+}
+
+type PagesBlocksSidebarCardsStyle {
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
+}
+
+type PagesBlocksSidebarCardsBackgroundOrnaments {
+  src: String
+  alignment: String
+  width: String
+  height: String
+  xOffset: String
+  yOffset: String
+}
+
+type PagesBlocksSidebarCardsBackground {
+  fillStyles: String
+  src: String
+  position: String
+  ornaments: [PagesBlocksSidebarCardsBackgroundOrnaments]
+}
+
+type PagesBlocksSidebarCardsCards {
+  cardType: String
+  headline: String
+  subhead: String
+  text: JSON
+  language: String
+  code: String
+}
+
+type PagesBlocksSidebarCards {
+  cardStyle: PagesBlocksSidebarCardsCardStyle
+  style: PagesBlocksSidebarCardsStyle
+  background: PagesBlocksSidebarCardsBackground
+  rule: String
+  imageSrc: String
+  label: String
+  headline: String
+  subhead: String
+  body: JSON
+  cards: [PagesBlocksSidebarCardsCards]
+  rule2: String
+  navigationLabel: String
+}
+
+union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner | PagesBlocksEmbed | PagesBlocksTailwindFeature | PagesBlocksTailwindCards | PagesBlocksSidebarCards
 
 type PagesMeta {
   pageTitle: String
@@ -2090,6 +2150,66 @@ input PagesBlocksTailwindCardsMutation {
   navigationLabel: String
 }
 
+input PagesBlocksSidebarCardsCardStyleMutation {
+  fillStyles: String
+  padding: String
+  borderStyles: String
+  typographyTitle: String
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
+  buttonTitle: String
+  buttonType: String
+}
+
+input PagesBlocksSidebarCardsStyleMutation {
+  labelStyles: String
+  headlineStyles: String
+  subheadStyles: String
+  textStyles: String
+}
+
+input PagesBlocksSidebarCardsBackgroundOrnamentsMutation {
+  src: String
+  alignment: String
+  width: String
+  height: String
+  xOffset: String
+  yOffset: String
+}
+
+input PagesBlocksSidebarCardsBackgroundMutation {
+  fillStyles: String
+  src: String
+  position: String
+  ornaments: [PagesBlocksSidebarCardsBackgroundOrnamentsMutation]
+}
+
+input PagesBlocksSidebarCardsCardsMutation {
+  cardType: String
+  headline: String
+  subhead: String
+  text: JSON
+  language: String
+  code: String
+}
+
+input PagesBlocksSidebarCardsMutation {
+  cardStyle: PagesBlocksSidebarCardsCardStyleMutation
+  style: PagesBlocksSidebarCardsStyleMutation
+  background: PagesBlocksSidebarCardsBackgroundMutation
+  rule: String
+  imageSrc: String
+  label: String
+  headline: String
+  subhead: String
+  body: JSON
+  cards: [PagesBlocksSidebarCardsCardsMutation]
+  rule2: String
+  navigationLabel: String
+}
+
 input PagesBlocksMutation {
   feature: PagesBlocksFeatureMutation
   photoCards: PagesBlocksPhotoCardsMutation
@@ -2098,6 +2218,7 @@ input PagesBlocksMutation {
   embed: PagesBlocksEmbedMutation
   tailwindFeature: PagesBlocksTailwindFeatureMutation
   tailwindCards: PagesBlocksTailwindCardsMutation
+  sidebarCards: PagesBlocksSidebarCardsMutation
 }
 
 input PagesMetaMutation {

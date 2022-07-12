@@ -19236,6 +19236,750 @@
                 "blocks",
                 "tailwindCards"
               ]
+            },
+            {
+              "name": "sidebarCards",
+              "label": "Sidebar Cards",
+              "ui": {
+                "defaultItem": {
+                  "headline": "This is the main headline",
+                  "cards": [
+                    {
+                      "headline": "Headline"
+                    },
+                    {
+                      "headline": "Headline"
+                    },
+                    {
+                      "headline": "Headline"
+                    }
+                  ]
+                }
+              },
+              "fields": [
+                {
+                  "type": "object",
+                  "label": "Card Style",
+                  "name": "cardStyle",
+                  "ui": {
+                    "component": "group"
+                  },
+                  "fields": [
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cardStyle",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Padding",
+                      "name": "padding",
+                      "type": "string",
+                      "ui": {
+                        "component": "paddingControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cardStyle",
+                        "padding"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Border",
+                      "name": "borderStyles",
+                      "ui": {
+                        "component": "borderControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cardStyle",
+                        "borderStyles"
+                      ]
+                    },
+                    {
+                      "label": "Typography",
+                      "name": "typographyTitle",
+                      "type": "string",
+                      "ui": {
+                        "component": "ruledTitle"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cardStyle",
+                        "typographyTitle"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Label",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cardStyle",
+                        "labelStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Headline",
+                      "name": "headlineStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cardStyle",
+                        "headlineStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Subhead",
+                      "name": "subheadStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cardStyle",
+                        "subheadStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text",
+                      "name": "textStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cardStyle",
+                        "textStyles"
+                      ]
+                    },
+                    {
+                      "label": "Button",
+                      "name": "buttonTitle",
+                      "type": "string",
+                      "ui": {
+                        "component": "ruledTitle"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cardStyle",
+                        "buttonTitle"
+                      ]
+                    },
+                    {
+                      "label": "Button Type",
+                      "name": "buttonType",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Secondary",
+                          "value": "secondary"
+                        },
+                        {
+                          "label": "Minor",
+                          "value": "minor"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cardStyle",
+                        "buttonType"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "sidebarCards",
+                    "cardStyle"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "label": "Style",
+                  "name": "style",
+                  "ui": {
+                    "component": "group"
+                  },
+                  "fields": [
+                    {
+                      "type": "string",
+                      "label": "Label",
+                      "name": "labelStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "style",
+                        "labelStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Headline",
+                      "name": "headlineStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "style",
+                        "headlineStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Subhead",
+                      "name": "subheadStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "style",
+                        "subheadStyles"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Text",
+                      "name": "textStyles",
+                      "ui": {
+                        "component": "typeControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "style",
+                        "textStyles"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "sidebarCards",
+                    "style"
+                  ]
+                },
+                {
+                  "label": "Background",
+                  "name": "background",
+                  "type": "object",
+                  "fields": [
+                    {
+                      "type": "string",
+                      "label": "Background",
+                      "name": "fillStyles",
+                      "ui": {
+                        "component": "fillControl"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "background",
+                        "fillStyles"
+                      ]
+                    },
+                    {
+                      "label": "Image",
+                      "name": "src",
+                      "type": "image",
+                      "ui": {
+                        "clearable": true
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "background",
+                        "src"
+                      ]
+                    },
+                    {
+                      "label": "Image Position",
+                      "name": "position",
+                      "ui": {
+                        "component": "select"
+                      },
+                      "type": "string",
+                      "options": [
+                        {
+                          "label": "Center",
+                          "value": "object-center"
+                        },
+                        {
+                          "label": "Top",
+                          "value": "object-top"
+                        },
+                        {
+                          "label": "Right Top",
+                          "value": "object-right-top"
+                        },
+                        {
+                          "label": "Right",
+                          "value": "object-right"
+                        },
+                        {
+                          "label": "Right Bottom",
+                          "value": "object-right-bottom"
+                        },
+                        {
+                          "label": "Bottom",
+                          "value": "object-bottom"
+                        },
+                        {
+                          "label": "Left Bottom",
+                          "value": "object-left-bottom"
+                        },
+                        {
+                          "label": "Left",
+                          "value": "object-left"
+                        },
+                        {
+                          "label": "Left Top",
+                          "value": "object-left-top"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "background",
+                        "position"
+                      ]
+                    },
+                    {
+                      "label": "Ornaments",
+                      "name": "ornaments",
+                      "type": "object",
+                      "list": true,
+                      "fields": [
+                        {
+                          "label": "Image",
+                          "name": "src",
+                          "type": "image",
+                          "ui": {
+                            "clearable": true
+                          },
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "sidebarCards",
+                            "background",
+                            "ornaments",
+                            "src"
+                          ]
+                        },
+                        {
+                          "label": "Alignment",
+                          "name": "alignment",
+                          "ui": {
+                            "component": "select"
+                          },
+                          "type": "string",
+                          "options": [
+                            {
+                              "label": "Center",
+                              "value": "center"
+                            },
+                            {
+                              "label": "Top",
+                              "value": "top"
+                            },
+                            {
+                              "label": "Right Top",
+                              "value": "top-right"
+                            },
+                            {
+                              "label": "Right",
+                              "value": "right"
+                            },
+                            {
+                              "label": "Right Bottom",
+                              "value": "bottom-right"
+                            },
+                            {
+                              "label": "Bottom",
+                              "value": "bottom"
+                            },
+                            {
+                              "label": "Left Bottom",
+                              "value": "bottom-left"
+                            },
+                            {
+                              "label": "Left",
+                              "value": "left"
+                            },
+                            {
+                              "label": "Left Top",
+                              "value": "top-left"
+                            }
+                          ],
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "sidebarCards",
+                            "background",
+                            "ornaments",
+                            "alignment"
+                          ]
+                        },
+                        {
+                          "label": "Width",
+                          "name": "width",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "sidebarCards",
+                            "background",
+                            "ornaments",
+                            "width"
+                          ]
+                        },
+                        {
+                          "label": "Height",
+                          "name": "height",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "sidebarCards",
+                            "background",
+                            "ornaments",
+                            "height"
+                          ]
+                        },
+                        {
+                          "label": "X Offset",
+                          "name": "xOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "sidebarCards",
+                            "background",
+                            "ornaments",
+                            "xOffset"
+                          ]
+                        },
+                        {
+                          "label": "Y Offset",
+                          "name": "yOffset",
+                          "type": "string",
+                          "namespace": [
+                            "pages",
+                            "blocks",
+                            "sidebarCards",
+                            "background",
+                            "ornaments",
+                            "yOffset"
+                          ]
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "background",
+                        "ornaments"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "sidebarCards",
+                    "background"
+                  ]
+                },
+                {
+                  "label": "",
+                  "name": "rule",
+                  "type": "string",
+                  "ui": {
+                    "component": "ruledTitle"
+                  },
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "sidebarCards",
+                    "rule"
+                  ]
+                },
+                {
+                  "label": "Image",
+                  "name": "imageSrc",
+                  "type": "image",
+                  "ui": {
+                    "clearable": true
+                  },
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "sidebarCards",
+                    "imageSrc"
+                  ]
+                },
+                {
+                  "label": "Label",
+                  "name": "label",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "sidebarCards",
+                    "label"
+                  ]
+                },
+                {
+                  "label": "Headline",
+                  "name": "headline",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "sidebarCards",
+                    "headline"
+                  ]
+                },
+                {
+                  "label": "Subhead",
+                  "name": "subhead",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "sidebarCards",
+                    "subhead"
+                  ]
+                },
+                {
+                  "label": "Body",
+                  "name": "body",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "sidebarCards",
+                    "body"
+                  ]
+                },
+                {
+                  "label": "Cards",
+                  "name": "cards",
+                  "type": "object",
+                  "list": true,
+                  "ui": {
+                    "component": "itemListField"
+                  },
+                  "fields": [
+                    {
+                      "label": "Type",
+                      "name": "cardType",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Basic",
+                          "value": "basic"
+                        },
+                        {
+                          "label": "Pullquote",
+                          "value": "pullquote"
+                        },
+                        {
+                          "label": "CTA",
+                          "value": "cta"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cards",
+                        "cardType"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "label": "Title",
+                      "name": "headline",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cards",
+                        "headline"
+                      ]
+                    },
+                    {
+                      "label": "Subhead",
+                      "name": "subhead",
+                      "type": "string",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cards",
+                        "subhead"
+                      ]
+                    },
+                    {
+                      "label": "Text",
+                      "name": "text",
+                      "type": "rich-text",
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cards",
+                        "text"
+                      ]
+                    },
+                    {
+                      "label": "Code Language",
+                      "name": "language",
+                      "type": "string",
+                      "ui": {
+                        "component": "selectField"
+                      },
+                      "options": [
+                        {
+                          "label": "Javascript",
+                          "value": "javascript"
+                        },
+                        {
+                          "label": "Go",
+                          "value": "go"
+                        },
+                        {
+                          "label": "Rust",
+                          "value": "rust"
+                        },
+                        {
+                          "label": "HTML",
+                          "value": "html"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cards",
+                        "language"
+                      ]
+                    },
+                    {
+                      "label": "Code",
+                      "name": "code",
+                      "type": "string",
+                      "ui": {
+                        "component": "textarea"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "cards",
+                        "code"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "sidebarCards",
+                    "cards"
+                  ]
+                },
+                {
+                  "label": "",
+                  "name": "rule2",
+                  "type": "string",
+                  "ui": {
+                    "component": "ruledTitle"
+                  },
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "sidebarCards",
+                    "rule2"
+                  ]
+                },
+                {
+                  "label": "Navigation Label",
+                  "name": "navigationLabel",
+                  "description": "Add a jump to this section to the navigation.",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "sidebarCards",
+                    "navigationLabel"
+                  ]
+                }
+              ],
+              "namespace": [
+                "pages",
+                "blocks",
+                "sidebarCards"
+              ]
             }
           ],
           "namespace": [
