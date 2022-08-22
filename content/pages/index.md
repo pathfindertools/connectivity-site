@@ -52,7 +52,7 @@ blocks:
     background:
       fillStyles: bg-black
     label: ''
-    headline: Public nodes
+    headline: Standalone Node ⇄ Standalone Node
     subhead: TCP
     body: >
       Public nodes is any node running in a data centers, or on a dedicated
