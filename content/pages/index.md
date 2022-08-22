@@ -231,8 +231,8 @@ blocks:
         text: >
           Obtaining a reservation with a relay is only half the story. After
           all, relayed connections are limited both in terms of time and
-          bandwidth. Nodes therefore use relayed connections exclusively to
-          coordinate the establishment of a direct connection.
+          bandwidth. Nodes use relayed connections to coordinate the
+          establishment of a direct connection.
 
 
           We need to distinguish two situations here:
@@ -241,19 +241,19 @@ blocks:
           1.  The node trying to connect is a public node: This is the easier
           scenario. When the node behind the NAT accepts the relayed connection,
           it notices that the peer has a public IP address. It then dials a
-          direct connection to that node, and closes the relayed connection.
+          direct connection to that node.
 
-          2.  The other node is also behind a NAT: Simply dialing the peer is
-          not an option. It’s necessary to employ a technique called “hole
-          punching”. This works by carefully timing simultaneous connection
-          attempts from both sides. That way, the NATs on both sides are tricked
-          into thinking that they’re dealing with outgoing connections.
+          2.  The other node is also behind a NAT: Simply dialing the peer won't
+          work. It’s necessary to employ a technique called “hole punching”. By
+          carefully timing simultaneous connection attempts from both sides the
+          NATs on both sides are tricked into thinking that they’re both
+          handling with outgoing connections.
 
 
           Setting up the direct connection requires quite some effort, but it’s
-          worth it: Having a direct connection between two nodes makes sure that
-          they are communicating with minimal latency possible, and can use the
+          worth it: direct connections have a lower possible, and can use the
           full bandwidth of the link.
+        language: javascript
       - cardType: pullquote
         headline: Support
         text: |
