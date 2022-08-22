@@ -16,7 +16,7 @@ blocks:
       src: >-
         https://res.cloudinary.com/protocolai/image/upload/v1657648092/libp2p/libp2p-hero_hath9f.svg
     label: ''
-    headline: Libp2p Landing
+    headline: libp2p Connectivity
     subhead: >-
       Depending on their positions in the network, noes use different technology
       to connect to other nodes.
