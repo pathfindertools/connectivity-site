@@ -493,8 +493,7 @@ blocks:
       headlineStyles: text-white font-2 text-2xl mb-5 font-bold
       subheadStyles: 'text-white undefined text-base undefined '
       textStyles: 'text-white undefined text-base mb-16 '
-    imageSrc: >-
-      https://res.cloudinary.com/protocolai/image/upload/v1657642681/libp2p/logo-webtransport_q7bxby.png
+    imageSrc: ''
     headline: WebTransport
     body: >
       While WebSockets allows the browser to “hijack” a TCP connection,
@@ -528,8 +527,8 @@ blocks:
           *   Origin: mywebsite.com
 
 
-          The server can accept the upgrade by sending a HTTP 200 response. Both
-          endpoints can now open streams associated with this WebTransport
+          The server can accept the upgrade by sending a HTTP 200 OK response.
+          Both endpoints can now open streams associated with this WebTransport
           session.
         language: javascript
       - cardType: basic
