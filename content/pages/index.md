@@ -751,7 +751,7 @@ blocks:
     navigationLabel: ''
     _template: textCards
 meta:
-  pageTitle: libp2p
-  pageDescription: Connectivity
+  pageTitle: libp2p Connectivity
+  pageDescription: ''
 ---
 
