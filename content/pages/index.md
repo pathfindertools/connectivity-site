@@ -296,13 +296,13 @@ blocks:
     background:
       fillStyles: bg-black
     label: ''
-    headline: Browsers
+    headline: Browser → Standalone Node
     subhead: ''
     body: >
       We want to be able to access the libp2p network from a web browser.
       Browsers are really, really good at speaking HTTP (using an underlying TCP
       connection for HTTP/1.1 and HTTP/2, and a QUIC connection for HTTP/3), but
-      getting access to streams has been challenging.
+      they don't allow access to the underlying connection.
     items:
       - cardType: pullquote
         headline: Streams vs. Request-Response
