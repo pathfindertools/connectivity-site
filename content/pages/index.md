@@ -645,7 +645,8 @@ blocks:
       textStyles: 'text-white font-1 text-base mb-16 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1657642674/libp2p/logo-webrtc_okp1ki.svg
-    headline: WebRTC
+    headline: Browser ⇄ Browser
+    subhead: WebRTC
     body: >
       Usually used for video conferencing, WebRTC is a suite of protocols that
       allows browsers to connect to servers, and to other browsers, and even
