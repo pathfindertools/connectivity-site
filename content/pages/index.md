@@ -18,8 +18,8 @@ blocks:
     label: ''
     headline: Libp2p Landing
     subhead: >-
-      Nodes in different positions in the network use different technology to
-      connect to each other.
+      Depending on their positions in the network, noes use different technology
+      to connect to other nodes.
     body: >
       Learn more about how libp2p achieves universal connectivity across
       networks.
