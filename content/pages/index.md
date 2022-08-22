@@ -66,6 +66,10 @@ blocks:
         headline: TCP in libp2p
         subhead: ''
         text: >
+          Establishing a libp2p connection on top of TCP takes a few steps,
+          upgrading the underlying connection:
+
+
           1.  establish a TCP connection to the remote node
 
           2.  negotiate a security protocol (Noise or TLS 1.3), perform a
@@ -77,6 +81,7 @@ blocks:
 
           TCP is a solid option, works in all networks (home and private).
           However, setting up a the libp2p takes quite a few network roundtrips.
+        language: javascript
       - cardType: pullquote
         headline: Counting Round Trips
         text: >
