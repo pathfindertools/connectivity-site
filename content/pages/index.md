@@ -202,9 +202,9 @@ blocks:
     headline: Hole Punching
     subhead: ''
     body: >
-      Not all nodes are located in a publicly reachable position. Most nodes are
-      behind NATs or firewalls: in home networks, in corporate networks, and
-      even on mobile devices (carrier-grade NATs).
+      Not all [nodes](#websocket) are located in a publicly reachable position.
+      Most nodes are behind NATs or firewalls: in home networks, in corporate
+      networks, and even on mobile devices (carrier-grade NATs).
 
 
       Nodes behind firewalls / NATs can dial any node on the public internet,
@@ -339,9 +339,9 @@ blocks:
       https://res.cloudinary.com/protocolai/image/upload/v1657642678/libp2p/logo-websocket_jjds6v.png
     headline: WebSocket
     body: >
-      WebSocket has been around for more than 10 years. It allows “hijacking” of
-      a HTTP/1.1 connection (it was later also standardized for HTTP/2), giving
-      the browser access to the underlying TCP connection.
+      WebSocket has [been]() around for more than 10 years. It allows
+      “hijacking” of a HTTP/1.1 connection (it was later also standardized for
+      HTTP/2), giving the browser access to the underlying TCP connection.
     cards:
       - cardType: basic
         headline: WebSocket Upgrade
@@ -352,6 +352,7 @@ blocks:
           request by sending a HTTP 200 response. All bytes sent on the TCP
           connection after this are now
         language: javascript
+        code: ''
       - cardType: basic
         headline: Code
         text: ''
