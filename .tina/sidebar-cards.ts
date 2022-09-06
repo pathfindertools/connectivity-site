@@ -4,6 +4,12 @@ import { navigationLabelSchema } from "./shared/navigation-label";
 
 const defaultCard = {
   headline: "Headline",
+  cardStyle: {
+    labelStyles: "text-white font-1 text-sm mb-0",
+    headlineStyles: "text-white font-1 text-3xl mb-20",
+    subheadStyles: "text-white font-1 text-2xl mb-20",
+    textStyles: "text-white font-1 text-base mb-0",
+  },
 };
 
 export const sidebarCardsBlockSchema: TinaTemplate = {
@@ -12,8 +18,15 @@ export const sidebarCardsBlockSchema: TinaTemplate = {
   ui: {
     defaultItem: {
       headline: "This is the main headline",
+      style: {
+        labelStyles: "text-white font-1 text-sm mb-0",
+        headlineStyles: "text-white font-1 text-3xl mb-20",
+        subheadStyles: "text-white font-1 text-2xl mb-20",
+        textStyles: "text-white font-1 text-base mb-0",
+      },
       cards: [defaultCard, defaultCard, defaultCard],
     },
+    
   },
   fields: [
     {
