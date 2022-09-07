@@ -27,11 +27,11 @@ export const bannerBlockSchema: TinaTemplate = {
       style: {
         textAlignment: "text-left",
         minHeight: "min-h-0",
-        padding: "pt-20 pr-10 pb-20 pl-10",
-        labelStyles: "text-black font-1 text-sm mb-0",
-        headlineStyles: "text-black font-1 text-5xl mb-0",
-        subheadStyles: "text-black font-1 text-3xl mb-0",
-        textStyles: "text-black font-1 text-md mb-0",
+        padding: "pt-20 pr-20 pb-20 pl-20 sm:pt-10 sm:pr-10 sm:pb-10 sm:pl-10",
+        labelStyles: "text-white font-1 text-sm mb-0",
+        headlineStyles: "text-white font-1 text-3xl mb-20",
+        subheadStyles: "text-white font-1 text-2xl mb-20",
+        textStyles: "text-white font-1 text-base mb-0",
         contentOrder: "labelHeadingsContent",
         width: "normal"
       },

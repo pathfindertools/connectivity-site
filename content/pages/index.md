@@ -18,8 +18,8 @@ blocks:
     label: ''
     headline: libp2p Connectivity
     subhead: >-
-      Depending on their positions in the network, noes use different technology
-      to connect to other nodes.
+      Depending on their positions in the network, nodes use different
+      technology to connect to other nodes.
     body: >
       Learn more about how libp2p achieves universal connectivity across
       networks.
@@ -31,40 +31,45 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: 'pt-10 pb-10 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
-      contentWidth: w-full
-      columns: '2'
-      labelStyles: 'text-white font-1 text-base mb-0 '
-      headlineStyles: 'text-white font-2 text-2xl mb-1 '
-      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-white font-1 text-base mb-10 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      fillStyles: bg-gray-dark
-      padding: pt-8 pb-8 pr-8 pl-8
-      type: solid
-      borderStyles: border-gray undefined-0
+      padding: pt-20 pb-10 pr-20 pl-20
+      width: normal
       labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: text-white font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-white font-1 undefined mb-0 '
-      textStyles: 'text-gray-light font-1 text-base mb-0 '
-      buttonType: primary
-    background:
-      fillStyles: bg-black
+      headlineStyles: 'text-white font-1 text-5xl mb-7 '
+      subheadStyles: 'text-white font-1 text-3xl mb-0 '
+      textStyles: 'text-white font-1 undefined mb-0 '
+      contentOrder: labelHeadingsContent
     label: ''
     headline: Standalone Node ⇄ Standalone Node
-    subhead: TCP
+    subhead: ''
     body: >
       Public nodes is any node running in a data centers, or on a dedicated
       connection without any router / NAT / firewall in between.
 
 
       Full nodes (e.g. go-libp2p, rust-libp2p, node.js-libp2p) use TCP and QUIC
-      to connect to each other.&#x20;
-    items:
-      - cardType: pullquote
+      to connect to each other.
+    navigationLabel: Standalone to Standalone
+    _template: banner
+  - cardStyle:
+      padding: undefined undefined undefined undefined
+      borderStyles: border-white undefined-0
+      labelStyles: text-white font-1 text-sm
+      headlineStyles: text-white font-1 text-xl mb-8 font-bold
+      subheadStyles: text-white font-1 text-base
+      textStyles: text-white font-1 text-base mb-5
+      buttonType: primary
+    style:
+      labelStyles: 'text-white undefined undefined undefined '
+      headlineStyles: 'text-white font-1 text-3xl mb-5 '
+      subheadStyles: 'text-white font-1 text-2xl mb-5 '
+      textStyles: 'text-white font-1 text-base mb-14 '
+    headline: ''
+    subhead: TCP
+    body: |
+      TCP is a...
+    cards:
+      - cardType: basic
         headline: TCP in libp2p
-        subhead: ''
         text: >
           Establishing a libp2p connection on top of TCP takes a few steps,
           upgrading the underlying connection:
@@ -82,7 +87,8 @@ blocks:
           TCP is a solid option, works in all networks (home and private).
           However, setting up a the libp2p takes quite a few network roundtrips.
         language: javascript
-      - cardType: pullquote
+        code: ''
+      - cardType: basic
         headline: Counting Round Trips
         text: >
           1.  TCP Handshake
@@ -91,42 +97,43 @@ blocks:
 
           3.  Security Handshake (TLS 1.3 or Noise)
 
-          4.  Multistream Negotiation of the Stream Multiplexer
-
+          4.  Multistream Negotiation of the Stream&#x20;
+              Multiplexer
 
           This is the most optimistic assumption. In case the peer doesn’t
           support the protocol suggested in a Multistream Negotiation step, this
           will incur additional round trips.
-      - cardType: pullquote
+        language: javascript
+      - cardType: basic
         headline: Support
-        subhead: ''
-        text: "*   go-libp2p: ✔\n*   rust-libp2p: ✔\n*   node.js-libp2p: ✔\n*   Chrome: ❌\_(not possible)\n*   Firefox: ❌\_(not possbile)\n*   Safari: ❌\_(not possible)\n"
-    navigationLabel: TCP
-    _template: textCards
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
-      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
-      contentWidth: w-full
-      columns: '2'
-      labelStyles: 'text-white font-1 text-base mb-0 '
-      headlineStyles: 'text-white font-2 text-2xl mb-1 '
-      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-white font-1 text-base mb-10 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      fillStyles: bg-gray-dark
-      padding: pt-8 pb-8 pr-8 pl-8
-      type: solid
-      borderStyles: border-gray undefined-0
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: text-white font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-white font-1 undefined mb-0 '
-      textStyles: 'text-gray-light font-1 text-base mb-0 '
+        text: |
+          go-libp2p: ✔
+
+          rust-libp2p: ✔
+
+          node.js-libp2p: ✔
+
+          Chrome: ❌ (not possible)
+
+          Firefox: ❌ (not possbile)
+
+          Safari: ❌ (not possible)
+        language: javascript
+        code: ''
+    _template: sidebarCards
+  - cardStyle:
+      padding: undefined undefined undefined undefined
+      borderStyles: border-white undefined-0
+      labelStyles: text-white font-1 text-sm
+      headlineStyles: text-white font-1 text-xl mb-8 font-bold
+      subheadStyles: text-white font-1 text-base
+      textStyles: text-white font-1 text-base mb-5
       buttonType: primary
-    background:
-      fillStyles: bg-black
-    label: ''
+    style:
+      labelStyles: 'text-white undefined undefined undefined '
+      headlineStyles: 'text-white font-1 text-3xl mb-5 '
+      subheadStyles: 'text-white font-1 text-2xl mb-5 '
+      textStyles: 'text-white font-1 text-base mb-14 '
     headline: ''
     subhead: QUIC
     body: >
@@ -135,15 +142,28 @@ blocks:
 
 
       Whenever possible, QUIC should be preferred over TCP. For more benefits of
-      using QUIC, see #holepunching.&#x20;
+      using QUIC, see #holepunching.
 
 
       However: UDP is blocked in ~5-10% of networks. Therefore TCP is still
       needed as a fallback.
-    items:
-      - cardType: pullquote
+    cards:
+      - cardType: basic
+        headline: QUIC in libp2p
+        text: >
+          Under most conditions, QUIC provides superior performance to TCP: The
+          libp2p handshake is (at least!) 3 network round-trips faster, and
+          provides better performance in unstable network conditions.
+
+
+          To verify the remote’s peer ID, it is [added to the TLS
+          certificate](https://github.com/libp2p/specs/blob/master/tls/tls.md)
+          (including a signature using the host’s key) which is used during the
+          handshake. Once the handshake is complete, both sides have
+          cryptographically verified each other’s identity.
+        language: javascript
+      - cardType: basic
         headline: Counting Round Trips
-        subhead: ''
         text: >
           1.  QUIC handshake
 
@@ -156,62 +176,49 @@ blocks:
 
           For resumed connections, QUIC even supports a 0-RTT handshake,
           although we’re currently not (yet) making use of that in libp2p.
-      - cardType: pullquote
-        headline: QUIC in libp2p
-        subhead: ''
-        text: >
-          Under most conditions, QUIC provides superior performance to TCP: The
-          libp2p handshake is (at least!) 3 network round-trips faster, and
-          provides better performance in unstable network conditions.
-
-
-          To verify the remote’s peer ID, it is [added to the TLS
-          certificate](https://github.com/libp2p/specs/blob/master/tls/tls.md)
-          (including a signature using the host’s key) which is used during the
-          handshake. Once the handshake is complete, both sides have
-          cryptographically verified each other’s identity.
-      - cardType: pullquote
+        language: javascript
+      - cardType: basic
         headline: Support
-        text: "*   go-libp2p: ✔\n*   rust-libp2p: ⏱\_([work in progress](https://github.com/libp2p/rust-libp2p/pull/2289))\n*   node.js-libp2p: ❌\n*   Chrome: ❌\_(not possible)\n*   Firefox: ❌\_(not possible)\n*   Safari: ❌\_(not possible)\n"
-    navigationLabel: QUIC
-    _template: textCards
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
-      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
-      contentWidth: w-full
-      columns: '1'
-      labelStyles: 'text-white font-1 text-base mb-0 '
-      headlineStyles: 'text-white font-2 text-2xl mb-1 '
-      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-white font-1 text-base mb-10 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      fillStyles: bg-gray-dark
-      padding: pt-8 pb-8 pr-8 pl-8
-      type: solid
-      borderStyles: border-gray undefined-0
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: text-white font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-white font-1 undefined mb-0 '
-      textStyles: 'text-gray-light font-1 text-base mb-0 '
+        text: |
+          go-libp2p: ✔
+
+          rust-libp2p: ⏱ (work in progress)
+
+          node.js-libp2p: ❌
+
+          Chrome: ❌ (not possible)
+
+          Firefox: ❌ (not possible)
+
+          Safari: ❌ (not possible)
+        language: javascript
+    _template: sidebarCards
+  - cardStyle:
+      padding: undefined undefined undefined undefined
+      borderStyles: border-white undefined-0
+      labelStyles: text-white font-1 text-sm
+      headlineStyles: text-white font-1 text-xl mb-8 font-bold
+      subheadStyles: text-white font-1 text-base
+      textStyles: text-white font-1 text-base mb-5
       buttonType: primary
-    background:
-      fillStyles: bg-black
-    label: ''
-    headline: Hole Punching
-    subhead: ''
+    style:
+      labelStyles: 'text-white undefined undefined undefined '
+      headlineStyles: 'text-white font-1 text-3xl mb-5 '
+      subheadStyles: 'text-white font-1 text-2xl mb-5 '
+      textStyles: 'text-white font-1 text-base mb-14 '
+    headline: ''
+    subhead: Hole Punching
     body: >
-      Not all [nodes](#websocket) are located in a publicly reachable position.
-      Most nodes are behind NATs or firewalls: in home networks, in corporate
-      networks, and even on mobile devices (carrier-grade NATs).
+      Not all nodes are located in a publicly reachable position. Most nodes are
+      behind NATs or firewalls: in home networks, in corporate networks, and
+      even on mobile devices (carrier-grade NATs).
 
 
       Nodes behind firewalls / NATs can dial any node on the public internet,
       but they cannot receive incoming connections from outside their local
       network.
-    items:
-      - cardType: pullquote
+    cards:
+      - cardType: basic
         headline: libp2p Relays
         text: >
           When a libp2p node boots up, one of the first things it does it
@@ -231,7 +238,7 @@ blocks:
           This is achieved by limiting the number of reservations, the
           connection time for relayed connections as well as their bandwidth.
         language: javascript
-      - cardType: pullquote
+      - cardType: basic
         headline: Obtaining a Direct Connection
         text: >
           Obtaining a reservation with a relay is only half the story. After
@@ -243,12 +250,12 @@ blocks:
           We need to distinguish two situations here:
 
 
-          1.  The node trying to connect is a public node: This is the easier
+          *   The node trying to connect is a public node: This is the easier
           scenario. When the node behind the NAT accepts the relayed connection,
           it notices that the peer has a public IP address. It then dials a
           direct connection to that node.
 
-          2.  The other node is also behind a NAT: Simply dialing the peer won't
+          *   The other node is also behind a NAT: Simply dialing the peer won't
           work. It’s necessary to employ a technique called “hole punching”. By
           carefully timing simultaneous connection attempts from both sides the
           NATs on both sides are tricked into thinking that they’re both
@@ -259,26 +266,27 @@ blocks:
           worth it: direct connections have a lower possible, and can use the
           full bandwidth of the link.
         language: javascript
-      - cardType: pullquote
+      - cardType: basic
         headline: Support
         text: |
-          go-libp2p
+          go-libp2p: ✔
 
-          rust-libp2p
+          rust-libp2p: ✔
 
-          js-libp2p
-      - cardType: pullquote
+          node.js-libp2p: ✔
+        language: javascript
+      - cardType: basic
         headline: Further Reading
         text: |
           Paper: \<link DINPS paper>
 
           Spec: \<link circuit v2 spec>
-    navigationLabel: Hole Punching
-    _template: textCards
+        language: javascript
+    _template: sidebarCards
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
+      padding: 'pt-20 pb-20 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '1'
       labelStyles: 'text-white font-1 text-base mb-0 '
@@ -318,21 +326,21 @@ blocks:
           libp2p on the other hand deals with streams. A stream is more flexible
           than a request-response scheme: it allows continuous bidirectional
           communication, both parties can send and receive data at any time.
-    navigationLabel: ''
+    navigationLabel: Browser to Standalone
     _template: textCards
   - cardStyle:
-      padding: pt-0 pb-0 pr-0 pl-0
-      borderStyles: undefined undefined-0
-      labelStyles: 'text-white font-2 text-base mb-px '
-      headlineStyles: text-white font-2 text-xl mb-5 font-bold
-      subheadStyles: 'text-white font-2 text-base mb-px '
-      textStyles: 'text-white font-1 text-base mb-px '
+      padding: undefined undefined undefined undefined
+      borderStyles: border-white undefined-0
+      labelStyles: text-white font-1 text-sm
+      headlineStyles: text-white font-1 text-xl mb-8 font-bold
+      subheadStyles: text-white font-1 text-base
+      textStyles: text-white font-1 text-base mb-5
       buttonType: primary
     style:
-      labelStyles: 'undefined undefined undefined undefined '
-      headlineStyles: text-white font-2 text-5xl mb-0 font-bold
-      subheadStyles: 'undefined undefined undefined undefined '
-      textStyles: 'text-white undefined text-base mb-16 '
+      labelStyles: 'text-white undefined undefined undefined '
+      headlineStyles: 'text-white font-1 text-3xl mb-5 '
+      subheadStyles: 'text-white font-1 text-2xl mb-5 '
+      textStyles: 'text-white font-1 text-base mb-14 '
     background:
       fillStyles: bg-black
     imageSrc: >-
@@ -427,7 +435,7 @@ blocks:
           records for the domain. This is not possible without special
           configuration.
         language: javascript
-    navigationLabel: WebSocket
+    navigationLabel: ''
     _template: sidebarCards
   - style:
       textAlignment: text-left
@@ -486,17 +494,17 @@ blocks:
     _template: textCards
   - cardStyle:
       padding: undefined undefined undefined undefined
-      borderStyles: undefined undefined-0
-      labelStyles: 'text-white font-2 text-sm undefined '
-      headlineStyles: 'text-white font-2 text-xl mb-5 '
-      subheadStyles: 'text-white font-2 text-base undefined '
-      textStyles: 'text-white font-2 text-base mb-8 '
+      borderStyles: border-white undefined-0
+      labelStyles: text-white font-1 text-sm
+      headlineStyles: text-white font-1 text-xl mb-8 font-bold
+      subheadStyles: text-white font-1 text-base
+      textStyles: text-white font-1 text-base mb-5
       buttonType: primary
     style:
       labelStyles: 'text-white undefined undefined undefined '
-      headlineStyles: text-white font-2 text-2xl mb-5 font-bold
-      subheadStyles: 'text-white undefined text-base undefined '
-      textStyles: 'text-white undefined text-base mb-16 '
+      headlineStyles: 'text-white font-1 text-3xl mb-5 '
+      subheadStyles: 'text-white font-1 text-2xl mb-5 '
+      textStyles: 'text-white font-1 text-base mb-14 '
     imageSrc: ''
     headline: WebTransport
     body: >
@@ -589,7 +597,7 @@ blocks:
           Chrome’s WebTransport implementation currently forces sequential
           execution.
         language: javascript
-    navigationLabel: WebTransport
+    navigationLabel: ''
     _template: sidebarCards
   - style:
       textAlignment: text-left
@@ -636,22 +644,39 @@ blocks:
           [https://github.com/marten-seemann/webtransport-go](https://github.com/marten-seemann/webtransport-go)
     navigationLabel: ''
     _template: textCards
+  - style:
+      textAlignment: text-left
+      minHeight: min-h-0
+      padding: pt-20 pb-10 pr-20 pl-20
+      width: normal
+      labelStyles: 'text-white font-1 text-sm mb-0 '
+      headlineStyles: 'text-white font-1 text-5xl mb-7 '
+      subheadStyles: 'text-white font-1 text-3xl mb-0 '
+      textStyles: 'text-white font-1 undefined mb-0 '
+      contentOrder: labelHeadingsContent
+    label: ''
+    headline: Browser ⇄ Browser
+    subhead: ''
+    body: |
+      Some content here?
+    navigationLabel: Browser to Browser
+    _template: banner
   - cardStyle:
       padding: undefined undefined undefined undefined
-      borderStyles: undefined undefined-0
-      labelStyles: 'text-white undefined undefined undefined '
-      headlineStyles: 'text-white font-2 text-xl mb-5 '
-      subheadStyles: 'text-white undefined undefined undefined '
-      textStyles: 'text-white undefined undefined undefined '
+      borderStyles: border-white undefined-0
+      labelStyles: text-white font-1 text-sm
+      headlineStyles: text-white font-1 text-xl mb-8 font-bold
+      subheadStyles: text-white font-1 text-base
+      textStyles: text-white font-1 text-base mb-5
       buttonType: primary
     style:
-      labelStyles: 'text-white font-2 undefined undefined '
-      headlineStyles: 'text-white font-2 text-2xl undefined '
-      subheadStyles: 'text-white font-2 undefined undefined '
-      textStyles: 'text-white font-1 text-base mb-16 '
+      labelStyles: 'text-white undefined undefined undefined '
+      headlineStyles: 'text-white font-1 text-3xl mb-5 '
+      subheadStyles: 'text-white font-1 text-2xl mb-5 '
+      textStyles: 'text-white font-1 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1657642674/libp2p/logo-webrtc_okp1ki.svg
-    headline: Browser ⇄ Browser
+    headline: ''
     subhead: WebRTC
     body: >
       Usually used for video conferencing, WebRTC is a suite of protocols that
@@ -703,7 +728,7 @@ blocks:
 
           4.  libp2p handshake: 1 RTT
         language: javascript
-    navigationLabel: WebRTC
+    navigationLabel: ''
     _template: sidebarCards
   - style:
       textAlignment: text-left

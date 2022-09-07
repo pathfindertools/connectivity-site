@@ -54,7 +54,7 @@ export const SidebarCards = ({ data, parentField = "" }) => {
 
   return (
     <Section className="" background={data.background} navigationLabel={data.navigationLabel}>
-      <div className="max-w-desktop-full mx-auto px-20 pt-20 pb-10 sm:px-10">
+      <div className="max-w-desktop-full mx-auto px-20 pt-4 pb-10 sm:px-10">
         <Content
           label = {data.label}
           headline = {data.headline}
@@ -85,7 +85,7 @@ export const SidebarCards = ({ data, parentField = "" }) => {
                 <ul className="sm:hidden">
                 { data.cards.map(function (block, index) {
                   const backgroundClasses = index === activeCard ? 'bg-primary' : 'bg-gray-dark'
-                  return <li key={index} className="font-2 uppercase text-sm">
+                  return <li key={index} className="font-2 text-sm">
                     <a
                       className={`block text-white p-2 cursor-pointer hover:bg-primary ${backgroundClasses}`}
                       onClick={ () => setActiveCard(index) }
