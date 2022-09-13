@@ -115,7 +115,7 @@ const LanguageToggle = ({language}) => {
 }
 
 export const Header = ({
-  language,
+  // language,
   blocks,
   globalData
 }) => {
