@@ -73,6 +73,10 @@ fragment LayoutQueryFragment on Query {
         navItems {
           link
           label
+          subNavItems {
+            label
+            link
+          }
         }
         navAlignment
         navTypeStyle

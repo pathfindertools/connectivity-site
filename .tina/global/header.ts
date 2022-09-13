@@ -14,15 +14,48 @@ export const globalHeader: TinaField = {
       name: "navItems",
       list: true,
       type: "object",
-      fields: [{
+      ui: {
+        component: "itemListField",
+        defaultItem: {
+          label: "Nav Item",
+          link: "/",
+        },
+      },
+      fields: [
+        {
         label: "Label",
         name: "label",
         type: "string"
-      }, {
-        label: "Link",
-        name: "link",
-        type: "string",
-      }]
+        }, {
+          label: "Link",
+          name: "link",
+          type: "string",
+        }, {
+          label: "Sub Navigation",
+          description: "Links below the main nav item",
+          name: "subNavItems",
+          list: true,
+          type: "object",
+          ui: {
+            component: "itemListField",
+            defaultItem: {
+              label: "Sub Nav Item",
+              link: "/",
+            },
+          },
+          fields: [
+            {
+              label: "Label",
+              name: "label",
+              type: "string"
+            }, {
+              label: "Link",
+              name: "link",
+              type: "string",
+            }
+          ]
+        }
+      ]
     },
     {
       label: "Alignment",
