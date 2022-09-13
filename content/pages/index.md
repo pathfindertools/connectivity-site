@@ -120,6 +120,7 @@ blocks:
           Safari: ❌ (not possible)
         language: javascript
         code: ''
+    navigationLabel: tcp
     _template: sidebarCards
   - cardStyle:
       padding: undefined undefined undefined undefined
@@ -192,6 +193,7 @@ blocks:
 
           Safari: ❌ (not possible)
         language: javascript
+    navigationLabel: quic
     _template: sidebarCards
   - cardStyle:
       padding: undefined undefined undefined undefined
@@ -282,6 +284,7 @@ blocks:
 
           Spec: \<link circuit v2 spec>
         language: javascript
+    navigationLabel: hole-punching
     _template: sidebarCards
   - style:
       textAlignment: text-left
@@ -290,9 +293,9 @@ blocks:
       contentWidth: w-full
       columns: '1'
       labelStyles: 'text-white font-1 text-base mb-0 '
-      headlineStyles: 'text-white font-2 text-2xl mb-1 '
+      headlineStyles: 'text-white font-2 text-2xl mb-7 '
       subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-white font-1 text-base mb-10 '
+      textStyles: 'text-white font-1 text-base mb-14 '
       contentOrder: labelHeadingsContent
     cardStyle:
       fillStyles: bg-gray-dark
@@ -435,7 +438,7 @@ blocks:
           records for the domain. This is not possible without special
           configuration.
         language: javascript
-    navigationLabel: ''
+    navigationLabel: websocket
     _template: sidebarCards
   - style:
       textAlignment: text-left
@@ -597,7 +600,7 @@ blocks:
           Chrome’s WebTransport implementation currently forces sequential
           execution.
         language: javascript
-    navigationLabel: ''
+    navigationLabel: webtransport
     _template: sidebarCards
   - style:
       textAlignment: text-left
@@ -728,7 +731,7 @@ blocks:
 
           4.  libp2p handshake: 1 RTT
         language: javascript
-    navigationLabel: ''
+    navigationLabel: webrtc
     _template: sidebarCards
   - style:
       textAlignment: text-left

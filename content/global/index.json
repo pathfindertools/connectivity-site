@@ -51,7 +51,7 @@
     "minorRounded": "rounded-none"
   },
   "links": {
-    "color": "primary"
+    "color": "white"
   },
   "logo": {
     "logoType": "LibP2P",
@@ -62,6 +62,50 @@
     "imageMargin": "20"
   },
   "nav": {
+    "navItems": [
+      {
+        "label": "Standalone ⇄ Standalone",
+        "link": "/",
+        "subNavItems": [
+          {
+            "label": "TCP",
+            "link": "#tcp"
+          },
+          {
+            "label": "QUIC",
+            "link": "#quic"
+          },
+          {
+            "label": "Hole Punching",
+            "link": "#hole-punching"
+          }
+        ]
+      },
+      {
+        "label": "Browser to Standalone",
+        "link": "/",
+        "subNavItems": [
+          {
+            "label": "WebSocket",
+            "link": "#websocket"
+          },
+          {
+            "label": "WebTransport",
+            "link": "#webtransport"
+          }
+        ]
+      },
+      {
+        "label": "Browser ⇄ Browser",
+        "link": "/",
+        "subNavItems": [
+          {
+            "label": "WebRTC",
+            "link": "#webrtc"
+          }
+        ]
+      }
+    ],
     "navAlignment": "text-right",
     "navTypeStyle": "text-gray-light font-1 text-sm mb-0 ",
     "navBackgroundColor": "bg-gray-dark",
