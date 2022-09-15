@@ -33,7 +33,7 @@ const Card = ({ data, index, cardstyle, parentField = ""  }) => {
         )}
       </div>
       <div
-        className={` ${wrapClasses} relative flex-1 text-left border-box ${paddingClasses[data.cardType]}`}
+        className={` ${wrapClasses} relative flex-1 text-left border-box ${paddingClasses[data.cardType]} shadow-lg`}
       >
         <div className={`${backgroundClasses[data.cardType]} absolute inset-0 -z-1`} />
         {data.label && (

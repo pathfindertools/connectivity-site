@@ -73,21 +73,22 @@ export const SidebarCards = ({ data, parentField = "" }) => {
         <div className="flex gap-20 sm:block">
           {data.cards && (
             <>
-              <div className="w-60 sm:w-full">
+              <div className="w-60 sm:w-full had">
                 {data.imageSrc && (
-                  <img
-                    className="mb-10"
-                    alt={data.headline}
-                    src={data.imageSrc}
-                    data-tinafield={`${parentField}.image`}
-                  />
+                  <div className={`p-10 bg-${data.style?.navColor}`}>
+                    <img
+                      alt={data.headline}
+                      src={data.imageSrc}
+                      data-tinafield={`${parentField}.image`}
+                    />
+                  </div>
                 )}
-                <ul className="sm:hidden">
+                <ul className="sm:hidden shadow-lg">
                 { data.cards.map(function (block, index) {
-                  const backgroundClasses = index === activeCard ? 'bg-primary' : 'bg-gray-dark'
-                  return <li key={index} className="font-2 text-sm">
+                  const backgroundClasses = index === activeCard ? `text-white bg-${data.style?.navColor}` : 'bg-white'
+                  return <li key={index} className="font-2 text-md">
                     <a
-                      className={`block text-white p-2 cursor-pointer hover:bg-primary ${backgroundClasses}`}
+                      className={`block text-black p-2 cursor-pointer hover:text-white hover:bg-${data.style?.navColor} ${backgroundClasses}`}
                       onClick={ () => setActiveCard(index) }
                     >
                       {block.headline}
@@ -96,7 +97,7 @@ export const SidebarCards = ({ data, parentField = "" }) => {
                 })}
                 </ul>
               </div>
-              <div className="sidebar-cards grid grid-cols-1 gap-16 border w-full flex-1">
+              <div className="sidebar-cards grid grid-cols-1 gap-16 w-full flex-1">
                 { data.cards.map(function (block, index) {
                   return <Card
                     block={block}

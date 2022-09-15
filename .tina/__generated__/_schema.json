@@ -19300,6 +19300,7 @@
                 "defaultItem": {
                   "headline": "This is the main headline",
                   "style": {
+                    "navColor": "bg-primary",
                     "labelStyles": "text-white font-1 text-sm mb-0",
                     "headlineStyles": "text-white font-1 text-3xl mb-20",
                     "subheadStyles": "text-white font-1 text-2xl mb-20",
@@ -19525,6 +19526,78 @@
                     "component": "group"
                   },
                   "fields": [
+                    {
+                      "type": "string",
+                      "label": "Nav Color",
+                      "name": "navColor",
+                      "ui": {
+                        "component": "colorControl"
+                      },
+                      "options": [
+                        {
+                          "label": "Primary",
+                          "value": "primary"
+                        },
+                        {
+                          "label": "Accent 1",
+                          "value": "accent1"
+                        },
+                        {
+                          "label": "Accent 2",
+                          "value": "accent2"
+                        },
+                        {
+                          "label": "Accent 3",
+                          "value": "accent3"
+                        },
+                        {
+                          "label": "Accent 4",
+                          "value": "accent4"
+                        },
+                        {
+                          "label": "White",
+                          "value": "white"
+                        },
+                        {
+                          "label": "Gray Light",
+                          "value": "grayLight"
+                        },
+                        {
+                          "label": "Gray",
+                          "value": "gray"
+                        },
+                        {
+                          "label": "Gray Dark",
+                          "value": "grayDark"
+                        },
+                        {
+                          "label": "Black",
+                          "value": "black"
+                        }
+                      ],
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "style",
+                        "navColor"
+                      ]
+                    },
+                    {
+                      "label": "Typography",
+                      "name": "typographyTitle",
+                      "type": "string",
+                      "ui": {
+                        "component": "ruledTitle"
+                      },
+                      "namespace": [
+                        "pages",
+                        "blocks",
+                        "sidebarCards",
+                        "style",
+                        "typographyTitle"
+                      ]
+                    },
                     {
                       "type": "string",
                       "label": "Label",

@@ -1086,6 +1086,8 @@ type PagesBlocksSidebarCardsCardStyle {
 }
 
 type PagesBlocksSidebarCardsStyle {
+  navColor: String
+  typographyTitle: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String
@@ -2176,6 +2178,8 @@ input PagesBlocksSidebarCardsCardStyleMutation {
 }
 
 input PagesBlocksSidebarCardsStyleMutation {
+  navColor: String
+  typographyTitle: String
   labelStyles: String
   headlineStyles: String
   subheadStyles: String

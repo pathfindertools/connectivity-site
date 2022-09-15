@@ -891,6 +891,8 @@ fragment PagesParts on Pages {
       }
       style {
         __typename
+        navColor
+        typographyTitle
         labelStyles
         headlineStyles
         subheadStyles

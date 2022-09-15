@@ -7,10 +7,10 @@ blocks:
       padding: pt-52 pb-20 pr-10 pl-20
       featureImage: 'object-center object-scale-down '
       imagePadding: pt-52 pb-20 pr-20 pl-10
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: text-white font-1 text-5xl mb-5 font-bold
-      subheadStyles: text-white font-1 text-base mb-5 font-bold
-      textStyles: 'text-white font-1 undefined mb-8 '
+      labelStyles: 'text-black font-1 text-sm mb-0 '
+      headlineStyles: text-black font-1 text-5xl mb-5 font-bold
+      subheadStyles: text-black font-1 text-xl mb-5 font-bold
+      textStyles: 'text-black font-1 undefined mb-8 '
       contentOrder: labelHeadingsContent
     image:
       src: >-
@@ -33,10 +33,10 @@ blocks:
       minHeight: min-h-0
       padding: pt-20 pb-10 pr-20 pl-20
       width: normal
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: 'text-white font-1 text-5xl mb-7 '
-      subheadStyles: 'text-white font-1 text-3xl mb-0 '
-      textStyles: 'text-white font-1 undefined mb-0 '
+      labelStyles: 'text-black font-1 text-sm mb-0 '
+      headlineStyles: 'text-black font-1 text-5xl mb-7 '
+      subheadStyles: 'text-black font-1 text-3xl mb-0 '
+      textStyles: 'text-black font-1 undefined mb-0 '
       contentOrder: labelHeadingsContent
     label: ''
     headline: Standalone Node ⇄ Standalone Node
@@ -53,16 +53,17 @@ blocks:
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
-      labelStyles: text-white font-1 text-sm
-      headlineStyles: text-white font-1 text-xl mb-8 font-bold
-      subheadStyles: text-white font-1 text-base
-      textStyles: text-white font-1 text-base mb-5
+      labelStyles: 'text-black font-1 text-sm undefined '
+      headlineStyles: text-black font-1 text-xl mb-8 font-bold
+      subheadStyles: 'text-black font-1 text-base undefined '
+      textStyles: 'text-black font-1 text-base mb-5 '
       buttonType: primary
     style:
-      labelStyles: 'text-white undefined undefined undefined '
-      headlineStyles: 'text-white font-1 text-3xl mb-5 '
-      subheadStyles: 'text-white font-1 text-2xl mb-5 '
-      textStyles: 'text-white font-1 text-base mb-14 '
+      navColor: accent1
+      labelStyles: 'text-black undefined undefined undefined '
+      headlineStyles: 'text-black font-1 text-3xl mb-5 '
+      subheadStyles: 'text-black font-1 text-2xl mb-5 '
+      textStyles: 'text-black font-1 text-base mb-14 '
     headline: ''
     subhead: TCP
     body: |
@@ -125,16 +126,17 @@ blocks:
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
-      labelStyles: text-white font-1 text-sm
-      headlineStyles: text-white font-1 text-xl mb-8 font-bold
-      subheadStyles: text-white font-1 text-base
-      textStyles: text-white font-1 text-base mb-5
+      labelStyles: text-black font-1 text-sm
+      headlineStyles: text-black font-1 text-xl mb-8 font-bold
+      subheadStyles: text-black font-1 text-base
+      textStyles: text-black font-1 text-base mb-5
       buttonType: primary
     style:
-      labelStyles: 'text-white undefined undefined undefined '
-      headlineStyles: 'text-white font-1 text-3xl mb-5 '
-      subheadStyles: 'text-white font-1 text-2xl mb-5 '
-      textStyles: 'text-white font-1 text-base mb-14 '
+      navColor: accent2
+      labelStyles: 'text-black undefined undefined undefined '
+      headlineStyles: 'text-primary font-1 text-3xl mb-5 '
+      subheadStyles: 'text-black font-1 text-2xl mb-5 '
+      textStyles: 'text-black font-1 text-base mb-14 '
     headline: ''
     subhead: QUIC
     body: >
@@ -198,16 +200,17 @@ blocks:
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
-      labelStyles: text-white font-1 text-sm
-      headlineStyles: text-white font-1 text-xl mb-8 font-bold
-      subheadStyles: text-white font-1 text-base
-      textStyles: text-white font-1 text-base mb-5
+      labelStyles: text-black font-1 text-sm
+      headlineStyles: text-black font-1 text-xl mb-8 font-bold
+      subheadStyles: text-black font-1 text-base
+      textStyles: text-black font-1 text-base mb-5
       buttonType: primary
     style:
-      labelStyles: 'text-white undefined undefined undefined '
-      headlineStyles: 'text-white font-1 text-3xl mb-5 '
-      subheadStyles: 'text-white font-1 text-2xl mb-5 '
-      textStyles: 'text-white font-1 text-base mb-14 '
+      navColor: accent3
+      labelStyles: 'text-black undefined undefined undefined '
+      headlineStyles: 'text-black font-1 text-3xl mb-5 '
+      subheadStyles: 'text-black font-1 text-2xl mb-5 '
+      textStyles: 'text-black font-1 text-base mb-14 '
     headline: ''
     subhead: Hole Punching
     body: >
@@ -292,23 +295,21 @@ blocks:
       padding: 'pt-20 pb-20 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '1'
-      labelStyles: 'text-white font-1 text-base mb-0 '
-      headlineStyles: 'text-white font-2 text-2xl mb-7 '
+      labelStyles: 'text-black font-1 text-base mb-0 '
+      headlineStyles: 'text-black font-2 text-2xl mb-7 '
       subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-white font-1 text-base mb-14 '
+      textStyles: 'text-black font-1 text-base mb-14 '
       contentOrder: labelHeadingsContent
     cardStyle:
-      fillStyles: bg-gray-dark
+      fillStyles: bg-white
       padding: pt-8 pb-8 pr-8 pl-8
       type: solid
       borderStyles: border-gray undefined-0
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: text-white font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-white font-1 undefined mb-0 '
-      textStyles: 'text-gray-light font-1 text-base mb-0 '
+      labelStyles: 'text-black font-1 text-sm mb-0 '
+      headlineStyles: text-black font-2 text-lg mb-3 font-bold
+      subheadStyles: 'text-black font-1 undefined mb-0 '
+      textStyles: 'text-black font-1 text-base mb-0 '
       buttonType: primary
-    background:
-      fillStyles: bg-black
     label: ''
     headline: Browser → Standalone Node
     subhead: ''
@@ -334,18 +335,17 @@ blocks:
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
-      labelStyles: text-white font-1 text-sm
-      headlineStyles: text-white font-1 text-xl mb-8 font-bold
-      subheadStyles: text-white font-1 text-base
-      textStyles: text-white font-1 text-base mb-5
+      labelStyles: text-black font-1 text-sm
+      headlineStyles: text-black font-1 text-xl mb-8 font-bold
+      subheadStyles: text-black font-1 text-base
+      textStyles: text-black font-1 text-base mb-5
       buttonType: primary
     style:
-      labelStyles: 'text-white undefined undefined undefined '
-      headlineStyles: 'text-white font-1 text-3xl mb-5 '
-      subheadStyles: 'text-white font-1 text-2xl mb-5 '
-      textStyles: 'text-white font-1 text-base mb-14 '
-    background:
-      fillStyles: bg-black
+      navColor: primary
+      labelStyles: 'text-black undefined undefined undefined '
+      headlineStyles: 'text-black font-1 text-3xl mb-5 '
+      subheadStyles: 'text-black font-1 text-2xl mb-5 '
+      textStyles: 'text-black font-1 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1657642678/libp2p/logo-websocket_jjds6v.png
     headline: WebSocket
@@ -446,23 +446,21 @@ blocks:
       padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '2'
-      labelStyles: 'text-white font-1 text-base mb-0 '
-      headlineStyles: 'text-white font-2 text-2xl mb-1 '
+      labelStyles: 'text-black font-1 text-base mb-0 '
+      headlineStyles: 'text-black font-2 text-2xl mb-1 '
       subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-white font-1 text-base mb-10 '
+      textStyles: 'text-black font-1 text-base mb-10 '
       contentOrder: labelHeadingsContent
     cardStyle:
-      fillStyles: bg-gray-dark
+      fillStyles: bg-white
       padding: pt-8 pb-8 pr-8 pl-8
       type: solid
       borderStyles: border-gray undefined-0
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: text-white font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-white font-1 undefined mb-0 '
-      textStyles: 'text-gray-light font-1 text-base mb-0 '
+      labelStyles: 'text-black font-1 text-sm mb-0 '
+      headlineStyles: text-black font-2 text-lg mb-3 font-bold
+      subheadStyles: 'text-black font-1 undefined mb-0 '
+      textStyles: 'text-gray-dark font-1 text-base mb-0 '
       buttonType: primary
-    background:
-      fillStyles: bg-black
     label: ''
     headline: ''
     subhead: ''
@@ -482,7 +480,7 @@ blocks:
           Firefox: ✔
 
           Safari: ✔
-      - cardType: cta
+      - cardType: pullquote
         headline: Get involved!
         text: >
           There are solutions to assign certificates to a fleet of nodes, see
@@ -493,21 +491,23 @@ blocks:
           Another option would be using IP certificates. They’re quite rare, and
           not a lot of CAs support generating them, but this might be worth
           investigating.
+        language: javascript
     navigationLabel: ''
     _template: textCards
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
-      labelStyles: text-white font-1 text-sm
-      headlineStyles: text-white font-1 text-xl mb-8 font-bold
-      subheadStyles: text-white font-1 text-base
-      textStyles: text-white font-1 text-base mb-5
+      labelStyles: text-black font-1 text-sm
+      headlineStyles: text-black font-1 text-xl mb-8 font-bold
+      subheadStyles: text-black font-1 text-base
+      textStyles: text-black font-1 text-base mb-5
       buttonType: primary
     style:
-      labelStyles: 'text-white undefined undefined undefined '
-      headlineStyles: 'text-white font-1 text-3xl mb-5 '
-      subheadStyles: 'text-white font-1 text-2xl mb-5 '
-      textStyles: 'text-white font-1 text-base mb-14 '
+      navColor: accent1
+      labelStyles: 'text-black undefined undefined undefined '
+      headlineStyles: 'text-black font-1 text-3xl mb-5 '
+      subheadStyles: 'text-black font-1 text-2xl mb-5 '
+      textStyles: 'text-black font-1 text-base mb-14 '
     imageSrc: ''
     headline: WebTransport
     body: >
@@ -608,23 +608,21 @@ blocks:
       padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '2'
-      labelStyles: 'text-white font-1 text-base mb-0 '
-      headlineStyles: 'text-white font-2 text-2xl mb-1 '
+      labelStyles: 'text-black font-1 text-base mb-0 '
+      headlineStyles: 'text-black font-2 text-2xl mb-1 '
       subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-white font-1 text-base mb-10 '
+      textStyles: 'text-black font-1 text-base mb-10 '
       contentOrder: labelHeadingsContent
     cardStyle:
-      fillStyles: bg-gray-dark
+      fillStyles: bg-white
       padding: pt-8 pb-8 pr-8 pl-8
       type: solid
       borderStyles: border-gray undefined-0
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: text-white font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-white font-1 undefined mb-0 '
-      textStyles: 'text-gray-light font-1 text-base mb-0 '
+      labelStyles: 'text-black font-1 text-sm mb-0 '
+      headlineStyles: text-black font-2 text-lg mb-3 font-bold
+      subheadStyles: 'text-black font-1 undefined mb-0 '
+      textStyles: 'text-black font-1 text-base mb-0 '
       buttonType: primary
-    background:
-      fillStyles: bg-black
     label: ''
     headline: ''
     subhead: ''
@@ -652,10 +650,10 @@ blocks:
       minHeight: min-h-0
       padding: pt-20 pb-10 pr-20 pl-20
       width: normal
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: 'text-white font-1 text-5xl mb-7 '
-      subheadStyles: 'text-white font-1 text-3xl mb-0 '
-      textStyles: 'text-white font-1 undefined mb-0 '
+      labelStyles: 'text-black font-1 text-sm mb-0 '
+      headlineStyles: 'text-black font-1 text-5xl mb-7 '
+      subheadStyles: 'text-black font-1 text-3xl mb-0 '
+      textStyles: 'text-black font-1 undefined mb-0 '
       contentOrder: labelHeadingsContent
     label: ''
     headline: Browser ⇄ Browser
@@ -667,16 +665,17 @@ blocks:
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
-      labelStyles: text-white font-1 text-sm
-      headlineStyles: text-white font-1 text-xl mb-8 font-bold
-      subheadStyles: text-white font-1 text-base
-      textStyles: text-white font-1 text-base mb-5
+      labelStyles: text-black font-1 text-sm
+      headlineStyles: text-black font-1 text-xl mb-8 font-bold
+      subheadStyles: text-black font-1 text-base
+      textStyles: text-black font-1 text-base mb-5
       buttonType: primary
     style:
-      labelStyles: 'text-white undefined undefined undefined '
-      headlineStyles: 'text-white font-1 text-3xl mb-5 '
-      subheadStyles: 'text-white font-1 text-2xl mb-5 '
-      textStyles: 'text-white font-1 text-base mb-14 '
+      navColor: accent2
+      labelStyles: 'text-black undefined undefined undefined '
+      headlineStyles: 'text-black font-1 text-3xl mb-5 '
+      subheadStyles: 'text-black font-1 text-2xl mb-5 '
+      textStyles: 'text-black font-1 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1657642674/libp2p/logo-webrtc_okp1ki.svg
     headline: ''
@@ -739,23 +738,21 @@ blocks:
       padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '2'
-      labelStyles: 'text-white font-1 text-base mb-0 '
-      headlineStyles: 'text-white font-2 text-2xl mb-1 '
+      labelStyles: 'text-black font-1 text-base mb-0 '
+      headlineStyles: 'text-black font-2 text-2xl mb-1 '
       subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-white font-1 text-base mb-10 '
+      textStyles: 'text-black font-1 text-base mb-10 '
       contentOrder: labelHeadingsContent
     cardStyle:
-      fillStyles: bg-gray-dark
+      fillStyles: bg-white
       padding: pt-8 pb-8 pr-8 pl-8
       type: solid
       borderStyles: border-gray undefined-0
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: text-white font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-white font-1 undefined mb-0 '
-      textStyles: 'text-gray-light font-1 text-base mb-0 '
+      labelStyles: 'text-black font-1 text-sm mb-0 '
+      headlineStyles: text-black font-2 text-lg mb-3 font-bold
+      subheadStyles: 'text-black font-1 undefined mb-0 '
+      textStyles: 'text-black font-1 text-base mb-0 '
       buttonType: secondary
-    background:
-      fillStyles: bg-black
     label: ''
     headline: ''
     subhead: ''
