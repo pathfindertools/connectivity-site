@@ -1,6 +1,7 @@
 import type { TinaTemplate } from "tinacms"
 import { backgroundSchema } from "./shared/background";
 import { navigationLabelSchema } from "./shared/navigation-label";
+import { colorOptions } from "./shared/options";
 
 const defaultCard = {
   headline: "Headline",
@@ -19,6 +20,7 @@ export const sidebarCardsBlockSchema: TinaTemplate = {
     defaultItem: {
       headline: "This is the main headline",
       style: {
+        navColor: "bg-primary",
         labelStyles: "text-white font-1 text-sm mb-0",
         headlineStyles: "text-white font-1 text-3xl mb-20",
         subheadStyles: "text-white font-1 text-2xl mb-20",
@@ -132,6 +134,23 @@ export const sidebarCardsBlockSchema: TinaTemplate = {
         component: "group",
       },
       fields: [
+        {
+          type: "string",
+          label: "Nav Color",
+          name: "navColor",
+          ui: {
+            component: "colorControl",
+          },
+          options: colorOptions,
+        },
+        {
+          label: "Typography",
+          name: "typographyTitle",
+          type: "string",
+          ui: {
+            component: "ruledTitle",
+          },
+        },
         {
           type: "string",
           label: "Label",

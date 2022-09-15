@@ -36,7 +36,7 @@ export default function ColorControl({ field, input, meta }) {
   return (
     <>
       <FieldLabel label={field.label} />
-      <ColorPicker width={120} value={color} onClick={handleSetColor} />
+      <ColorPicker width={120} value={input.value} onClick={handleSetColor} />
       <input ref={inputRef} type="text" {...input}  className="hidden" />
     </>
   )

@@ -4,16 +4,16 @@
   "favicon": "https://res.cloudinary.com/protocolai/image/upload/v1649882296/filecoin-favicon_rn3bfm.png",
   "desktopWidth": "1150",
   "colors": {
-    "primary": "#0090FF",
-    "accent1": "#062739",
-    "accent2": "#CDDD40",
-    "accent3": "#2DD0DB",
-    "accent4": "#00D0DB",
+    "primary": "#C5D050",
+    "accent1": "#864D9A",
+    "accent2": "#5A9FBA",
+    "accent3": "#E69F4C",
+    "accent4": "#DF6DA2",
     "white": "#FFFFFF",
-    "grayLight": "#E8E8EF",
+    "grayLight": "#F4F6F9",
     "gray": "#B0B0BF",
     "grayDark": "#2C2C32",
-    "black": "#000000"
+    "black": "#0F1642"
   },
   "fonts": {
     "font1": "IBM Plex Mono:wght@400;700",
@@ -36,9 +36,9 @@
     "text8xl": "96/120"
   },
   "buttons": {
-    "primaryFill": "bg-accent2",
+    "primaryFill": "bg-primary",
     "primaryBorder": "border-accent3 border-r-0",
-    "primaryTypography": "text-accent1 font-2 text-sm mb-0 font-bold",
+    "primaryTypography": "text-black font-2 text-sm mb-0 font-bold",
     "primaryPadding": "pt-2.5 pb-2.5 pr-6 pl-6",
     "primaryRounded": "rounded-full",
     "secondaryBorder": "border-white border-2",
@@ -51,7 +51,7 @@
     "minorRounded": "rounded-none"
   },
   "links": {
-    "color": "white"
+    "color": "accent2"
   },
   "logo": {
     "logoType": "LibP2P",
@@ -107,9 +107,9 @@
       }
     ],
     "navAlignment": "text-right",
-    "navTypeStyle": "text-gray-light font-1 text-sm mb-0 ",
-    "navBackgroundColor": "bg-gray-dark",
-    "padding": "pt-10 pb-10 pr-20 pl-20 sm:pt-5 sm:pb-5 sm:pr-10 sm:pl-10"
+    "navTypeStyle": "text-gray-dark font-1 text-sm mb-0 font-bold",
+    "navBackgroundColor": "bg-white",
+    "padding": "pt-8 pb-8 pr-20 pl-20 sm:pt-4 sm:pb-4 sm:pr-10 sm:pl-10"
   },
   "blocks": [
     {
@@ -121,11 +121,8 @@
         "labelStyles": "text-black undefined text-sm mb-0 ",
         "headlineStyles": "text-black undefined text-5xl mb-0 ",
         "subheadStyles": "text-black undefined text-3xl mb-0 ",
-        "textStyles": "text-white undefined text-sm mb-0 ",
+        "textStyles": "text-black undefined text-sm mb-0 ",
         "contentOrder": "labelHeadingsContent"
-      },
-      "background": {
-        "fillStyles": "bg-black"
       },
       "label": "",
       "headline": "",
