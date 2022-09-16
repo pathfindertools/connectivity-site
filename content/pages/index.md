@@ -56,14 +56,14 @@ blocks:
       labelStyles: 'text-black font-1 text-sm undefined '
       headlineStyles: text-black font-1 text-xl mb-8 font-bold
       subheadStyles: 'text-black font-1 text-base undefined '
-      textStyles: 'text-black font-1 text-base mb-5 '
+      textStyles: 'text-black font-2 text-base mb-5 '
       buttonType: primary
     style:
       navColor: accent1
       labelStyles: 'text-black undefined undefined undefined '
       headlineStyles: 'text-black font-1 text-3xl mb-5 '
       subheadStyles: text-black font-1 text-3xl mb-5 font-bold
-      textStyles: 'text-black font-1 text-base mb-14 '
+      textStyles: 'text-black font-2 text-lg mb-14 '
     headline: ''
     subhead: TCP
     body: |
