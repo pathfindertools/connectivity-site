@@ -8,9 +8,9 @@ blocks:
       featureImage: 'object-center object-scale-down '
       imagePadding: pt-52 pb-20 pr-20 pl-10
       labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: text-black font-1 text-5xl mb-5 font-bold
+      headlineStyles: text-black font-1 text-4xl mb-5 font-bold
       subheadStyles: text-black font-1 text-xl mb-5 font-bold
-      textStyles: 'text-black font-1 undefined mb-8 '
+      textStyles: 'text-black font-2 text-lg mb-8 '
       contentOrder: labelHeadingsContent
     image:
       src: >-
