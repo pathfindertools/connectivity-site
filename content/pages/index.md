@@ -4,9 +4,9 @@ blocks:
   - style:
       alignment: 'flex-row-reverse text-left items-center items-start-vertical '
       featureContent: 'w-1/2 min-h-0 '
-      padding: pt-52 pb-20 pr-10 pl-20
+      padding: 'pt-52 pb-20 pr-10 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
       featureImage: 'object-center object-scale-down '
-      imagePadding: pt-52 pb-20 pr-20 pl-10
+      imagePadding: 'pt-52 pb-20 pr-20 pl-10 sm:pt-10 sm:pb-0 sm:pr-10 sm:pl-10'
       labelStyles: 'text-black font-1 text-sm mb-0 '
       headlineStyles: text-black font-1 text-4xl mb-5 font-bold
       subheadStyles: text-black font-1 text-xl mb-5 font-bold
@@ -31,7 +31,7 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-20 pb-10 pr-20 pl-20
+      padding: 'pt-20 pb-10 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
       width: normal
       labelStyles: 'text-black font-1 text-sm mb-0 '
       headlineStyles: text-black font-1 text-3xl mb-7 font-bold
@@ -64,6 +64,8 @@ blocks:
       headlineStyles: 'text-black font-1 text-3xl mb-5 '
       subheadStyles: text-black font-1 text-3xl mb-5 font-bold
       textStyles: 'text-black font-2 text-lg mb-14 '
+    imageSrc: >-
+      https://res.cloudinary.com/protocolai/image/upload/v1663347575/libp2p/tpc_kku6wb.svg
     headline: ''
     subhead: TCP
     body: |
@@ -126,17 +128,19 @@ blocks:
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
-      labelStyles: text-black font-1 text-sm
+      labelStyles: 'text-black font-1 text-sm undefined '
       headlineStyles: text-black font-1 text-xl mb-8 font-bold
-      subheadStyles: text-black font-1 text-base
-      textStyles: text-black font-1 text-base mb-5
+      subheadStyles: 'text-black font-1 text-base undefined '
+      textStyles: 'text-black font-2 text-base mb-5 '
       buttonType: primary
     style:
       navColor: accent2
       labelStyles: 'text-black undefined undefined undefined '
-      headlineStyles: 'text-primary font-1 text-3xl mb-5 '
-      subheadStyles: 'text-black font-1 text-2xl mb-5 '
-      textStyles: 'text-black font-1 text-base mb-14 '
+      headlineStyles: 'text-black font-1 text-3xl mb-5 '
+      subheadStyles: text-black font-1 text-3xl mb-5 font-bold
+      textStyles: 'text-black font-2 text-lg mb-14 '
+    imageSrc: >-
+      https://res.cloudinary.com/protocolai/image/upload/v1663347570/libp2p/quic_yhwi6l.svg
     headline: ''
     subhead: QUIC
     body: >
@@ -200,17 +204,19 @@ blocks:
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
-      labelStyles: text-black font-1 text-sm
+      labelStyles: 'text-black font-1 text-sm undefined '
       headlineStyles: text-black font-1 text-xl mb-8 font-bold
-      subheadStyles: text-black font-1 text-base
-      textStyles: text-black font-1 text-base mb-5
+      subheadStyles: 'text-black font-1 text-base undefined '
+      textStyles: 'text-black font-2 text-base mb-5 '
       buttonType: primary
     style:
       navColor: accent3
       labelStyles: 'text-black undefined undefined undefined '
       headlineStyles: 'text-black font-1 text-3xl mb-5 '
-      subheadStyles: 'text-black font-1 text-2xl mb-5 '
-      textStyles: 'text-black font-1 text-base mb-14 '
+      subheadStyles: text-black font-1 text-3xl mb-5 font-bold
+      textStyles: 'text-black font-2 text-lg mb-14 '
+    imageSrc: >-
+      https://res.cloudinary.com/protocolai/image/upload/v1663347566/libp2p/hole-punching_gbdmww.svg
     headline: ''
     subhead: Hole Punching
     body: >
@@ -296,9 +302,9 @@ blocks:
       contentWidth: w-full
       columns: '1'
       labelStyles: 'text-black font-1 text-base mb-0 '
-      headlineStyles: 'text-black font-2 text-2xl mb-7 '
+      headlineStyles: text-black font-1 text-3xl mb-7 font-bold
       subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-black font-1 text-base mb-14 '
+      textStyles: 'text-black font-2 text-lg mb-14 '
       contentOrder: labelHeadingsContent
     cardStyle:
       fillStyles: bg-white
@@ -308,7 +314,7 @@ blocks:
       labelStyles: 'text-black font-1 text-sm mb-0 '
       headlineStyles: text-black font-2 text-lg mb-3 font-bold
       subheadStyles: 'text-black font-1 undefined mb-0 '
-      textStyles: 'text-black font-1 text-base mb-0 '
+      textStyles: 'text-black font-2 text-base mb-0 '
       buttonType: primary
     label: ''
     headline: Browser → Standalone Node
@@ -335,19 +341,19 @@ blocks:
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
-      labelStyles: text-black font-1 text-sm
+      labelStyles: 'text-black font-1 text-sm undefined '
       headlineStyles: text-black font-1 text-xl mb-8 font-bold
-      subheadStyles: text-black font-1 text-base
-      textStyles: text-black font-1 text-base mb-5
+      subheadStyles: 'text-black font-1 text-base undefined '
+      textStyles: 'text-black font-2 text-base mb-5 '
       buttonType: primary
     style:
       navColor: primary
       labelStyles: 'text-black undefined undefined undefined '
-      headlineStyles: 'text-black font-1 text-3xl mb-5 '
-      subheadStyles: 'text-black font-1 text-2xl mb-5 '
-      textStyles: 'text-black font-1 text-base mb-14 '
+      headlineStyles: text-black font-1 text-3xl mb-5 font-bold
+      subheadStyles: text-black font-1 text-3xl mb-5 font-bold
+      textStyles: 'text-black font-2 text-lg mb-14 '
     imageSrc: >-
-      https://res.cloudinary.com/protocolai/image/upload/v1657642678/libp2p/logo-websocket_jjds6v.png
+      https://res.cloudinary.com/protocolai/image/upload/v1663347583/libp2p/websocket_pbu8af.svg
     headline: WebSocket
     body: >
       WebSocket has [been]() around for more than 10 years. It allows
@@ -459,7 +465,7 @@ blocks:
       labelStyles: 'text-black font-1 text-sm mb-0 '
       headlineStyles: text-black font-2 text-lg mb-3 font-bold
       subheadStyles: 'text-black font-1 undefined mb-0 '
-      textStyles: 'text-gray-dark font-1 text-base mb-0 '
+      textStyles: 'text-gray-dark font-2 text-base mb-0 '
       buttonType: primary
     label: ''
     headline: ''
@@ -497,18 +503,19 @@ blocks:
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
-      labelStyles: text-black font-1 text-sm
+      labelStyles: 'text-black font-1 text-sm undefined '
       headlineStyles: text-black font-1 text-xl mb-8 font-bold
-      subheadStyles: text-black font-1 text-base
-      textStyles: text-black font-1 text-base mb-5
+      subheadStyles: 'text-black font-1 text-base undefined '
+      textStyles: 'text-black font-2 text-base mb-5 '
       buttonType: primary
     style:
       navColor: accent1
       labelStyles: 'text-black undefined undefined undefined '
-      headlineStyles: 'text-black font-1 text-3xl mb-5 '
-      subheadStyles: 'text-black font-1 text-2xl mb-5 '
-      textStyles: 'text-black font-1 text-base mb-14 '
-    imageSrc: ''
+      headlineStyles: text-black font-1 text-3xl mb-5 font-bold
+      subheadStyles: text-black font-1 text-3xl mb-5 font-bold
+      textStyles: 'text-black font-2 text-lg mb-14 '
+    imageSrc: >-
+      https://res.cloudinary.com/protocolai/image/upload/v1663347588/libp2p/webtransport_ko6iua.svg
     headline: WebTransport
     body: >
       While WebSockets allows the browser to “hijack” a TCP connection,
@@ -621,7 +628,7 @@ blocks:
       labelStyles: 'text-black font-1 text-sm mb-0 '
       headlineStyles: text-black font-2 text-lg mb-3 font-bold
       subheadStyles: 'text-black font-1 undefined mb-0 '
-      textStyles: 'text-black font-1 text-base mb-0 '
+      textStyles: 'text-black font-2 text-base mb-0 '
       buttonType: primary
     label: ''
     headline: ''
@@ -648,12 +655,12 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-20 pb-10 pr-20 pl-20
+      padding: 'pt-20 pb-10 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
       width: normal
       labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: 'text-black font-1 text-5xl mb-7 '
+      headlineStyles: text-black font-1 text-3xl mb-7 font-bold
       subheadStyles: 'text-black font-1 text-3xl mb-0 '
-      textStyles: 'text-black font-1 undefined mb-0 '
+      textStyles: 'text-black font-2 text-lg mb-0 '
       contentOrder: labelHeadingsContent
     label: ''
     headline: Browser ⇄ Browser
@@ -665,19 +672,19 @@ blocks:
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
-      labelStyles: text-black font-1 text-sm
+      labelStyles: 'text-black font-1 text-sm undefined '
       headlineStyles: text-black font-1 text-xl mb-8 font-bold
-      subheadStyles: text-black font-1 text-base
-      textStyles: text-black font-1 text-base mb-5
+      subheadStyles: 'text-black font-1 text-base undefined '
+      textStyles: 'text-black font-2 text-base mb-5 '
       buttonType: primary
     style:
       navColor: accent2
       labelStyles: 'text-black undefined undefined undefined '
       headlineStyles: 'text-black font-1 text-3xl mb-5 '
-      subheadStyles: 'text-black font-1 text-2xl mb-5 '
-      textStyles: 'text-black font-1 text-base mb-14 '
+      subheadStyles: text-black font-1 text-3xl mb-5 font-bold
+      textStyles: 'text-black font-2 text-lg mb-14 '
     imageSrc: >-
-      https://res.cloudinary.com/protocolai/image/upload/v1657642674/libp2p/logo-webrtc_okp1ki.svg
+      https://res.cloudinary.com/protocolai/image/upload/v1663347579/libp2p/webrtc_agqcgn.svg
     headline: ''
     subhead: WebRTC
     body: >
@@ -751,7 +758,7 @@ blocks:
       labelStyles: 'text-black font-1 text-sm mb-0 '
       headlineStyles: text-black font-2 text-lg mb-3 font-bold
       subheadStyles: 'text-black font-1 undefined mb-0 '
-      textStyles: 'text-black font-1 text-base mb-0 '
+      textStyles: 'text-black font-2 text-base mb-0 '
       buttonType: secondary
     label: ''
     headline: ''
