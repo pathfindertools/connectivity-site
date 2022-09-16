@@ -54,7 +54,7 @@ export const SidebarCards = ({ data, parentField = "" }) => {
 
   return (
     <Section className="" background={data.background} navigationLabel={data.navigationLabel}>
-      <div className="max-w-desktop-full mx-auto px-20 pt-4 pb-10 sm:px-10">
+      <div className="max-w-desktop-full mx-auto px-20 pt-4 pb-10 sm:px-10 sm:pb-0">
         <Content
           label = {data.label}
           headline = {data.headline}
@@ -70,13 +70,17 @@ export const SidebarCards = ({ data, parentField = "" }) => {
           width = "w-full"
           parentField={parentField}
         />
-        <div className="flex gap-20 sm:block">
+        <div className="flex gap-12 sm:block">
           {data.cards && (
             <>
-              <div className="w-60 sm:w-full had">
+              <div className="w-1/3 sm:w-full sm:mb-16">
                 {data.imageSrc && (
-                  <div className={`p-10 bg-${data.style?.navColor}`}>
+                  <div className={`relative w-full bg-${data.style?.navColor}`} style={{paddingTop: '80%'}}>
+                    <svg className="absolute inset-0 mix-blend-overlay opacity-40" viewBox="0 0 420 336" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" clipRule="evenodd" d="M420 0H0V336H420V0ZM96 233.501V102.499L209.502 37L323 102.499V233.501L209.502 299L96 233.501Z" fill="white"/>
+                    </svg>
                     <img
+                      className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/2 p-4"
                       alt={data.headline}
                       src={data.imageSrc}
                       data-tinafield={`${parentField}.image`}
@@ -88,7 +92,7 @@ export const SidebarCards = ({ data, parentField = "" }) => {
                   const backgroundClasses = index === activeCard ? `text-white bg-${data.style?.navColor}` : 'bg-white'
                   return <li key={index} className="font-2 text-md">
                     <a
-                      className={`block text-black p-2 cursor-pointer hover:text-white hover:bg-${data.style?.navColor} ${backgroundClasses}`}
+                      className={`block text-sm font-1 font-bold text-black px-4 py-3 cursor-pointer hover:text-white hover:bg-${data.style?.navColor} ${backgroundClasses}`}
                       onClick={ () => setActiveCard(index) }
                     >
                       {block.headline}
@@ -97,7 +101,7 @@ export const SidebarCards = ({ data, parentField = "" }) => {
                 })}
                 </ul>
               </div>
-              <div className="sidebar-cards grid grid-cols-1 gap-16 w-full flex-1">
+              <div className="sidebar-cards grid grid-cols-1 gap-16 w-full flex-1 sm:gap-0">
                 { data.cards.map(function (block, index) {
                   return <Card
                     block={block}
