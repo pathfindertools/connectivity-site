@@ -17,7 +17,7 @@
   },
   "fonts": {
     "font1": "IBM Plex Mono:wght@400;700",
-    "font2": "IBM Plex Mono:wght@300;500",
+    "font2": "IBM Plex Sans:wght@400;700",
     "font3": "Halbfett",
     "font4": "JetBrains Mono:wght@400;700"
   },
