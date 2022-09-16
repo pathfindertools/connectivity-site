@@ -22,18 +22,18 @@
     "font4": "JetBrains Mono:wght@400;700"
   },
   "sizeLeading": {
-    "textXs": "12/20",
-    "textSm": "14/24",
-    "textMd": "16/28",
-    "textLg": "18/34",
-    "textXl": "24/32",
-    "text2xl": "34/42",
-    "text3xl": "28/40",
-    "text4xl": "32/44",
-    "text5xl": "39/48",
-    "text6xl": "48/48",
-    "text7xl": "72/84",
-    "text8xl": "96/120"
+    "textXs": "14/25",
+    "textSm": "16/25",
+    "textMd": "20/25",
+    "textLg": "23/30",
+    "textXl": "25/30",
+    "text2xl": "30/40",
+    "text3xl": "38/40",
+    "text4xl": "50/60",
+    "text5xl": "60/60",
+    "text6xl": "70/70",
+    "text7xl": "80/80",
+    "text8xl": "90/90"
   },
   "buttons": {
     "primaryFill": "bg-primary",
