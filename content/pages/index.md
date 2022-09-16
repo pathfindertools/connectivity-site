@@ -34,9 +34,9 @@ blocks:
       padding: pt-20 pb-10 pr-20 pl-20
       width: normal
       labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: 'text-black font-1 text-5xl mb-7 '
+      headlineStyles: text-black font-1 text-3xl mb-7 font-bold
       subheadStyles: 'text-black font-1 text-3xl mb-0 '
-      textStyles: 'text-black font-1 undefined mb-0 '
+      textStyles: 'text-black font-2 text-lg mb-0 '
       contentOrder: labelHeadingsContent
     label: ''
     headline: Standalone Node ⇄ Standalone Node
@@ -62,7 +62,7 @@ blocks:
       navColor: accent1
       labelStyles: 'text-black undefined undefined undefined '
       headlineStyles: 'text-black font-1 text-3xl mb-5 '
-      subheadStyles: 'text-black font-1 text-2xl mb-5 '
+      subheadStyles: text-black font-1 text-3xl mb-5 font-bold
       textStyles: 'text-black font-1 text-base mb-14 '
     headline: ''
     subhead: TCP
