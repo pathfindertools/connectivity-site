@@ -174,10 +174,6 @@ blocks:
 
           Safari: ❌ (not possible)
         language: javascript
-      - headline: Here's Another Card
-        subhead: ''
-        text: |
-          This is a rich text component you can add hyperlinks, etc.
     _template: textCards
   - cardStyle:
       padding: undefined undefined undefined undefined
