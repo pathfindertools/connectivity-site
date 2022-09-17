@@ -92,8 +92,8 @@ blocks:
           3.  Apply a stream multiplexer (yamux or mplex).
 
 
-          TCP is a solid option, works in all networks (home and private).
-          However, setting up a the libp2p takes quite a few network roundtrips.
+          Setting up a the libp2p takes quite a few network roundtrips, but is
+          the most reliable option, as very few networks block TCP connections.
         language: javascript
         code: ''
       - cardType: basic
