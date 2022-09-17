@@ -18,8 +18,8 @@ blocks:
     label: ''
     headline: libp2p Connectivity
     subhead: >-
-      Depending on their positions in the network, nodes use different
-      technology to connect to other nodes.
+      Depending on their positions in the network, nodes use different transport
+      protocols to connect to other nodes.
     body: >
       Learn more about how libp2p achieves universal connectivity across
       networks.
