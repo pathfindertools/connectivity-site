@@ -209,7 +209,7 @@ blocks:
       - cardType: basic
         headline: Counting Round Trips
         text: >
-          1.  QUIC handshake
+          1.  QUIC handshake (1-RTT)
 
 
           That’s all there is. QUIC verifies the client’s address (that’s what
