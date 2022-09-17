@@ -283,9 +283,10 @@ blocks:
     headline: ''
     subhead: Hole Punching
     body: >
-      Not all nodes are located in a publicly reachable position. Most nodes are
-      behind NATs or firewalls: in home networks, in corporate networks, and
-      even on mobile devices (carrier-grade NATs).
+      Not all nodes are located in a publicly reachable position. Nodes in home
+      and in corporate networks are usually separated from the public internet
+      by a NAT or a firewalls. Mobile phones are usually behind a so-called
+      carrier-grade NAT.
 
 
       Nodes behind firewalls / NATs can dial any node on the public internet,
@@ -295,7 +296,7 @@ blocks:
       - cardType: basic
         headline: libp2p Relays
         text: >
-          When a libp2p node boots up, one of the first things it does it
+          When a libp2p node boots up, one of the first things it does is to
           determine its position in the network: is it a public node, reachable
           from the public internet, or is it a private node, located behind a
           firewall or a NAT?
