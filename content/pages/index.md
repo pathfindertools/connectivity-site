@@ -134,6 +134,51 @@ blocks:
         code: ''
     navigationLabel: tcp
     _template: sidebarCards
+  - style:
+      textAlignment: text-left
+      minHeight: min-h-0
+      padding: pt-20 pr-20 pb-20 pl-20
+      contentWidth: w-full
+      columns: '3'
+      labelStyles: text-black font-1 text-sm mb-0
+      headlineStyles: text-black font-1 text-5xl mb-0
+      subheadStyles: text-black font-1 text-3xl mb-0
+      textStyles: text-black font-1 text-md mb-0
+      contentOrder: labelHeadingsContent
+    cardStyle:
+      fillStyles: bg-gray
+      padding: pt-4 pr-4 pb-4 pl-4
+      borderStyles: border-gray
+      labelStyles: text-black font-1 text-sm mb-0
+      headlineStyles: text-black font-1 text-2xl mb-0
+      subheadStyles: text-black font-1 text-md mb-0
+      textStyles: text-black font-1 text-sm mb-0
+    label: ''
+    headline: ''
+    subhead: ''
+    body: ''
+    items:
+      - cardType: basic
+        headline: Support
+        subhead: ''
+        text: |
+          go-libp2p: ✔
+
+          rust-libp2p: ✔
+
+          node.js-libp2p: ✔
+
+          Chrome: ❌ (not possible)
+
+          Firefox: ❌ (not possbile)
+
+          Safari: ❌ (not possible)
+        language: javascript
+      - headline: Here's Another Card
+        subhead: ''
+        text: |
+          This is a rich text component you can add hyperlinks, etc.
+    _template: textCards
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
