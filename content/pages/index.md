@@ -107,9 +107,13 @@ blocks:
           4.  Multistream Negotiation of the Stream&#x20;
               Multiplexer (1 RTT)
 
-          This is the most optimistic assumption. In case the peer doesn’t
-          support the protocol suggested in a Multistream Negotiation step, this
-          will incur additional round trips.
+          Establishing and "upgrading" (applying encryption and a stream
+          multiplexer) takes a whopping 4 round trips.
+
+
+          And this is the most optimistic assumption. In case the peer doesn’t
+          support the protocol suggested in a Multistream Negotiation step,
+          Multistream will incur additional round trips.
         language: javascript
       - cardType: basic
         headline: Support
