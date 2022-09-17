@@ -218,21 +218,6 @@ blocks:
           For resumed connections, QUIC even supports a 0-RTT handshake,
           although we’re currently not (yet) making use of that in libp2p.
         language: javascript
-      - cardType: basic
-        headline: Support
-        text: |
-          go-libp2p: ✔
-
-          rust-libp2p: ⏱ (work in progress)
-
-          node.js-libp2p: ❌
-
-          Chrome: ❌ (not possible)
-
-          Firefox: ❌ (not possible)
-
-          Safari: ❌ (not possible)
-        language: javascript
     navigationLabel: quic
     _template: sidebarCards
   - style:
