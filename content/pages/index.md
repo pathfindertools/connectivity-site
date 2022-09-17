@@ -142,7 +142,7 @@ blocks:
     subhead: ''
     body: ''
     items:
-      - cardType: basic
+      - cardType: pullquote
         headline: Support
         subhead: ''
         text: |
