@@ -341,22 +341,6 @@ blocks:
           worth it: direct connections have a lower possible, and can use the
           full bandwidth of the link.
         language: javascript
-      - cardType: basic
-        headline: Support
-        text: |
-          go-libp2p: ✔
-
-          rust-libp2p: ✔
-
-          node.js-libp2p: ✔
-        language: javascript
-      - cardType: basic
-        headline: Further Reading
-        text: |
-          Paper: \<link DINPS paper>
-
-          Spec: \<link circuit v2 spec>
-        language: javascript
     navigationLabel: hole-punching
     _template: sidebarCards
   - style:
