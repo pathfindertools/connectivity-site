@@ -82,13 +82,14 @@ blocks:
           upgrading the underlying connection:
 
 
-          1.  establish a TCP connection to the remote node
+          1.  Dial a TCP connection to the remote node and perform the
+          3-way-handshake
 
-          2.  negotiate a security protocol (Noise or TLS 1.3), perform a
-          cryptographic handshake. The connection is now encrypted and the peer
-          IDs have been verified.
+          2.  Negotiate a security protocol (Noise or TLS 1.3), and then perform
+          the chosen cryptographic handshake. The connection is now encrypted
+          and the peers have verified each others' peer IDs.
 
-          3.  apply a stream multiplexer (yamux or mplex).
+          3.  Apply a stream multiplexer (yamux or mplex).
 
 
           TCP is a solid option, works in all networks (home and private).
