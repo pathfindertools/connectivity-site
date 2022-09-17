@@ -377,11 +377,6 @@ blocks:
 
           node.js-libp2p: ✔
         language: javascript
-      - cardType: pullquote
-        headline: Further Reading
-        subhead: ''
-        text: ''
-        language: javascript
     _template: textCards
   - style:
       textAlignment: text-left
