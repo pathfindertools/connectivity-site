@@ -116,22 +116,6 @@ blocks:
           support the protocol suggested in a Multistream Negotiation step,
           Multistream will incur additional round trips.
         language: javascript
-      - cardType: basic
-        headline: Support
-        text: |
-          go-libp2p: ✔
-
-          rust-libp2p: ✔
-
-          node.js-libp2p: ✔
-
-          Chrome: ❌ (not possible)
-
-          Firefox: ❌ (not possbile)
-
-          Safari: ❌ (not possible)
-        language: javascript
-        code: ''
     navigationLabel: tcp
     _template: sidebarCards
   - style:
