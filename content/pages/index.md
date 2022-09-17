@@ -380,10 +380,7 @@ blocks:
       - cardType: pullquote
         headline: Further Reading
         subhead: ''
-        text: |
-          Paper: \<link DINPS paper>
-
-          Spec: \<link circuit v2 spec>
+        text: ''
         language: javascript
     _template: textCards
   - style:
