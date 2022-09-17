@@ -42,12 +42,14 @@ blocks:
     headline: Standalone Node ⇄ Standalone Node
     subhead: ''
     body: >
-      Public nodes is any node running in a data centers, or on a dedicated
-      connection without any router / NAT / firewall in between.
+      Standalone nodes are libp2p nodes that run directly on their host machine,
+      without being constrained by for example a browser environment. Examples
+      are applications using go-libp2p, rust-libp2p or node.js-libp2p.
 
 
-      Full nodes (e.g. go-libp2p, rust-libp2p, node.js-libp2p) use TCP and QUIC
-      to connect to each other.
+      If a node is any node running in a data centers, or on a dedicated
+      connection, without any router / NAT / firewall in between, we call it a
+      "public node". Public nodes use TCP and QUIC to connect to each other.
     navigationLabel: Standalone to Standalone
     _template: banner
   - cardStyle:
