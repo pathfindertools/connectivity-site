@@ -393,14 +393,14 @@ blocks:
 
           node.js-libp2p: ✔
         language: javascript
-      - headline: Here's Another Card
+      - cardType: pullquote
+        headline: Further Reading
         subhead: ''
         text: |
-          This is a rich text component you can add hyperlinks, etc.
-      - headline: Here's Another Card
-        subhead: ''
-        text: |
-          This is a rich text component you can add hyperlinks, etc.
+          Paper: \<link DINPS paper>
+
+          Spec: \<link circuit v2 spec>
+        language: javascript
     _template: textCards
   - style:
       textAlignment: text-left
