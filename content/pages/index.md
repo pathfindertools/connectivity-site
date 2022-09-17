@@ -194,9 +194,10 @@ blocks:
       - cardType: basic
         headline: QUIC in libp2p
         text: >
-          Under most conditions, QUIC provides superior performance to TCP: The
-          libp2p handshake is (at least!) 3 network round-trips faster, and
-          provides better performance in unstable network conditions.
+          Since QUIC provides encryption and stream multiplexing at the
+          transport layer, no "upgrading" is required: As soon as the QUIC
+          handshake finishes, we can use the QUIC connection as a libp2p
+          connection.
 
 
           To verify the remote’s peer ID, it is [added to the TLS
