@@ -520,6 +520,7 @@ blocks:
           Firefox: ✔
 
           Safari: ✔
+        language: javascript
       - cardType: pullquote
         headline: Get involved!
         text: >
