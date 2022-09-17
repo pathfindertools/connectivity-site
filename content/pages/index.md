@@ -70,8 +70,10 @@ blocks:
       https://res.cloudinary.com/protocolai/image/upload/v1663347575/libp2p/tpc_kku6wb.svg
     headline: ''
     subhead: TCP
-    body: |
-      TCP is a...
+    body: >
+      TCP was delevoped in the 1970s, and carried, up to the introduction of
+      QUIC, the vast majority of traffic on the internet. It was also the first
+      transport that was used in libp2p.
     cards:
       - cardType: basic
         headline: TCP in libp2p
@@ -96,14 +98,14 @@ blocks:
       - cardType: basic
         headline: Counting Round Trips
         text: >
-          1.  TCP Handshake
+          1.  TCP Handshake (1 RTT)
 
-          2.  Multistream Negotiation of the Security Protocol
+          2.  Multistream Negotiation of the Security Protocol (1 RTT)
 
-          3.  Security Handshake (TLS 1.3 or Noise)
+          3.  Security Handshake: TLS 1.3 or Noise (1 RTT)
 
           4.  Multistream Negotiation of the Stream&#x20;
-              Multiplexer
+              Multiplexer (1 RTT)
 
           This is the most optimistic assumption. In case the peer doesn’t
           support the protocol suggested in a Multistream Negotiation step, this
