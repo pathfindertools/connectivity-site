@@ -178,16 +178,18 @@ blocks:
     headline: ''
     subhead: QUIC
     body: >
-      QUIC is a UDP-based transport protocol which is always encrypted (using
-      TLS 1.3) and provides native stream multiplexing.
+      QUIC is a new UDP-based transport protocol. QUIC connections are always
+      encrypted (using TLS 1.3) and provides native stream multiplexing.
 
 
-      Whenever possible, QUIC should be preferred over TCP. For more benefits of
-      using QUIC, see #holepunching.
+      Whenever possible, QUIC should be preferred over TCP. Not only is it
+      faster, it also increases the chances of a successful holepunch in case of
+      firewalls (see next section).
 
 
-      However: UDP is blocked in ~5-10% of networks. Therefore TCP is still
-      needed as a fallback.
+      However: UDP is blocked in ~5-10% of networks, especially in corporate
+      networks, so running a node exclusively with QUIC is usually not an
+      option.
     cards:
       - cardType: basic
         headline: QUIC in libp2p
