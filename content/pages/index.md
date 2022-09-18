@@ -640,8 +640,9 @@ blocks:
       - cardType: basic
         headline: WebTransport Upgrade
         text: >
-          The browser first establishes an HTTP/3 connection to the server. It
-          then opens a new HTTP stream, and sends an Extended CONNECT request.
+          The browser first establishes a HTTP/3 connection to the server. It
+          then opens a new stream, and sends an Extended CONNECT request, and
+          proposed a WebTransport Session ID.
 
 
           HEADERS
@@ -661,8 +662,8 @@ blocks:
 
 
           The server can accept the upgrade by sending a HTTP 200 OK response.
-          Both endpoints can now open streams associated with this WebTransport
-          session.
+          Both endpoints can now open QUIC streams associated with this
+          WebTransport session.
         language: javascript
       - cardType: basic
         headline: Code
