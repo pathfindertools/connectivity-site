@@ -671,6 +671,21 @@ blocks:
           WebTransport session.
         language: javascript
       - cardType: basic
+        headline: Certificate Hashes
+        subhead: ''
+        text: >
+          In WebTransport, the browser has two ways to verify the TLS
+          certificate:
+
+
+          1.  Checking if the certificate is signed by a certificate authority
+          (CA). The requirements are analogous to WebSocket Secure.
+
+          2.  Checking that the SHA-256 [hash of the
+          certificate](https://www.w3.org/TR/webtransport/#certificate-hashes)
+          matches a pre-determined value.
+        language: javascript
+      - cardType: basic
         headline: Securing the WebTransport Connection
         text: >
           What does the certificate hash secure? By itself, not much. In
