@@ -520,9 +520,8 @@ blocks:
           ACME is a protocol which allows a server to obtain a certificate from
           a CA without any manual involvement. There've been
           [proposals](https://github.com/libp2p/go-libp2p/issues/1360
-          "proposals") to use ACME to issue a
-          [LetsEncrypt](https://letsencrypt.org/ "Let's Encrypt") certificate
-          for every libp2p node.
+          "proposals") to use ACME to issue a [Let's
+          Encrypt](https://letsencrypt.org/) certificate for every libp2p node.
 
 
           To be able to issue the certificate, the CA needs to verify that the
