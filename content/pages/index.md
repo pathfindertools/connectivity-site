@@ -701,13 +701,15 @@ blocks:
       - cardType: basic
         headline: Securing the WebTransport Connection
         text: >
-          What does the certificate hash secure? By itself, not much. In
-          particular, the server doesn’t have any way to know the client’s peer
-          ID.
+          What does the certificate hash actually secure? By itself, not much.
+          In particular, an attacker could have injected a multiaddress
+          containing the hash of its own certificate. Furthermore, after
+          completing the WebTransport handshake, the server doesn’t have any way
+          to know the client’s peer ID.
 
 
-          We therefore run a Noise handshake on top of the first WebTransport
-          stream. This handshake does two things:
+          libp2p therefore run a Noise handshake on top of the first
+          WebTransport stream. This handshake serves two purposes:
 
 
           1.  It exchanges and cryptographically verifies the peer IDs of the
@@ -715,6 +717,11 @@ blocks:
 
           2.  It binds the certificate hash to the WebTransport session, making
           sure there’s no MITM attack.
+
+
+          This handshake is only run on a single stream. As soon as the
+          handshake completes, we can use raw WebTransport streams in libp2p -
+          there is need for any double encryption.
         language: javascript
       - cardType: basic
         headline: Counting Round Trips
