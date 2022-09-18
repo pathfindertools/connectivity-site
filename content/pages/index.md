@@ -298,9 +298,10 @@ blocks:
         headline: libp2p Relays
         text: >
           When a libp2p node boots up, one of the first things it does is to
-          determine its position in the network: is it a public node, reachable
-          from the public internet, or is it a private node, located behind a
-          firewall or a NAT?
+          start [AutoNAT](https://github.com/libp2p/specs/tree/master/autonat)
+          to determine its position in the network: is it a public node,
+          reachable from the public internet, or is it a private node, located
+          behind a firewall or a NAT?
 
 
           *   A private node will start looking for relay servers on the
