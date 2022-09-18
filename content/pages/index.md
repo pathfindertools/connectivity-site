@@ -832,7 +832,7 @@ blocks:
     cards:
       - cardType: basic
         headline: Connection Establishment
-        text: "In order to connect, two WebRTC nodes need to exchange SDP (Session Description Protocol) packets. These packets contain all the information that’s needed to establish the connection: (public) IP addresses, supported WebRTC features, audio and video codecs etc.\n\nWebRTC specifies the format of this packet, but it doesn’t specify\_*how*\_they are exchanged. This is left to the application.\n"
+        text: "In order to connect, two WebRTC nodes need to exchange SDP (Session Description Protocol) packets. These packets contain all the information that’s needed to establish the connection: (public) IP addresses, supported WebRTC features, audio and video codecs etc.\n\nWebRTC specifies the format of this packet, but it doesn’t specify\_*how*\_they are exchanged. This is left to the application, or libp2p in our case.\n"
         language: javascript
       - cardType: basic
         headline: Browser to Standalone Node
