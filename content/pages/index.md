@@ -72,8 +72,8 @@ blocks:
     subhead: TCP
     body: >
       TCP was delevoped in the 1970s, and carried, up to the introduction of
-      QUIC, the vast majority of traffic on the internet. It was also the first
-      transport that was used in libp2p.
+      QUIC (see next section), the vast majority of traffic on the internet. It
+      was also the first transport that was used in libp2p.
     cards:
       - cardType: basic
         headline: TCP in libp2p
