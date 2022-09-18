@@ -518,26 +518,30 @@ blocks:
         headline: ACME to the rescue?
         text: >
           The ACME protocol allows a server to obtain a certificate from a CA
-          fully automatically. To be able to issue the certificate, the CA needs
-          to verify that the server actually controls the domain. There are 2
-          ways:
+          fully automatically. LetsEncrypt is the CA that has been pioneering
+          this fully automated protocol. There've been
+          [proposals](https://github.com/libp2p/go-libp2p/issues/1360
+          "proposals") to use
+
+
+          To be able to issue the certificate, the CA needs to verify that the
+          server actually controls the domain. There are 2 ways:
 
 
           1.  HTTP / TLS challenge: The CA instructs the server to publish a
-          (pseudo-) random value on the website. It then makes a request to that
-          website, and checks the value. The server is only able to publish the
-          value if it actually controls the contents of the website.
+          random value on the website. It then issues a request to check the
+          value. By being able to publish this value, the server has proven to
+          control the domain.
 
           2.  DNS challenge: The CA instructs the server to publish the random
           value in a DNS TXT record. The server thereby proves that it can
-          modify the DNS records for that domain. DNS challenges are the only
-          way to obtain wildcard certificates.
+          modify the DNS records for that domain.&#x20;
 
 
           There are a couple of problems with this approach:
 
 
-          *   libp2p nodes still need to possess a domain name.
+          *   libp2p nodes would still need to possess a domain name.
 
           *   Using the HTTP / TLS challenge requires starting a webserver on
           port 80 or 443. On Linux, a non-privileged user is not able to bind to
