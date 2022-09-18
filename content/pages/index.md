@@ -827,8 +827,8 @@ blocks:
 
       In addition to enabling audio and video communication (for which packets
       are sent using an unreliably transport), WebRTC also establishes
-      stream-based communication on top of SCTP and exposes reliable streams,
-      called WebRTC Data Channels.
+      stream-based communication and exposes reliable streams, called WebRTC
+      Data Channels.
     cards:
       - cardType: basic
         headline: Connection Establishment
