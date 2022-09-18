@@ -403,10 +403,11 @@ blocks:
     headline: Browser → Standalone Node
     subhead: ''
     body: >
-      We want to be able to access the libp2p network from a web browser.
-      Browsers are really, really good at speaking HTTP (using an underlying TCP
-      connection for HTTP/1.1 and HTTP/2, and a QUIC connection for HTTP/3), but
-      they don't allow access to the underlying connection.
+      Browsers mostly use HTTP(S), making use of an underlying TCP connection
+      for HTTP/1.1 and HTTP/2, or a QUIC connection for HTTP/3. To keep their
+      users secure, they enforce strict rules, like certificate requirements and
+      blocking of cross-origin policies. For security reasons, it's not possible
+      to gain access to the raw TCP or QUIC connection from within the browser.
     items:
       - cardType: pullquote
         headline: Streams vs. Request-Response
