@@ -481,13 +481,6 @@ blocks:
         language: javascript
         code: ''
       - cardType: basic
-        headline: Code
-        text: ''
-        language: javascript
-        code: |-
-          const socket = new WebSocket('ws://chat.example.com/chat');
-          // TODO: show how to send some and receive some data
-      - cardType: basic
         headline: WebSocket in libp2p
         text: >
           1.  TCP handshake (1 RTT)
@@ -504,17 +497,18 @@ blocks:
           5 round trips is quite a long time for setting up a connection.
 
 
-          Unfortunately, this is not the whole story. In recent years, the web
-          has moved towards ubiquitous encryption, and browsers have started
+          Unfortunately, this is not even the whole story. In recent years, the
+          web has moved towards ubiquitous encryption, and browsers have started
           enforcing that web content is loaded via encrypted connection.
           Specifically, when on a website loaded via HTTPS, browsers will block
           plaintext WebSocket connections, and require a WebSocket Secure (wss)
           connection.
 
 
-          WebSocket Secure is Websocket that doesn’t use HTTP, but HTTPS, to do
-          the Upgrade request. That means that in addition to the 5 round trips
-          listed above, there’ll be another roundtrip for the TLS handshake.
+          A WebSocket Secure connection uses HTTPS to perform the Upgrade
+          request. That means that in addition to the 5 round trips listed
+          above, there’ll be another roundtrip for the TLS handshake, increasing
+          the handshake latency to 6 RTTs.
         language: javascript
       - cardType: basic
         headline: TLS Certificate Verification in the Browser
