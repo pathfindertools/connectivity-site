@@ -695,7 +695,7 @@ blocks:
           second option. We can encode the certificate hash into the
           multiaddress of a node, for example:
           /ip4/1.2.3.4/udp/4001/quic/webtransport/certhash/\<hash>. The browser
-          now knows about the
+          now knows the hash, and can establish a (secure!) connection.
         language: javascript
       - cardType: basic
         headline: Securing the WebTransport Connection
