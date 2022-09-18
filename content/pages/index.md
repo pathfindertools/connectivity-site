@@ -630,7 +630,8 @@ blocks:
 
 
       The protocol is brand-new, in fact, there’s not even an RFC yet: It’s
-      still under development by the IETF WebTransport Working Group and the W3C
+      still under development by the IETF [WebTransport Working
+      Group](https://datatracker.ietf.org/wg/webtrans/about/) and the W3C
       WebTransport Working Group.
     cards:
       - cardType: basic
