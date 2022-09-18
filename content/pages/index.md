@@ -423,9 +423,11 @@ blocks:
           request, and then waits for a response.
 
 
-          libp2p on the other hand deals with streams. A stream is more flexible
-          than a request-response scheme: it allows continuous bidirectional
-          communication, both parties can send and receive data at any time.
+          libp2p on the other hand is built on top of a stream abstraction. A
+          stream is more flexible than a request-response scheme: it allows
+          continuous bidirectional communication, both parties can send and
+          receive data at any time.
+        language: javascript
     navigationLabel: Browser to Standalone
     _template: textCards
   - cardStyle:
