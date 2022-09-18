@@ -521,7 +521,8 @@ blocks:
           fully automatically. LetsEncrypt is the CA that has been pioneering
           this fully automated protocol. There've been
           [proposals](https://github.com/libp2p/go-libp2p/issues/1360
-          "proposals") to use
+          "proposals") to use ACME to issue a LetsEncrypt certificate for every
+          libp2p node.
 
 
           To be able to issue the certificate, the CA needs to verify that the
@@ -543,14 +544,12 @@ blocks:
 
           *   libp2p nodes would still need to possess a domain name.
 
-          *   Using the HTTP / TLS challenge requires starting a webserver on
-          port 80 or 443. On Linux, a non-privileged user is not able to bind to
-          port smaller than 1024. It might also conflict with other processes
-          that are listening on said ports.
+          *   Using the HTTP / TLS challenge requires the node to start a
+          webserver on port 80 or 443. This might not be possible if the node is
+          running a webserver at the same time.
 
           *   The DNS challenge requires (programmatic) access to the DNS
-          records for the domain. This is not possible without special
-          configuration.
+          records for the domain, which requires special configuration.
         language: javascript
     navigationLabel: websocket
     _template: sidebarCards
