@@ -878,7 +878,7 @@ blocks:
           1.  Establishing the WebRTC connection: 1 RTT, plus the time STUN
           takes
 
-          2.  libp2p handshake: 1 RTT
+          2.  libp2p handshake (1 RTT)
 
 
           For the browser to browser use case:
@@ -887,12 +887,12 @@ blocks:
           1.  Establishing a connection to the relay: 2 - 3 RTTs (when using
           WebTransport or WebRTC), 6 RTTs (when using WebSocket)
 
-          2.  Establishing a connection to the remote node via the relay: 1 RTT
+          2.  Establishing a connection to the remote node via the relay (1 RTT)
 
           3.  Establishing the WebRTC connection: 1 RTT, plus the time STUN
           takes
 
-          4.  libp2p handshake: 1 RTT
+          4.  libp2p handshake (1 RTT)
         language: javascript
     navigationLabel: webrtc
     _template: sidebarCards
