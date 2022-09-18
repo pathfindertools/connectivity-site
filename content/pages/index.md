@@ -798,8 +798,7 @@ blocks:
     label: ''
     headline: Browser ⇄ Browser
     subhead: ''
-    body: |
-      Some content here?
+    body: ''
     navigationLabel: Browser to Browser
     _template: banner
   - cardStyle:
