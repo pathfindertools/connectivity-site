@@ -459,10 +459,25 @@ blocks:
         headline: WebSocket Upgrade
         text: >
           The browser first establishes the TCP connection and sends an HTTP
-          request: GET /chat HTTP/1.1 Host: server.example.com Upgrade:
-          websocket Connection: Upgrade The server can accept this upgrade
-          request by sending a HTTP 200 response. All bytes sent on the TCP
-          connection after this are now
+          request:&#x20;
+
+
+          GET /chat HTTP/1.1
+
+
+          Host: server.example.com
+
+
+          Upgrade: websocket
+
+
+          Connection: Upgrade
+
+
+          The server can accept this upgrade request by sending a HTTP 200
+          response. All bytes sent on the TCP connection after this are now not
+          considered part of the HTTP response anymore, but part of the
+          WebSocket connection.
         language: javascript
         code: ''
       - cardType: basic
