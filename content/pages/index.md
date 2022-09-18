@@ -448,9 +448,12 @@ blocks:
       https://res.cloudinary.com/protocolai/image/upload/v1663347583/libp2p/websocket_pbu8af.svg
     headline: WebSocket
     body: >
-      WebSocket has [been]() around for more than 10 years. It allows
-      “hijacking” of a HTTP/1.1 connection (it was later also standardized for
-      HTTP/2), giving the browser access to the underlying TCP connection.
+      WebSocket allows “hijacking” of a HTTP/1.1 connection. Later on, it was
+      later also standardized for HTTP/2.
+
+
+      After an HTTP-based "Upgrade request", the browser gains access to the
+      underlying TCP connection.
     cards:
       - cardType: basic
         headline: WebSocket Upgrade
