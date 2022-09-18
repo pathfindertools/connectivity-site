@@ -448,8 +448,8 @@ blocks:
       https://res.cloudinary.com/protocolai/image/upload/v1663347583/libp2p/websocket_pbu8af.svg
     headline: WebSocket
     body: >
-      WebSocket allows “hijacking” of a HTTP/1.1 connection. Later on, it was
-      later also [standardized for
+      [WebSocket](https://www.rfc-editor.org/rfc/rfc6455) allows “hijacking” of
+      a HTTP/1.1 connection. Later on, it was later also [standardized for
       HTTP/2](https://www.rfc-editor.org/rfc/rfc8441).
 
 
