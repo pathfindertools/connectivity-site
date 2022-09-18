@@ -666,25 +666,6 @@ blocks:
           WebTransport session.
         language: javascript
       - cardType: basic
-        headline: Code
-        text: >
-          Similar to how QUIC shines over TCP, WebTransport should be preferred
-          over WebSocket. But for libp2p, there’s one more reason to use
-          WebTransport instead of WebSocket. As we’ve seen above, browsers
-          enforce secure WebSocket connections when the website is loaded via
-          HTTPS, and this is no different when using WebTransport.
-        language: javascript
-        code: >-
-          const conf = { "serverCertificateHashes": [ { "algorithm": "sha-256",
-          "value": hash1, } ] }
-
-
-          const transport = new WebTransport('https://chat.example.com/chat',
-          conf)
-
-
-          // TODO: show how to open / accept streams and how to send data
-      - cardType: basic
         headline: Securing the WebTransport Connection
         text: >
           What does the certificate hash secure? By itself, not much. In
