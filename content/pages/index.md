@@ -684,6 +684,17 @@ blocks:
           2.  Checking that the SHA-256 [hash of the
           certificate](https://www.w3.org/TR/webtransport/#certificate-hashes)
           matches a pre-determined value.
+
+
+          The first options comes with the same problems that we encountered for
+          WebSocket: libp2p nodes usually neither have a domain name, nor do
+          they have an easy way to obtain a certificate from a CA.
+
+
+          libp2p makes use of the second option. We can encode the certificate
+          hash into the multiaddress of a node, for example:
+          /ip4/1.2.3.4/udp/4001/quic/webtransport/certhash/\<hash>. The browser
+          now knows about the
         language: javascript
       - cardType: basic
         headline: Securing the WebTransport Connection
