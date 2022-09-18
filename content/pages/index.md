@@ -839,6 +839,27 @@ blocks:
         text: "This is useful in cases where WebSocket and WebTransport are not available. In this case, we don't need to actually exchange the SDP, but only\_*pretend*\_that we did that, and actually construct the SDP from the node's advertised multiaddress(es). This saves one round-trip.\n"
         language: javascript
       - cardType: basic
+        headline: Browser to Browser
+        text: >
+          Connection one browser to another browser usually requires hole
+          punching, as browsers are usually used by people in their home or
+          corporate networks (i.e. behind their home router or a corporate
+          firewall, respectively), or on mobile devices (i.e. behind a
+          carrier-grade NAT).
+
+
+          Fortunately, WebRTC was built exactly for this use case, and provides
+          hole-punching capabilites using the ICE protocol. The browser's WebRTC
+          stack will handle this for us, as long as we manage to exchange the
+          SDP in the first place. We use a special WebRTC coordination protocol
+          run over relayed connections to do that.
+
+
+          In order to establish a relayed connection, we first need to connect
+          to a relay node. Since the relay server will be a public node, we can
+          use WebSocket, WebTransport or WebRTC for that purpose.
+        language: javascript
+      - cardType: basic
         headline: Securing the WebRTC Connection
         text: >
           As WebRTC is built to facilitate video conferencing between browsers,
