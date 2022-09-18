@@ -178,8 +178,9 @@ blocks:
     headline: ''
     subhead: QUIC
     body: >
-      QUIC is a new UDP-based transport protocol. QUIC connections are always
-      encrypted (using TLS 1.3) and provides native stream multiplexing.
+      [QUIC](https://datatracker.ietf.org/doc/html/rfc9000) is a new UDP-based
+      transport protocol. QUIC connections are always encrypted (using TLS 1.3)
+      and provides native stream multiplexing.
 
 
       Whenever possible, QUIC should be preferred over TCP. Not only is it
