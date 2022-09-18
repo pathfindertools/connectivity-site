@@ -449,7 +449,8 @@ blocks:
     headline: WebSocket
     body: >
       WebSocket allows “hijacking” of a HTTP/1.1 connection. Later on, it was
-      later also standardized for HTTP/2.
+      later also [standardized for
+      HTTP/2](https://www.rfc-editor.org/rfc/rfc8441).
 
 
       After an HTTP-based "Upgrade request", the browser gains access to the
