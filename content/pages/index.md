@@ -636,6 +636,11 @@ blocks:
       still under development by the [IETF WebTransport Working
       Group](https://datatracker.ietf.org/wg/webtrans/about/) and the [W3C
       WebTransport Working Group](https://www.w3.org/groups/wg/webtransport).
+
+
+      WebTransport is interesting for libp2p, because in contrast with
+      WebSocket, there's a way around the strict certificate requirements,
+      allowing the use in a p2p setting.
     cards:
       - cardType: basic
         headline: WebTransport Upgrade
