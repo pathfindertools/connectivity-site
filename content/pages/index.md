@@ -407,7 +407,13 @@ blocks:
       for HTTP/1.1 and HTTP/2, or a QUIC connection for HTTP/3. To keep their
       users secure, they enforce strict rules, like certificate requirements and
       blocking of cross-origin policies. For security reasons, it's not possible
-      to gain access to the raw TCP or QUIC connection from within the browser.
+      to dial a raw TCP or QUIC connection from within the browser.
+
+
+      Traditionally, WebSocket could be used to gain access to the underlying to
+      the underlying TCP connection, after a so-called WebSocket Upgrade.
+      Similarly, WebTransport aims to allow access to the underlying QUIC
+      connection for HTTP/3.
     items:
       - cardType: pullquote
         headline: Streams vs. Request-Response
