@@ -625,7 +625,7 @@ blocks:
       https://res.cloudinary.com/protocolai/image/upload/v1663347588/libp2p/webtransport_ko6iua.svg
     headline: WebTransport
     body: >
-      While WebSockets allows the browser to “hijack” a TCP connection,
+      While WebSocket allows the browser to “hijack” a TCP connection,
       WebTransport does the same thing with a QUIC connection.
 
 
