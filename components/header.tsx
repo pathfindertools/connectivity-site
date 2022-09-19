@@ -54,23 +54,28 @@ const Dropdown = ({item}) => {
   );
 }
 
-const MobileSub = ({item, className}) => {
+const MobileSub = ({item, className, closeNav }) => {
   const ref = useRef(null);
   const [ isOpen, setIsOpen] = useState(false);
+
+  const clickNav = () => {
+    setIsOpen(false)
+    closeNav(false)
+  }
   return (
     <li>
       <div className={`w-full bg-white h-px opacity-25`} />
       <a className="block leading-8 py-4 no-underline cursor-pointer select-none" onClick={() => setIsOpen(true)}>
         {item.label}
         <svg className="relative inline-block w-3 h-3 ml-1.5 -top-px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-          <path fill="#ffffff" d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"/>
+          <path fill="#000000" d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"/>
         </svg>
       </a>
       {/* {isOpen && ( */}
-        <div className={`${className} fixed inset-0 transition-all transform ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0 pointer-events-none'}`} >
+        <div className={`${className} absolute z-20 inset-0 transition-all transform ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0 pointer-events-none'}`} >
           <a className="block p-4 leading-8 mb-1" onClick={() => setIsOpen(false)}>
             <svg className="inline-block w-3 h-3 mr-1 relative -top-px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <path fill="#ffffff" d="M447.1 256C447.1 273.7 433.7 288 416 288H109.3l105.4 105.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H416C433.7 224 447.1 238.3 447.1 256z"/>
+              <path fill="#000000" d="M447.1 256C447.1 273.7 433.7 288 416 288H109.3l105.4 105.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H416C433.7 224 447.1 238.3 447.1 256z"/>
             </svg>
             Back
           </a>
@@ -79,7 +84,7 @@ const MobileSub = ({item, className}) => {
               return (
                 <li key={index}>
                   <div className={`bg-white h-px opacity-25`} />
-                  <a className={"block no-underline whitespace-nowrap leading-8 py-4"} href={subItem.link} target={linkTarget(subItem.link)}>{subItem.label}</a>
+                  <a className={"block no-underline whitespace-nowrap leading-8 py-4"} href={subItem.link} target={linkTarget(subItem.link)} onClick={() => clickNav()}>{subItem.label}</a>
                 </li>
               )
             })}
@@ -157,7 +162,9 @@ export const Header = ({
     const hasLogoImage = globalData.logo?.image;
     if (hasLogoImage) {
       return (
-        <img className={props.className} src={globalData.logo?.image} width={globalData.logo?.imageWidth} height={globalData.logo?.imageHeight} style={logoStyles} alt={globalData.logo?.logoType || "logo"} />
+        <a href="/">
+          <img className={props.className} src={globalData.logo?.image} width={globalData.logo?.imageWidth} height={globalData.logo?.imageHeight} style={logoStyles} alt={globalData.logo?.logoType || "logo"} />
+        </a>
       );
     }
     return (
@@ -215,7 +222,7 @@ export const Header = ({
             <Logo className="absolute top-4 left-4 hidden" />
             <div className="absolute top-3 -right-2">
               <div className={`py-1 pl-2 pr-6 rounded ${nav.navBackgroundColor}`} onClick={() => setNavOpen(!navOpen)}>
-                <Burger color="white" isOpen={navOpen}  />
+                <Burger color="black" isOpen={navOpen}  />
               </div>
 
             </div>
@@ -238,7 +245,7 @@ export const Header = ({
                   const subNavItems = item.subNavItems || null
                   if (subNavItems) {
                     return (
-                      <MobileSub item={item} className={nav.navBackgroundColor} key={index} />
+                      <MobileSub item={item} className={nav.navBackgroundColor} closeNav={setNavOpen} key={index} />
                     )
                   } else {
                     return (
