@@ -64,8 +64,8 @@ blocks:
       navColor: accent1
       labelStyles: 'text-black undefined undefined undefined '
       headlineStyles: 'text-black font-1 text-3xl mb-5 '
-      subheadStyles: text-black font-1 text-3xl mb-5 font-bold
-      textStyles: 'text-black font-2 text-lg mb-14 '
+      subheadStyles: text-black font-1 text-2xl mb-5 font-bold
+      textStyles: 'text-black font-2 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1663347575/libp2p/tpc_kku6wb.svg
     headline: ''
@@ -173,8 +173,8 @@ blocks:
       navColor: accent2
       labelStyles: 'text-black undefined undefined undefined '
       headlineStyles: 'text-black font-1 text-3xl mb-5 '
-      subheadStyles: text-black font-1 text-3xl mb-5 font-bold
-      textStyles: 'text-black font-2 text-lg mb-14 '
+      subheadStyles: text-black font-1 text-2xl mb-5 font-bold
+      textStyles: 'text-black font-2 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1663347570/libp2p/quic_yhwi6l.svg
     headline: ''
@@ -281,8 +281,8 @@ blocks:
       navColor: accent3
       labelStyles: 'text-black undefined undefined undefined '
       headlineStyles: 'text-black font-1 text-3xl mb-5 '
-      subheadStyles: text-black font-1 text-3xl mb-5 font-bold
-      textStyles: 'text-black font-2 text-lg mb-14 '
+      subheadStyles: text-black font-1 text-2xl mb-5 font-bold
+      textStyles: 'text-black font-2 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1663347566/libp2p/hole-punching_gbdmww.svg
     headline: ''
@@ -450,11 +450,12 @@ blocks:
       navColor: primary
       labelStyles: 'text-black undefined undefined undefined '
       headlineStyles: text-black font-1 text-3xl mb-5 font-bold
-      subheadStyles: text-black font-1 text-3xl mb-5 font-bold
-      textStyles: 'text-black font-2 text-lg mb-14 '
+      subheadStyles: text-black font-1 text-2xl mb-5 font-bold
+      textStyles: 'text-black font-2 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1663347583/libp2p/websocket_pbu8af.svg
-    headline: WebSocket
+    headline: ''
+    subhead: WebSocket
     body: >
       [WebSocket](https://www.rfc-editor.org/rfc/rfc6455) allows “hijacking” of
       a HTTP/1.1 connection. Later on, it was later also [standardized for
@@ -620,11 +621,12 @@ blocks:
       navColor: accent1
       labelStyles: 'text-black undefined undefined undefined '
       headlineStyles: text-black font-1 text-3xl mb-5 font-bold
-      subheadStyles: text-black font-1 text-3xl mb-5 font-bold
-      textStyles: 'text-black font-2 text-lg mb-14 '
+      subheadStyles: text-black font-1 text-2xl mb-5 font-bold
+      textStyles: 'text-black font-2 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1663347588/libp2p/webtransport_ko6iua.svg
-    headline: WebTransport
+    headline: ''
+    subhead: WebTransport
     body: >
       While WebSocket allows the browser to “hijack” a TCP connection,
       WebTransport does the same thing with a QUIC connection.
@@ -803,8 +805,8 @@ blocks:
       navColor: accent2
       labelStyles: 'text-black undefined undefined undefined '
       headlineStyles: 'text-black font-1 text-3xl mb-5 '
-      subheadStyles: text-black font-1 text-3xl mb-5 font-bold
-      textStyles: 'text-black font-2 text-lg mb-14 '
+      subheadStyles: text-black font-1 text-2xl mb-5 font-bold
+      textStyles: 'text-black font-2 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1663347579/libp2p/webrtc_agqcgn.svg
     headline: ''
