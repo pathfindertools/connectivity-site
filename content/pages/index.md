@@ -121,22 +121,24 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-20 pr-20 pb-20 pl-20
+      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
-      columns: '3'
-      labelStyles: text-black font-1 text-sm mb-0
-      headlineStyles: text-black font-1 text-5xl mb-0
-      subheadStyles: text-black font-1 text-3xl mb-0
-      textStyles: text-black font-1 text-md mb-0
+      columns: '2'
+      labelStyles: 'text-black font-1 text-base mb-0 '
+      headlineStyles: 'text-black font-2 text-2xl mb-1 '
+      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
+      textStyles: 'text-black font-1 text-base mb-10 '
       contentOrder: labelHeadingsContent
     cardStyle:
-      fillStyles: bg-gray
-      padding: pt-4 pr-4 pb-4 pl-4
-      borderStyles: border-gray
-      labelStyles: text-black font-1 text-sm mb-0
-      headlineStyles: text-black font-1 text-2xl mb-0
-      subheadStyles: text-black font-1 text-md mb-0
-      textStyles: text-black font-1 text-sm mb-0
+      fillStyles: bg-white
+      padding: pt-8 pb-8 pr-8 pl-8
+      type: solid
+      borderStyles: border-gray undefined-0
+      labelStyles: 'text-black font-1 text-sm mb-0 '
+      headlineStyles: text-black font-2 text-lg mb-3 font-bold
+      subheadStyles: 'text-black font-1 undefined mb-0 '
+      textStyles: 'text-gray-dark font-2 text-base mb-0 '
+      buttonType: primary
     label: ''
     headline: ''
     subhead: ''
@@ -227,22 +229,24 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-20 pr-20 pb-20 pl-20
+      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
-      columns: '3'
-      labelStyles: text-black font-1 text-sm mb-0
-      headlineStyles: text-black font-1 text-5xl mb-0
-      subheadStyles: text-black font-1 text-3xl mb-0
-      textStyles: text-black font-1 text-md mb-0
+      columns: '2'
+      labelStyles: 'text-black font-1 text-base mb-0 '
+      headlineStyles: 'text-black font-2 text-2xl mb-1 '
+      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
+      textStyles: 'text-black font-1 text-base mb-10 '
       contentOrder: labelHeadingsContent
     cardStyle:
-      fillStyles: bg-gray
-      padding: pt-4 pr-4 pb-4 pl-4
-      borderStyles: border-gray
-      labelStyles: text-black font-1 text-sm mb-0
-      headlineStyles: text-black font-1 text-2xl mb-0
-      subheadStyles: text-black font-1 text-md mb-0
-      textStyles: text-black font-1 text-sm mb-0
+      fillStyles: bg-white
+      padding: pt-8 pb-8 pr-8 pl-8
+      type: solid
+      borderStyles: border-gray undefined-0
+      labelStyles: 'text-black font-1 text-sm mb-0 '
+      headlineStyles: text-black font-2 text-lg mb-3 font-bold
+      subheadStyles: 'text-black font-1 undefined mb-0 '
+      textStyles: 'text-gray-dark font-2 text-base mb-0 '
+      buttonType: primary
     label: ''
     headline: ''
     subhead: ''
@@ -348,22 +352,24 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-20 pr-20 pb-20 pl-20
+      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
-      columns: '3'
-      labelStyles: text-black font-1 text-sm mb-0
-      headlineStyles: text-black font-1 text-5xl mb-0
-      subheadStyles: text-black font-1 text-3xl mb-0
-      textStyles: text-black font-1 text-md mb-0
+      columns: '2'
+      labelStyles: 'text-black font-1 text-base mb-0 '
+      headlineStyles: 'text-black font-2 text-2xl mb-1 '
+      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
+      textStyles: 'text-black font-1 text-base mb-10 '
       contentOrder: labelHeadingsContent
     cardStyle:
-      fillStyles: bg-gray
-      padding: pt-4 pr-4 pb-4 pl-4
-      borderStyles: border-gray
-      labelStyles: text-black font-1 text-sm mb-0
-      headlineStyles: text-black font-1 text-2xl mb-0
-      subheadStyles: text-black font-1 text-md mb-0
-      textStyles: text-black font-1 text-sm mb-0
+      fillStyles: bg-white
+      padding: pt-8 pb-8 pr-8 pl-8
+      type: solid
+      borderStyles: border-gray undefined-0
+      labelStyles: 'text-black font-1 text-sm mb-0 '
+      headlineStyles: text-black font-2 text-lg mb-3 font-bold
+      subheadStyles: 'text-black font-1 undefined mb-0 '
+      textStyles: 'text-gray-dark font-2 text-base mb-0 '
+      buttonType: primary
     label: ''
     headline: ''
     subhead: ''
@@ -462,27 +468,19 @@ blocks:
         headline: WebSocket Upgrade
         text: >
           The browser first establishes the TCP connection and sends an HTTP
-          request:&#x20;
-
-
-          GET /chat HTTP/1.1
-
-
-          Host: server.example.com
-
-
-          Upgrade: websocket
-
-
-          Connection: Upgrade
+          request.
 
 
           The server can accept this upgrade request by sending a HTTP 200
           response. All bytes sent on the TCP connection after this are now not
           considered part of the HTTP response anymore, but part of the
           WebSocket connection.
-        language: javascript
-        code: ''
+        language: html
+        code: |
+          GET /chat HTTP/1.1
+          Host: server.example.com
+          Upgrade: websocket
+          Connection: Upgrade
       - cardType: basic
         headline: WebSocket in libp2p
         text: >
@@ -650,26 +648,18 @@ blocks:
           proposed a WebTransport Session ID.
 
 
-          HEADERS
-
-
-          *   method: CONNECT
-
-          *   protocol: webtransport
-
-          *   scheme: https
-
-          *   authority: https://chat.example.com
-
-          *   path: /chat
-
-          *   Origin: mywebsite.com
-
-
           The server can accept the upgrade by sending a HTTP 200 OK response.
           Both endpoints can now open QUIC streams associated with this
           WebTransport session.
         language: javascript
+        code: |
+          HEADERS
+          method: CONNECT
+          protocol: webtransport
+          scheme: https
+          authority: https://chat.example.com
+          path: /chat
+          Origin: mywebsite.com
       - cardType: basic
         headline: Certificate Hashes
         subhead: ''
