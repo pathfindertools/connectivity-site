@@ -6,19 +6,7 @@ import { getStyleMatch } from './widgets/helpers'
 
 export default function ColorControl({ field, input, meta }) {
   const inputRef = useRef<HTMLInputElement>(null);
-  const colors = [
-    { label: "Primary", value: "bg-primary"},
-    { label: "Accent 1", value: "bg-accent1"},
-    { label: "Accent 2", value: "bg-accent2"},
-    { label: "Accent 3", value: "bg-accent3"},
-    { label: "Accent 4", value: "bg-accent4"},
-    { label: "White", value: "bg-white"},
-    { label: "Gray Light", value: "bg-gray-light"},
-    { label: "Gray", value: "bg-gray"},
-    { label: "Gray Dark", value: "bg-gray-dark"},
-    { label: "Black", value: "bg-black"},
-  ]
-  const [color, setColor] = useState(getStyleMatch(colors, input.value) || "white");
+  const [color, setColor] = useState(input.value);
 
   useEffect(() => {
     // Update Hidden Field
