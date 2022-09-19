@@ -25,7 +25,7 @@ blocks:
       networks.
     buttons:
       - label: Chat With Developers
-        link: /
+        link: 'https://filecoin.io/slack'
         type: primary
     _template: feature
   - style:
