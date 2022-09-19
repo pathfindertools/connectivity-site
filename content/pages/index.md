@@ -71,7 +71,7 @@ blocks:
     headline: ''
     subhead: TCP
     body: >
-      TCP was delevoped in the 1970s, and carried, up to the introduction of
+      TCP was developed in the 1970s, and carried, up to the introduction of
       QUIC (see next section), the vast majority of traffic on the internet. It
       was also the first transport that was adopted in libp2p.
     cards:
@@ -522,9 +522,9 @@ blocks:
         text: >
           ACME is a protocol which allows a server to obtain a certificate from
           a CA without any manual involvement. There've been
-          [proposals](https://github.com/libp2p/go-libp2p/issues/1360
-          "proposals") to use ACME to issue a [Let's
-          Encrypt](https://letsencrypt.org/) certificate for every libp2p node.
+          [proposals](https://github.com/libp2p/go-libp2p/issues/1360) to use
+          ACME to issue a [Let's Encrypt](https://letsencrypt.org/) certificate
+          for every libp2p node.
 
 
           To be able to issue the certificate, the CA needs to verify that the
@@ -694,7 +694,7 @@ blocks:
           [libp2p makes use](https://github.com/libp2p/specs/pull/404) of the
           second option. We can encode the certificate hash into the
           multiaddress of a node, for example:
-          */ip4**/1.2.3.4**/udp**/4001**/quic**/webtransport**/certhash**/\<hash>*.
+          */ip4*\*/1.2.3.4\*\*/udp\*\*/4001\*\*/quic\*\*/webtransport\*\*/certhash\*\*/\<hash>\*.
           The browser now knows the hash, and can establish a (secure!)
           connection.
         language: javascript
