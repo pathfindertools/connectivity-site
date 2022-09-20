@@ -418,7 +418,10 @@ blocks:
       for HTTP/1.1 and HTTP/2, or a QUIC connection for HTTP/3. To keep their
       users secure, they enforce strict rules, like certificate requirements and
       blocking of cross-origin policies. For security reasons, it's not possible
-      to dial a raw TCP or QUIC connection from within the browser.
+      for a browser to dial a raw TCP or QUIC connection from within the
+      browser, and all connections have to meet [Secure
+      Context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure\_Contexts)
+      requirements such as messages delivered over TLS.
 
 
       Traditionally, WebSocket could be used to gain access to the underlying to
