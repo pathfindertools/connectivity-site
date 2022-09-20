@@ -46,7 +46,7 @@ blocks:
       without being constrained by for example a browser environment. Examples
       are applications using [go-libp2p](https://github.com/libp2p/go-libp2p),
       [rust-libp2p](https://github.com/libp2p/rust-libp2p) or
-      [js-libp2p](https://github.com/libp2p/js-libp2p).
+      [js-libp2p](https://github.com/libp2p/js-libp2p) (when using Node.js).
 
 
       If a node is any node running in a data centers, or on a dedicated
