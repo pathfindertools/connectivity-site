@@ -87,9 +87,10 @@ blocks:
           1.  Dial a TCP connection to the remote node and perform the
           3-way-handshake
 
-          2.  Negotiate a security protocol (Noise or TLS 1.3), and then perform
-          the chosen cryptographic handshake. The connection is now encrypted
-          and the peers have verified each others' peer IDs.
+          2.  Negotiate a security protocol
+          ([Noise](https://github.com/libp2p/js-libp2p) or TLS 1.3), and then
+          perform the chosen cryptographic handshake. The connection is now
+          encrypted and the peers have verified each others' peer IDs.
 
           3.  Apply a stream multiplexer (yamux or mplex).
 
