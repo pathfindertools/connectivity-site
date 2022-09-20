@@ -45,7 +45,7 @@ blocks:
       Standalone nodes are libp2p nodes that run directly on their host machine,
       without being constrained by for example a browser environment. Examples
       are applications using [go-libp2p](https://github.com/libp2p/go-libp2p),
-      rust-libp2p or node.js-libp2p.
+      [rust-libp2p](https://github.com/libp2p/rust-libp2p) or node.js-libp2p.
 
 
       If a node is any node running in a data centers, or on a dedicated
