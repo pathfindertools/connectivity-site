@@ -88,9 +88,9 @@ blocks:
           3-way-handshake
 
           2.  Negotiate a security protocol ([Noise](https://noiseprotocol.org)
-          or TLS 1.3), and then perform the chosen cryptographic handshake. The
-          connection is now encrypted and the peers have verified each others'
-          peer IDs.
+          or [TLS 1.3](https://datatracker.ietf.org/doc/rfc8446)), and then
+          perform the chosen cryptographic handshake. The connection is now
+          encrypted and the peers have verified each others' peer IDs.
 
           3.  Apply a stream multiplexer (yamux or mplex).
 
