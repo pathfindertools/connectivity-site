@@ -719,7 +719,7 @@ blocks:
 
           This handshake is only run on a single stream. As soon as the
           handshake completes, we can use raw WebTransport streams in libp2p -
-          there is need for any double encryption.
+          there is no need for any double encryption.
         language: javascript
       - cardType: basic
         headline: Counting Round Trips
