@@ -706,7 +706,7 @@ blocks:
           to know the client’s peer ID.
 
 
-          libp2p therefore run a Noise handshake on top of the first
+          libp2p therefore runs a Noise handshake on top of the first
           WebTransport stream. This handshake serves two purposes:
 
 
