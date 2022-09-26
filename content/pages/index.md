@@ -37,7 +37,7 @@ blocks:
       involved!
     buttons:
       - label: Chat With Developers
-        link: 'https://filecoin.io/slack'
+        link: 'https://libp2p.io/#community'
         type: primary
     _template: feature
   - style:
