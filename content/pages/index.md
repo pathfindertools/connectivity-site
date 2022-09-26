@@ -18,11 +18,22 @@ blocks:
     label: ''
     headline: libp2p Connectivity
     subhead: >-
-      Depending on their positions in the network, nodes use different transport
-      protocols to connect to other nodes.
+      By supporting a wide range of transport protocols, libp2p enables
+      universal connectivity between nodes across different network positions.
     body: >
-      Learn more about how libp2p achieves universal connectivity across
-      networks.
+      A primary goal of the libp2p project is universal connectivity. However,
+      actually achieving this is difficult and complex. Nodes may run on host
+      machines or in browsers; they may be publically reachable or private.
+
+
+      Thus, connectivity across these barriers has been historically out of
+      reach.
+
+
+      For developers using libp2p to build an application, we hope this site
+      will help you learn more about how libp2p achieves universal connectivity
+      across networks, how it will improve in the future, and how you can get
+      involved!
     buttons:
       - label: Chat With Developers
         link: 'https://filecoin.io/slack'
