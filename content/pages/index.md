@@ -981,6 +981,13 @@ blocks:
           rust-libp2p: working on the implementation
 
           js-libp2p: working on the implementation
+
+          Chrome: ✔
+
+          Firefox: ✔
+
+          Safari: ✔
+        language: javascript
       - cardType: pullquote
         headline: Get involved
         text: >
