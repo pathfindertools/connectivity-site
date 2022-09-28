@@ -460,6 +460,13 @@ blocks:
     headline: Browser → Standalone Node
     subhead: ''
     body: >
+      Enabling users and app developers to run fully functioning nodes in the
+      browser has been a goal of the libp2p project for some time. Yet seamless
+      connectivity had been out of reach until significant changes in browsers
+      as of late. Here we outline existing ways of establishing connectivity and
+      modern advances such as WebTransport.
+
+
       Browsers mostly use HTTP(S), making use of an underlying TCP connection
       for HTTP/1.1 and HTTP/2, or a QUIC connection for HTTP/3. To keep their
       users secure, they enforce strict rules, like certificate requirements and
