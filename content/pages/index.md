@@ -333,15 +333,20 @@ blocks:
     headline: ''
     subhead: Hole Punching
     body: >
-      Not all nodes are located in a publicly reachable position. Nodes in home
-      and in corporate networks are usually separated from the public internet
-      by a NAT or a firewalls. Mobile phones are usually behind a so-called
-      carrier-grade NAT.
+      TCP and QUIC by themselves are enough for establishing communication
+      between public nodes; however, not all nodes are located in a publicly
+      reachable position. Nodes in home or corporate networks are private and
+      usually separated from the public internet by a NAT or a firewall. Mobile
+      phones are also usually behind a so-called "carrier-grade NAT".
 
 
-      Nodes behind firewalls / NATs can dial any node on the public internet,
-      but they cannot receive incoming connections from outside their local
-      network.
+      Nodes behind firewalls/NATs can dial any node on the public internet, but
+      they cannot receive incoming connections from outside their local network.
+
+
+      Therefore, we introduced a [novel decentralized hole punching
+      mechanism](https://blog.ipfs.tech/2022-01-20-libp2p-hole-punching/) in
+      libp2p to enable connectivity between public and private nodes.
     cards:
       - cardType: basic
         headline: libp2p Relays
