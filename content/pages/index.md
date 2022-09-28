@@ -88,8 +88,7 @@ blocks:
       Node.js).
 
 
-
-      Furthermore, if a node is one running in a data center, or on a dedicated
+      Furthermore, if a node is running in a data center, or on a dedicated
       connection, without any router, NAT, or firewall in between, we call it a
       "**public node**". Public nodes use TCP and QUIC to connect to each other.
     navigationLabel: Standalone to Standalone
