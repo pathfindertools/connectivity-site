@@ -115,7 +115,9 @@ blocks:
     body: >
       TCP was developed in the 1970s, and carried, up to the introduction of
       QUIC (see next section), the vast majority of traffic on the internet. It
-      was also the first transport that was adopted in libp2p.
+      was also the first transport that was adopted in libp2p. To learn why it
+      is not supported in browsers, see the Browser → Standalone Node section
+      further below.
     cards:
       - cardType: basic
         headline: TCP in libp2p
