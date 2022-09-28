@@ -80,16 +80,18 @@ blocks:
     headline: Standalone Node ⇄ Standalone Node
     subhead: ''
     body: >
-      Standalone nodes are libp2p nodes that run directly on their host machine,
+      This type of connectivity first established as a part of ARPANET and is
+      the most widely used across computer networks. For our purposes, we define
+      standalone nodes as libp2p nodes that run directly on their host machine,
       without being constrained by for example a browser environment. Examples
-      are applications using [go-libp2p](https://github.com/libp2p/go-libp2p),
-      [rust-libp2p](https://github.com/libp2p/rust-libp2p) or
-      [js-libp2p](https://github.com/libp2p/js-libp2p) (when using Node.js).
+      are applications using go-libp2p, rust-libp2p or js-libp2p (when using
+      Node.js).
 
 
-      If a node is any node running in a data centers, or on a dedicated
-      connection, without any router / NAT / firewall in between, we call it a
-      "public node". Public nodes use TCP and QUIC to connect to each other.
+
+      Furthermore, if a node is one running in a data center, or on a dedicated
+      connection, without any router, NAT, or firewall in between, we call it a
+      "**public node**". Public nodes use TCP and QUIC to connect to each other.
     navigationLabel: Standalone to Standalone
     _template: banner
   - cardStyle:
