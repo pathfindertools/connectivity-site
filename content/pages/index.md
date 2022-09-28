@@ -821,7 +821,8 @@ blocks:
     items:
       - cardType: pullquote
         headline: Support
-        text: "go-libp2p: ⏱\_(work in progress)\n\nrust-libp2p: ❌\n\nnode.js-libp2p: ❌\n\nChrome: ✔️\_\n\nFirefox: ⏱\_(work in progress, TODO: link to issue)\n\nSafari: ❌\_(status unknown)\n"
+        text: "go-libp2p: ⏱\_(work in progress)\n\nrust-libp2p: ❌\n\nnode.js-libp2p: ❌\n\nChrome: ✔️\_\n\nFirefox: ⏱\_(work in progress. [Issue tracked here.](https://bugzilla.mozilla.org/show\\_bug.cgi?id=1709355))\n\nSafari: ❌\_(status unknown)\n"
+        language: javascript
       - cardType: pullquote
         headline: Get Involved
         text: >
