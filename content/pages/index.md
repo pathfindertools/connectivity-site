@@ -344,8 +344,8 @@ blocks:
 
 
       Therefore, we introduced a [novel decentralized hole punching
-      mechanism](https://blog.ipfs.tech/2022-01-20-libp2p-hole-punching/) in
-      libp2p to enable connectivity between public and private nodes.
+      mechanism](https://research.protocol.ai/publications/decentralized-hole-punching/
+      "") in libp2p to enable connectivity between public and private nodes.
     cards:
       - cardType: basic
         headline: libp2p Relays
