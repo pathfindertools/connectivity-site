@@ -931,6 +931,14 @@ fragment PagesParts on Pages {
       rule2
       navigationLabel
     }
+    ... on PagesBlocksSupport {
+      possible
+      notPossible
+      workInProgress
+      workNotStarted
+      headline
+      body
+    }
   }
   meta {
     __typename

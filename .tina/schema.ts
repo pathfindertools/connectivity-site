@@ -8,6 +8,7 @@ import { embedBlockSchema } from "./embed";
 import { tailwindFeatureBlockSchema } from "./tailwind-feature";
 import { tailwindCardsBlockSchema } from "./tailwind-cards";
 import { sidebarCardsBlockSchema } from "./sidebar-cards";
+import { supportBlockSchema } from "./support";
 
 export default defineSchema({
   collections: [
@@ -39,7 +40,8 @@ export default defineSchema({
             embedBlockSchema,
             tailwindFeatureBlockSchema,
             tailwindCardsBlockSchema,
-            sidebarCardsBlockSchema
+            sidebarCardsBlockSchema,
+            supportBlockSchema
           ],
         },
         {

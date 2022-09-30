@@ -66,33 +66,6 @@ blocks:
     subhead: ''
     body: ''
     _template: textCards
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
-      padding: 'pt-20 pb-10 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
-      width: normal
-      labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: text-black font-1 text-3xl mb-7 font-bold
-      subheadStyles: 'text-black font-1 text-3xl mb-0 '
-      textStyles: 'text-black font-2 text-lg mb-0 '
-      contentOrder: labelHeadingsContent
-    label: ''
-    headline: Standalone Node ⇄ Standalone Node
-    subhead: ''
-    body: >
-      This type of connectivity first established as a part of ARPANET and is
-      the most widely used across computer networks. For our purposes, we define
-      standalone nodes as libp2p nodes that run directly on their host machine,
-      without being constrained by for example a browser environment. Examples
-      are applications using go-libp2p, rust-libp2p or js-libp2p (when using
-      Node.js).
-
-
-      Furthermore, if a node is running in a data center, or on a dedicated
-      connection, without any router, NAT, or firewall in between, we call it a
-      "**public node**". Public nodes use TCP and QUIC to connect to each other.
-    navigationLabel: Standalone to Standalone
-    _template: banner
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
@@ -162,49 +135,20 @@ blocks:
         language: javascript
     navigationLabel: tcp
     _template: sidebarCards
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
-      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
-      contentWidth: w-full
-      columns: '2'
-      labelStyles: 'text-black font-1 text-base mb-0 '
-      headlineStyles: 'text-black font-2 text-2xl mb-1 '
-      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-black font-1 text-base mb-10 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      fillStyles: bg-white
-      padding: pt-8 pb-8 pr-8 pl-8
-      type: solid
-      borderStyles: border-gray undefined-0
-      labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: text-black font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-black font-1 undefined mb-0 '
-      textStyles: 'text-gray-dark font-2 text-base mb-0 '
-      buttonType: primary
-    label: ''
-    headline: ''
-    subhead: ''
-    body: ''
-    items:
-      - cardType: pullquote
-        headline: Support
-        subhead: ''
-        text: |
-          go-libp2p: ✔
-
-          rust-libp2p: ✔
-
-          node.js-libp2p: ✔
-
-          Chrome: ❌ (not possible)
-
-          Firefox: ❌ (not possbile)
-
-          Safari: ❌ (not possible)
-        language: javascript
-    _template: textCards
+  - possible: |
+      *   go-libp2p
+      *   rust-libp2p
+      *   node.js-libp2p
+    notPossible: |
+      *   Chrome
+      *   Firefox
+      *   Safari
+    workInProgress: ''
+    workNotStarted: ''
+    headline: Get Involved
+    body: |
+      This is a very new protocol, and we can use your help.
+    _template: support
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
@@ -270,49 +214,19 @@ blocks:
         language: javascript
     navigationLabel: quic
     _template: sidebarCards
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
-      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
-      contentWidth: w-full
-      columns: '2'
-      labelStyles: 'text-black font-1 text-base mb-0 '
-      headlineStyles: 'text-black font-2 text-2xl mb-1 '
-      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-black font-1 text-base mb-10 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      fillStyles: bg-white
-      padding: pt-8 pb-8 pr-8 pl-8
-      type: solid
-      borderStyles: border-gray undefined-0
-      labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: text-black font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-black font-1 undefined mb-0 '
-      textStyles: 'text-gray-dark font-2 text-base mb-0 '
-      buttonType: primary
-    label: ''
+  - possible: |
+      *   go-libp2
+      *   node.js-libp2p
+    notPossible: |
+      *   Chrome
+      *   Firefox
+      *   Safari
+    workInProgress: |
+      *   rust-libp2p
+    workNotStarted: ''
     headline: ''
-    subhead: ''
     body: ''
-    items:
-      - cardType: pullquote
-        headline: Support
-        subhead: ''
-        text: |
-          go-libp2p: ✔
-
-          rust-libp2p: ⏱ (work in progress)
-
-          node.js-libp2p: ❌
-
-          Chrome: ❌ (not possible)
-
-          Firefox: ❌ (not possible)
-
-          Safari: ❌ (not possible)
-        language: javascript
-    _template: textCards
+    _template: support
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
@@ -398,43 +312,21 @@ blocks:
         language: javascript
     navigationLabel: hole-punching
     _template: sidebarCards
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
-      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
-      contentWidth: w-full
-      columns: '2'
-      labelStyles: 'text-black font-1 text-base mb-0 '
-      headlineStyles: 'text-black font-2 text-2xl mb-1 '
-      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-black font-1 text-base mb-10 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      fillStyles: bg-white
-      padding: pt-8 pb-8 pr-8 pl-8
-      type: solid
-      borderStyles: border-gray undefined-0
-      labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: text-black font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-black font-1 undefined mb-0 '
-      textStyles: 'text-gray-dark font-2 text-base mb-0 '
-      buttonType: primary
-    label: ''
-    headline: ''
-    subhead: ''
-    body: ''
-    items:
-      - cardType: pullquote
-        headline: Support
-        subhead: ''
-        text: |
-          go-libp2p: ✔
+  - possible: |
+      go-libp2p
 
-          rust-libp2p: ✔
+      rust-libp2p
 
-          node.js-libp2p: ✔
-        language: javascript
-    _template: textCards
+      js-libp2p
+    notPossible: ''
+    workInProgress: ''
+    workNotStarted: ''
+    headline: Further Reading
+    body: |
+      DINPS Paper
+
+      Circuit v2 Spec
+    _template: support
   - style:
       textAlignment: text-left
       minHeight: min-h-0
@@ -613,61 +505,27 @@ blocks:
         language: javascript
     navigationLabel: websocket
     _template: sidebarCards
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
-      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
-      contentWidth: w-full
-      columns: '2'
-      labelStyles: 'text-black font-1 text-base mb-0 '
-      headlineStyles: 'text-black font-2 text-2xl mb-1 '
-      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-black font-1 text-base mb-10 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      fillStyles: bg-white
-      padding: pt-8 pb-8 pr-8 pl-8
-      type: solid
-      borderStyles: border-gray undefined-0
-      labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: text-black font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-black font-1 undefined mb-0 '
-      textStyles: 'text-gray-dark font-2 text-base mb-0 '
-      buttonType: primary
-    label: ''
-    headline: ''
-    subhead: ''
-    body: ''
-    items:
-      - cardType: pullquote
-        headline: Support
-        text: |
-          go-libp2p: ✔
-
-          rust-libp2p: ✔
-
-          node.js-libp2p: ???
-
-          Chrome: ✔
-
-          Firefox: ✔
-
-          Safari: ✔
-        language: javascript
-      - cardType: pullquote
-        headline: Get involved!
-        text: >
-          There are solutions to assign certificates to a fleet of nodes, see
-          for example
-          [https://words.filippo.io/how-plex-is-doing-https-for-all-its-users/](https://words.filippo.io/how-plex-is-doing-https-for-all-its-users/).
+  - possible: |
+      *   go-libp2p
+      *   rust-libp2p
+      *   Chrome
+      *   Firefox
+      *   Safari
+    notPossible: ''
+    workInProgress: |
+      *   node.js-libp2p2
+    workNotStarted: ''
+    headline: Get Involved
+    body: >
+      There are solutions to assign certificates to a fleet of nodes, see [an
+      example](<https://words.filippo.io/how-plex-is-doing-https-for-
+      all-its-users/>).
 
 
-          Another option would be using IP certificates. They’re quite rare, and
-          not a lot of CAs support generating them, but this might be worth
-          investigating.
-        language: javascript
-    navigationLabel: ''
-    _template: textCards
+      Another option would be using IP certificates. They’re quite rare, and not
+      a lot of CAs support generating them, but this might be worth
+      investigating.
+    _template: support
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
@@ -793,50 +651,24 @@ blocks:
         language: javascript
     navigationLabel: webtransport
     _template: sidebarCards
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
-      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
-      contentWidth: w-full
-      columns: '2'
-      labelStyles: 'text-black font-1 text-base mb-0 '
-      headlineStyles: 'text-black font-2 text-2xl mb-1 '
-      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-black font-1 text-base mb-10 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      fillStyles: bg-white
-      padding: pt-8 pb-8 pr-8 pl-8
-      type: solid
-      borderStyles: border-gray undefined-0
-      labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: text-black font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-black font-1 undefined mb-0 '
-      textStyles: 'text-black font-2 text-base mb-0 '
-      buttonType: primary
-    label: ''
-    headline: ''
-    subhead: ''
-    body: ''
-    items:
-      - cardType: pullquote
-        headline: Support
-        text: "go-libp2p: ⏱\_(work in progress)\n\nrust-libp2p: ❌\n\nnode.js-libp2p: ❌\n\nChrome: ✔️\_\n\nFirefox: ⏱\_(work in progress. [Issue tracked here.](https://bugzilla.mozilla.org/show\\_bug.cgi?id=1709355))\n\nSafari: ❌\_(status unknown)\n"
-        language: javascript
-      - cardType: pullquote
-        headline: Get Involved
-        text: >
-          This is a very new protocol, and we can use your help.
+  - possible: |
+      *   Chrome
+    notPossible: |
+      *   node.js-libp2p
+    workInProgress: |
+      *   go-libp2p
+      *   Firefox
+      *   Safari
+    workNotStarted: |
+      *   rust-libp2p
+    headline: Get Involved
+    body: |
+      This is a very new protocol, and we can use your help.
 
+      [**Specification**](https://github.com/libp2p/specs/pull/404)
 
-          Specification:
-          [https://github.com/libp2p/specs/pull/404](https://github.com/libp2p/specs/pull/404)
-
-
-          Go implementation:
-          [https://github.com/marten-seemann/webtransport-go](https://github.com/marten-seemann/webtransport-go)
-    navigationLabel: ''
-    _template: textCards
+      [**Go implementation**](https://github.com/marten-seemann/webtransport-go)
+    _template: support
   - style:
       textAlignment: text-left
       minHeight: min-h-0
@@ -948,60 +780,23 @@ blocks:
         language: javascript
     navigationLabel: webrtc
     _template: sidebarCards
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
-      padding: 'pt-0 pb-20 pr-20 pl-20 sm:pt-0 sm:pb-10 sm:pr-10 sm:pl-10'
-      contentWidth: w-full
-      columns: '2'
-      labelStyles: 'text-black font-1 text-base mb-0 '
-      headlineStyles: 'text-black font-2 text-2xl mb-1 '
-      subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
-      textStyles: 'text-black font-1 text-base mb-10 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      fillStyles: bg-white
-      padding: pt-8 pb-8 pr-8 pl-8
-      type: solid
-      borderStyles: border-gray undefined-0
-      labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: text-black font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-black font-1 undefined mb-0 '
-      textStyles: 'text-black font-2 text-base mb-0 '
-      buttonType: secondary
-    label: ''
-    headline: ''
-    subhead: ''
-    body: ''
-    items:
-      - cardType: pullquote
-        headline: Support
-        text: |
-          go-libp2p: working on the implementation
+  - possible: ''
+    notPossible: ''
+    workInProgress: |
+      *   go-libp2
+      *   rust-libp2
+      *   js-libp2p
+    workNotStarted: ''
+    headline: Get Involved
+    body: >
+      [https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412)
 
-          rust-libp2p: working on the implementation
 
-          js-libp2p: working on the implementation
+      [Go implementation](https://github.com/libp2p/specs/pull/412)
 
-          Chrome: ✔
 
-          Firefox: ✔
-
-          Safari: ✔
-        language: javascript
-      - cardType: pullquote
-        headline: Get involved
-        text: >
-          *  
-          &#x20;[https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412)
-
-          *   Go implementation
-
-          *   Rust implementation
-        link: ''
-        buttonLabel: ''
-    navigationLabel: ''
-    _template: textCards
+      [Rust implementation](https://github.com/libp2p/specs/pull/412)
+    _template: support
 meta:
   pageTitle: libp2p Connectivity
   pageDescription: ''

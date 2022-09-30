@@ -7,6 +7,7 @@ import { Embed } from "./blocks/embed";
 import { TailwindFeature } from "./blocks/tailwind-feature";
 import { TailwindCards } from "./blocks/tailwind-cards";
 import { SidebarCards } from "./blocks/sidebar-cards";
+import { Support } from "./blocks/support";
 
 export const Blocks = (props: Pages | Global) => {
   return (
@@ -67,6 +68,12 @@ export const Blocks = (props: Pages | Global) => {
                 return (
                   <div data-tinafield={`blocks.${i}`} key={i + block.__typename}>
                     <SidebarCards data={block} parentField={`blocks.${i}`} />
+                  </div>
+                );
+              case "PagesBlocksSupport":
+                return (
+                  <div data-tinafield={`blocks.${i}`} key={i + block.__typename}>
+                    <Support data={block} parentField={`blocks.${i}`} />
                   </div>
                 );
               default:

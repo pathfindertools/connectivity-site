@@ -25,6 +25,7 @@ export const SectionListItemsPlugin = {
         postCards: 'Post Cards',
         sidebarCards: 'Tabs',
         banner: 'Banner',
+        support: 'Support',
         embed: 'Embed'
       }
       const sectionName = item.headline || item.subhead || item.label || item.title || ''
