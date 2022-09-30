@@ -14,7 +14,7 @@ blocks:
       contentOrder: labelHeadingsContent
     image:
       src: >-
-        https://res.cloudinary.com/protocolai/image/upload/v1657648092/libp2p/libp2p-hero_hath9f.svg
+        https://res.cloudinary.com/protocolai/image/upload/v1664549728/libp2p/libp2p-hero_y8ygx4.png
     label: ''
     headline: libp2p Connectivity
     subhead: >-
