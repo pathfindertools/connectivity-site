@@ -20133,6 +20133,100 @@
                 "blocks",
                 "sidebarCards"
               ]
+            },
+            {
+              "name": "support",
+              "label": "Support",
+              "ui": {
+                "defaultItem": {
+                  "headline": "Get Involved",
+                  "body": {
+                    "children": [
+                      {
+                        "type": "p",
+                        "children": [
+                          {
+                            "text": "This is a very new protocol, and we can use your help."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "fields": [
+                {
+                  "label": "Possible",
+                  "name": "possible",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "support",
+                    "possible"
+                  ]
+                },
+                {
+                  "label": "Not Possible",
+                  "name": "notPossible",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "support",
+                    "notPossible"
+                  ]
+                },
+                {
+                  "label": "Work In Progress",
+                  "name": "workInProgress",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "support",
+                    "workInProgress"
+                  ]
+                },
+                {
+                  "label": "Work Not Started",
+                  "name": "workNotStarted",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "support",
+                    "workNotStarted"
+                  ]
+                },
+                {
+                  "label": "Headline",
+                  "name": "headline",
+                  "type": "string",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "support",
+                    "headline"
+                  ]
+                },
+                {
+                  "label": "Body",
+                  "name": "body",
+                  "type": "rich-text",
+                  "namespace": [
+                    "pages",
+                    "blocks",
+                    "support",
+                    "body"
+                  ]
+                }
+              ],
+              "namespace": [
+                "pages",
+                "blocks",
+                "support"
+              ]
             }
           ],
           "namespace": [

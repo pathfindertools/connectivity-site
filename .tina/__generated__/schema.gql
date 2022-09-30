@@ -1134,7 +1134,16 @@ type PagesBlocksSidebarCards {
   navigationLabel: String
 }
 
-union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner | PagesBlocksEmbed | PagesBlocksTailwindFeature | PagesBlocksTailwindCards | PagesBlocksSidebarCards
+type PagesBlocksSupport {
+  possible: JSON
+  notPossible: JSON
+  workInProgress: JSON
+  workNotStarted: JSON
+  headline: String
+  body: JSON
+}
+
+union PagesBlocks = PagesBlocksFeature | PagesBlocksPhotoCards | PagesBlocksTextCards | PagesBlocksBanner | PagesBlocksEmbed | PagesBlocksTailwindFeature | PagesBlocksTailwindCards | PagesBlocksSidebarCards | PagesBlocksSupport
 
 type PagesMeta {
   pageTitle: String
@@ -2226,6 +2235,15 @@ input PagesBlocksSidebarCardsMutation {
   navigationLabel: String
 }
 
+input PagesBlocksSupportMutation {
+  possible: JSON
+  notPossible: JSON
+  workInProgress: JSON
+  workNotStarted: JSON
+  headline: String
+  body: JSON
+}
+
 input PagesBlocksMutation {
   feature: PagesBlocksFeatureMutation
   photoCards: PagesBlocksPhotoCardsMutation
@@ -2235,6 +2253,7 @@ input PagesBlocksMutation {
   tailwindFeature: PagesBlocksTailwindFeatureMutation
   tailwindCards: PagesBlocksTailwindCardsMutation
   sidebarCards: PagesBlocksSidebarCardsMutation
+  support: PagesBlocksSupportMutation
 }
 
 input PagesMetaMutation {
