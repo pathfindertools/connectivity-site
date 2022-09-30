@@ -174,7 +174,7 @@ export const Header = ({
 
   
   return (
-    <section className="relative">
+    <section className="fixed w-full z-50 sm:relative">
       <>
         {/* Desktop Nav */}
         <div className="md:hidden absolute z-10 top-0 left-0 right-0 bg-white">
