@@ -20,21 +20,7 @@ blocks:
     subhead: >-
       By supporting a wide range of transport protocols, libp2p enables
       universal connectivity between nodes across different network positions.
-    body: >
-      A primary goal of the libp2p project is universal connectivity. However,
-      libp2p nodes may run on host machines or in browsers; they may be
-      publically reachable or private. Thus, connectivity across these barriers
-      has been historically out of reach.
-
-
-      Support for new protocols and our own advancements in libp2p helped us
-      overcome these hurdles.
-
-
-      For developers using libp2p to build an application, we hope this site
-      will help you learn more about how libp2p achieves universal connectivity
-      across networks, how it will improve in the future, and how you can get
-      involved!
+    body: "A primary goal of the libp2p project is universal connectivity. However, libp2p nodes may run on host machines or in browsers; they may be publically reachable or private. Thus, connectivity across these barriers has been historically out of reach.\n\nSupport for new protocols and our own advancements in libp2p helped us overcome these hurdles.\n\n**For developers** using libp2p to build an application, we hope this site will help you **learn** more about **how libp2p achieves universal connectivity** across networks, how it will **improve in the future**, and **how you can get involved! \U0001F680**\n"
     buttons:
       - label: Chat With Developers
         link: 'https://libp2p.io/#community'
@@ -258,8 +244,8 @@ blocks:
 
 
       Therefore, we introduced a [novel decentralized hole punching
-      mechanism](https://research.protocol.ai/publications/decentralized-hole-punching/
-      "") in libp2p to enable connectivity between public and private nodes.
+      mechanism](https://research.protocol.ai/publications/decentralized-hole-punching/)
+      in libp2p to enable connectivity between public and private nodes.
     cards:
       - cardType: basic
         headline: libp2p Relays
