@@ -8,8 +8,8 @@ blocks:
       featureImage: 'object-center object-scale-down '
       imagePadding: 'pt-52 pb-20 pr-20 pl-10 sm:pt-10 sm:pb-0 sm:pr-10 sm:pl-10'
       labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: text-black font-1 text-4xl mb-5 font-bold
-      subheadStyles: text-black font-1 text-xl mb-5 font-bold
+      headlineStyles: text-black font-1 text-5xl mb-5 font-bold
+      subheadStyles: 'text-black font-1 text-xl mb-5 '
       textStyles: 'text-black font-2 text-sm mb-8 '
       contentOrder: labelHeadingsContent
     image:
@@ -18,9 +18,9 @@ blocks:
     label: ''
     headline: libp2p Connectivity
     subhead: >-
-      By supporting a wide range of transport protocols, libp2p enables
-      universal connectivity between nodes across different network positions.
-    body: "A primary goal of the libp2p project is universal connectivity. However, libp2p nodes may run on host machines or in browsers; they may be publically reachable or private. Thus, connectivity across these barriers has been historically out of reach.\n\nSupport for new protocols and our own advancements in libp2p helped us overcome these hurdles.\n\n**For developers** using libp2p to build an application, we hope this site will help you **learn** more about **how libp2p achieves universal connectivity** across networks, how it will **improve in the future**, and **how you can get involved! \U0001F680**\n"
+      libp2p enables universal connectivity between nodes across different
+      network positions by supporting a wide range of transport protocols.
+    body: "A primary goal of the libp2p project is universal connectivity. However, libp2p nodes may run on host machines or in browsers; they may be publically reachable or private. Thus, connectivity across these barriers has been historically out of reach.\n\nSupport for new protocols and our own advancements in libp2p helped us overcome these hurdles.\n\nFor developers using libp2p to build an application, we hope this site will help you learn more about how libp2p achieves universal connectivity across networks, how it will improve in the future, and how you can get involved! \U0001F680\n"
     buttons:
       - label: Chat With Developers
         link: 'https://libp2p.io/#community'
