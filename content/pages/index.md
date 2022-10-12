@@ -202,7 +202,7 @@ blocks:
       *   Firefox
       *   Safari
     workInProgress: |
-      *   rust-libp2p
+      *   [rust-libp2p](https://github.com/libp2p/rust-libp2p/pull/2289)
     workNotStarted: ''
     headline: ''
     body: ''
