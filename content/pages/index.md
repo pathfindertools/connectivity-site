@@ -783,24 +783,17 @@ blocks:
     _template: sidebarCards
   - possible: ''
     notPossible: ''
-    workInProgress: |
-      *   go-libp2
-      *   rust-libp2
-      *   js-libp2p
+    workInProgress: >
+      *   [go-libp2p](https://github.com/libp2p/go-libp2p/pull/1655)
+
+      *   [rust-libp2p](https://github.com/libp2p/rust-libp2p/pull/2622)
+
+      *  
+      [js-libp2p](https://github.com/little-bear-labs/js-libp2p-webrtc/pull/4)
     workNotStarted: ''
     headline: Get Involved
-    body: >
+    body: |
       [Specification](https://github.com/libp2p/specs/pull/412)
-
-
-      [Go implementation](https://github.com/libp2p/go-libp2p/pull/1655 "")
-
-
-      [Rust implementation](https://github.com/libp2p/rust-libp2p/pull/2622 "")
-
-
-      [JS
-      implementation](https://github.com/little-bear-labs/js-libp2p-webrtc/pull/4)
     _template: support
 meta:
   pageTitle: libp2p Connectivity
