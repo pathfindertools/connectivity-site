@@ -54,7 +54,7 @@ export const SidebarCards = ({ data, parentField = "" }) => {
 
   return (
     <Section className="" background={data.background} navigationLabel={data.navigationLabel}>
-      <div className="max-w-desktop-full mx-auto px-20 pt-4 pb-10 sm:px-10 sm:pb-0 overflow-hidden">
+      <div className="max-w-desktop-full mx-auto px-20 pt-4 pb-10 sm:px-5 sm:pb-0 overflow-hidden">
         <Content
           label = {data.label}
           headline = {data.headline}

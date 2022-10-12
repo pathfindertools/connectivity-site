@@ -5,7 +5,7 @@ import { Section } from "../section";
 const IconX = () => {
   return (
     <svg width="22" height="30" viewBox="0 0 22 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g clip-path="url(#clip0_403_2610)">
+      <g clipPath="url(#clip0_403_2610)">
         <path d="M21.5761 4.95127C22.2235 4.15439 22.1204 2.9708 21.3412 2.30869C20.562 1.64658 19.4048 1.75205 18.7574 2.54892L11.0001 12.0704L3.24278 2.54892C2.59538 1.75205 1.43809 1.64658 0.658926 2.30869C-0.120241 2.9708 -0.223366 4.15439 0.42403 4.95127L8.61101 15.0001L0.42403 25.0489C-0.223366 25.8458 -0.120241 27.0294 0.658926 27.6915C1.43809 28.3536 2.59538 28.2481 3.24278 27.4513L11.0001 17.9298L18.7574 27.4513C19.4048 28.2481 20.562 28.3536 21.3412 27.6915C22.1204 27.0294 22.2235 25.8458 21.5761 25.0489L13.3891 15.0001L21.5761 4.95127Z" fill="black" />
       </g>
       <defs>
@@ -65,11 +65,11 @@ export const Support = ({ data, parentField = "" }) => {
       background={data.background}
       navigationLabel={data.navigationLabel}
     >
-      <div className={`max-w-desktop-full mx-auto px-20 mb-20 sm:px-10`}>
+      <div className={`max-w-desktop-full mx-auto px-20 mb-20 sm:px-5`}>
         <div className="grid grid-cols-2 sm:grid-cols-1 gap-8 p-8 rounded-lg shadow-lg bg-white font-2 text-base markdown">
           <div>
             <h3 className="font-bold text-xl mb-6">Support</h3>
-            <div className="grid grid-cols-2 gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-1 gap-8">
               {data.possible?.children?.length > 0 &&
                 <Column icon={<IconCheck />} label="Possible" content={data.possible} />
               }
