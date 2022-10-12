@@ -8,13 +8,15 @@ blocks:
       featureImage: 'object-center object-scale-down '
       imagePadding: 'pt-52 pb-20 pr-20 pl-10 sm:pt-10 sm:pb-0 sm:pr-10 sm:pl-10'
       labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: text-black font-1 text-5xl mb-5 font-bold
+      headlineStyles: >-
+        text-black font-1 text-5xl mb-5 font-bold sm:text-black sm:font-1
+        sm:text-3xl sm:mb-5 sm:font-bold
       subheadStyles: 'text-black font-1 text-xl mb-5 '
       textStyles: 'text-black font-2 text-sm mb-8 '
       contentOrder: labelHeadingsContent
     image:
       src: >-
-        https://res.cloudinary.com/protocolai/image/upload/v1664549728/libp2p/libp2p-hero_y8ygx4.png
+        https://res.cloudinary.com/protocolai/image/upload/v1665598194/libp2p/libp2p-hero_ygpbg9.svg
     label: ''
     headline: libp2p Connectivity
     subhead: >-
