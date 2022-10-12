@@ -723,9 +723,10 @@ blocks:
     headline: ''
     subhead: WebRTC
     body: >
-      Usually used for video conferencing, Web Real-Time Communication (WebRTC)
-      is a suite of protocols that allows browsers to connect to servers, and to
-      other browsers, and even punch through NATs.
+      First, let's describe the tranport protocol we're employing. Usually used
+      for video conferencing, Web Real-Time Communication (WebRTC) is a suite of
+      protocols that allows browsers to connect to servers, and to other
+      browsers, and even punch through NATs.
 
 
       In addition to enabling audio and video communication (for which packets
