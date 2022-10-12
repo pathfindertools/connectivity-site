@@ -669,17 +669,18 @@ blocks:
       This type of connectvity has been possible but through less than ideal
       means. Users of js-libp2p could use connection establishment libraries
       like [webrtc-star](https://github.com/libp2p/js-libp2p-webrtc-star) and
-      [webrtc-direct](https://github.com/libp2p/js-libp2p-webrtc-direct),
+      [webrtc-direct](https://github.com/libp2p/js-libp2p-webrtc-direct);
       however, both have shortcomings. The former requires a rendezvouz server
-      where all peers must signal they want to connect and latter only works for
-      Browser ⇄ Node or Node ⇄ Node use cases. Additionally, niether library is
-      used in Go, Rust, or other implementations.
+      where all peers must signal they want to connect with each other and the
+      latter only works for Browser ⇄ Node and Node ⇄ Node use cases.
+      Additionally, neither library is implemented in Go, Rust, or other
+      languages.
 
 
       Therefore, the libp2p project is working to enable seamless Browser ⇄
-      Browser connectivity by adding native support for WebRTC across Go, Rust,
-      JS, and other implementations. This first class support employs our newer
-      advancements like Circuit Relay v2, DCUtR, and authentication via Noise.
+      Browser connectivity by adding native support for WebRTC beginning with
+      Go, Rust, and JS. This first class support employs our newer advancements
+      like Circuit Relay v2, DCUtR, and authentication via Noise.
     navigationLabel: Browser to Browser
     _template: banner
   - cardStyle:
