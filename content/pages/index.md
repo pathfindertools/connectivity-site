@@ -29,42 +29,16 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-5 pb-5 pr-20 pl-20
-      contentWidth: w-full
-      columns: '1'
-      labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: text-black font-1 text-4xl mb-0 font-bold
-      subheadStyles: 'text-black font-1 text-3xl mb-0 '
-      textStyles: 'text-black font-1 undefined mb-0 '
-      contentOrder: labelHeadingsContent
-    cardStyle:
-      fillStyles: bg-gray
-      padding: pt-4 pb-4 pr-4 pl-4
-      type: solid
-      borderStyles: border-gray undefined-0
-      labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: 'text-black font-1 text-2xl mb-0 '
-      subheadStyles: 'text-black font-1 undefined mb-0 '
-      textStyles: 'text-black font-1 text-sm mb-0 '
-      buttonType: primary
-    label: ''
-    headline: Types of Connectivity
-    subhead: ''
-    body: ''
-    _template: textCards
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
-      padding: 'pt-20 pb-10 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
+      padding: 'pt-10 pb-0 pr-20 pl-20 sm:pt-10 sm:pb-0 sm:pr-10 sm:pl-10'
       width: normal
       labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: text-black font-1 text-3xl mb-7 font-bold
-      subheadStyles: 'text-white font-1 text-2xl mb-20 '
+      headlineStyles: text-black font-1 text-4xl mb-7 font-bold
+      subheadStyles: text-black font-1 text-3xl mb-0 font-bold
       textStyles: 'text-white font-1 text-base mb-0 '
       contentOrder: labelHeadingsContent
     label: ''
-    headline: Standalone ⇄ Standalone
-    subhead: ''
+    headline: Types of Connectivity
+    subhead: Standalone ⇄ Standalone
     body: ''
     navigationLabel: Standalone to Standalone
     _template: banner
