@@ -368,7 +368,7 @@ blocks:
           continuous bidirectional communication, both parties can send and
           receive data at any time.
         language: javascript
-    navigationLabel: Browser-to-Standalone
+    navigationLabel: Browser to Standalone
     _template: textCards
   - cardStyle:
       padding: undefined undefined undefined undefined
