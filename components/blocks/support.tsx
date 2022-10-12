@@ -65,7 +65,7 @@ export const Support = ({ data, parentField = "" }) => {
       background={data.background}
       navigationLabel={data.navigationLabel}
     >
-      <div className={`max-w-desktop-full mx-auto px-20 mb-20 sm:px-5`}>
+      <div className={`max-w-desktop-full mx-auto px-20 sm:px-5`}>
         <div className="grid grid-cols-2 sm:grid-cols-1 gap-8 p-8 rounded-lg shadow-lg bg-white font-2 text-base markdown">
           <div>
             <h3 className="font-bold text-xl mb-6">Support</h3>

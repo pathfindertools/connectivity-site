@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { Content } from "../content";
 import { Section } from "../section";
 import { Buttons } from "../buttons";
 import { CodeBlock, dracula } from "react-code-blocks";
-import { BlockList } from "net";
+
+
+const slugify = (s) => {
+  return s
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/[\s_-]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+}
 
 const Card = ({ block, index, cardstyle, isActive, parentField = ""  }) => {
   const activeClass = !isActive ? 'hidden sm:block' : ''
@@ -50,11 +59,35 @@ const Card = ({ block, index, cardstyle, isActive, parentField = ""  }) => {
 };
 
 export const SidebarCards = ({ data, parentField = "" }) => {
+  const sectionEl = useRef(null);
   const [activeCard, setActiveCard] = useState(0);
+
+
+  useEffect(() => {
+    const queryString = window?.location?.href
+    const paramsString = queryString.substring(queryString.indexOf('?') + 1);
+    const urlParams = new URLSearchParams(paramsString);
+    
+    const currentSection =  queryString.substring(queryString.indexOf('#') + 1, queryString.lastIndexOf('?'));
+    const currentTab =  urlParams.get('tab')
+    const sectionTabs = data.cards.map(item => slugify(item.headline))
+    const isMatchingSection = data.navigationLabel === currentSection
+    const matchingTabIndex = sectionTabs.findIndex(item => item === currentTab)
+    
+    if (isMatchingSection === false) return
+    if (matchingTabIndex < 0) return
+    if (activeCard != matchingTabIndex) setActiveCard(matchingTabIndex)
+    
+    if (window?.scrollY > 0) return
+    const yPosition = sectionEl.current.getBoundingClientRect().top
+    if (yPosition) {
+      window?.scrollTo(0, yPosition)
+    }
+  }, [activeCard]);
 
   return (
     <Section className="" background={data.background} navigationLabel={data.navigationLabel}>
-      <div className="max-w-desktop-full mx-auto px-20 pt-4 pb-10 sm:px-5 sm:pb-0 overflow-hidden">
+      <div className="max-w-desktop-full mx-auto px-20 pt-28 pb-10 sm:px-5 sm:pb-0 overflow-hidden" ref={sectionEl}>
         <Content
           label = {data.label}
           headline = {data.headline}
@@ -93,6 +126,7 @@ export const SidebarCards = ({ data, parentField = "" }) => {
                   return <li key={index} className="font-2 text-md">
                     <a
                       className={`block text-sm font-1 font-bold text-black px-4 py-3 cursor-pointer hover:text-white hover:bg-${data.style?.navColor} ${backgroundClasses}`}
+                      href={`/#${data.navigationLabel}?tab=${slugify(block.headline)}`}
                       onClick={ () => setActiveCard(index) }
                     >
                       {block.headline}
