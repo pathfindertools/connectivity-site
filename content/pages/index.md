@@ -126,9 +126,8 @@ blocks:
       *   Safari
     workInProgress: ''
     workNotStarted: ''
-    headline: Get Involved
-    body: |
-      This is a very new protocol, and we can use your help.
+    headline: ''
+    body: ''
     _template: support
   - cardStyle:
       padding: undefined undefined undefined undefined
