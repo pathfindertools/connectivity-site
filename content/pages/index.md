@@ -665,9 +665,9 @@ blocks:
     body: |
       This is a very new protocol, and we can use your help.
 
-      [**Specification**](https://github.com/libp2p/specs/pull/404)
+      [Specification](https://github.com/libp2p/specs/pull/404)
 
-      [**Go implementation**](https://github.com/marten-seemann/webtransport-go)
+      [Go implementation](https://github.com/marten-seemann/webtransport-go)
     _template: support
   - style:
       textAlignment: text-left
