@@ -302,8 +302,10 @@ blocks:
     workInProgress: ''
     workNotStarted: ''
     headline: Further Reading
-    body: |
-      DINPS Paper
+    body: >
+      [DINPS
+      Paper](https://research.protocol.ai/publications/decentralized-hole-punching/)
+
 
       Circuit v2 Spec
     _template: support
