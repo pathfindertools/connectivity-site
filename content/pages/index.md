@@ -725,11 +725,10 @@ blocks:
       - cardType: basic
         headline: Browser to Browser
         text: >
-          Connection one browser to another browser usually requires hole
-          punching, as browsers are usually used by people in their home or
-          corporate networks (i.e. behind their home router or a corporate
-          firewall, respectively), or on mobile devices (i.e. behind a
-          carrier-grade NAT).
+          Connecting one browser to another browser usually requires hole
+          punching, as browsers are usually used by people in home or corporate
+          networks (i.e. behind their home router or a corporate firewall,
+          respectively), or on mobile devices (i.e. behind a carrier-grade NAT).
 
 
           Fortunately, WebRTC was built exactly for this use case, and provides
