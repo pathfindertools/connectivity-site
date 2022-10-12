@@ -657,7 +657,7 @@ blocks:
       labelStyles: 'text-black font-1 text-sm mb-0 '
       headlineStyles: text-black font-1 text-3xl mb-7 font-bold
       subheadStyles: 'text-black font-1 text-3xl mb-0 '
-      textStyles: 'text-black font-2 text-lg mb-0 '
+      textStyles: 'text-black font-2 text-base mb-5 '
       contentOrder: labelHeadingsContent
     label: ''
     headline: Browser ⇄ Browser
