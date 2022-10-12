@@ -789,7 +789,8 @@ blocks:
     workNotStarted: ''
     headline: Get Involved
     body: >
-      [https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412)
+      [https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412
+      "Specification")
 
 
       [Go implementation](https://github.com/libp2p/specs/pull/412)
