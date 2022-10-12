@@ -63,7 +63,7 @@ blocks:
       https://res.cloudinary.com/protocolai/image/upload/v1663347575/libp2p/tpc_kku6wb.svg
     headline: ''
     subhead: TCP
-    body: "The [Transmission Control Protocol\_(TCP)](https://datatracker.ietf.org/doc/html/rfc9293) is the one of the foundations of the Internet protocol suite and was developed in the 1970s. TCP carried, up to the introduction of QUIC (see next section), the vast majority of traffic on the internet. It was also the first transport that was adopted in libp2p. To learn why it is not supported in browsers, see the Browser → Standalone Node section further below.\n"
+    body: "The [Transmission Control Protocol\_(TCP)](https://datatracker.ietf.org/doc/html/rfc9293) is the one of the foundations of the Internet protocol suite and was developed in the 1970s. TCP carried, up to the introduction of QUIC, the vast majority of traffic on the internet. It was also the first transport that was adopted in libp2p. To learn why it is not supported in browsers, see the [Browser → Standalone Node section](#browser-to-standalone) further below.\n"
     cards:
       - cardType: basic
         headline: TCP in libp2p
@@ -119,9 +119,8 @@ blocks:
       *   Safari
     workInProgress: ''
     workNotStarted: ''
-    headline: Get Involved
-    body: |
-      This is a very new protocol, and we can use your help.
+    headline: ''
+    body: ''
     _template: support
   - cardStyle:
       padding: undefined undefined undefined undefined
@@ -196,7 +195,7 @@ blocks:
       *   Firefox
       *   Safari
     workInProgress: |
-      *   rust-libp2p
+      *   [rust-libp2p](https://github.com/libp2p/rust-libp2p/pull/2289)
     workNotStarted: ''
     headline: ''
     body: ''
@@ -290,16 +289,18 @@ blocks:
       go-libp2p
 
       rust-libp2p
-
-      js-libp2p
     notPossible: ''
-    workInProgress: ''
+    workInProgress: |
+      js-libp2p
     workNotStarted: ''
     headline: Further Reading
-    body: |
-      DINPS Paper
+    body: >
+      [DINPS
+      Paper](https://research.protocol.ai/publications/decentralized-hole-punching/)
 
-      Circuit v2 Spec
+
+      [Circuit v2
+      Spec](https://github.com/libp2p/specs/blob/master/relay/circuit-v2.md)
     _template: support
   - style:
       textAlignment: text-left
