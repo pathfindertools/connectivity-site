@@ -793,10 +793,10 @@ blocks:
       [Specification](https://github.com/libp2p/specs/pull/412)
 
 
-      [Go implementation](https://github.com/libp2p/specs/pull/412)
+      [Go implementation](https://github.com/libp2p/go-libp2p/pull/1655 "")
 
 
-      [Rust implementation](https://github.com/libp2p/specs/pull/412)
+      [Rust implementation](https://github.com/libp2p/rust-libp2p/pull/2622 "")
 
 
       [JS
