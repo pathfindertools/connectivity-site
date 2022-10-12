@@ -684,7 +684,9 @@ blocks:
     subhead: ''
     body: >
       Connectivity between libp2p nodes running in the browser has been possible
-      but via less than ideal means. js-libp2p has relied on&#x20;
+      but via less than ideal means. js-libp2p has relied on libraries like
+      [webrtc-star](https://github.com/libp2p/js-libp2p-webrtc-star) and
+      webrtc-direct
     navigationLabel: Browser to Browser
     _template: banner
   - cardStyle:
