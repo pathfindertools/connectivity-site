@@ -70,7 +70,7 @@ blocks:
       https://res.cloudinary.com/protocolai/image/upload/v1663347575/libp2p/tpc_kku6wb.svg
     headline: ''
     subhead: TCP
-    body: "The [Transmission Control Protocol\_(TCP)](https://datatracker.ietf.org/doc/html/rfc9293) was developed in the 1970s, and carried, up to the introduction of QUIC (see next section), the vast majority of traffic on the internet. It was also the first transport that was adopted in libp2p. To learn why it is not supported in browsers, see the Browser → Standalone Node section further below.\n"
+    body: "The [Transmission Control Protocol\_(TCP)](https://datatracker.ietf.org/doc/html/rfc9293) is the core of the Internet protocol suite and was developed in the 1970s. TCP carried, up to the introduction of QUIC (see next section), the vast majority of traffic on the internet. It was also the first transport that was adopted in libp2p. To learn why it is not supported in browsers, see the Browser → Standalone Node section further below.\n"
     cards:
       - cardType: basic
         headline: TCP in libp2p
