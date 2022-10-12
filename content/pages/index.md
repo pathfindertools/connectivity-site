@@ -4,19 +4,17 @@ blocks:
   - style:
       alignment: 'flex-row-reverse text-left items-center items-start-vertical '
       featureContent: 'w-1/2 min-h-0 '
-      padding: 'pt-52 pb-20 pr-10 pl-20 sm:pt-10 sm:pb-10 sm:pr-5 sm:pl-5'
+      padding: 'pt-52 pb-20 pr-10 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
       featureImage: 'object-center object-scale-down '
-      imagePadding: 'pt-52 pb-20 pr-20 pl-10 sm:pt-10 sm:pb-0 sm:pr-5 sm:pl-5'
+      imagePadding: 'pt-52 pb-20 pr-20 pl-10 sm:pt-10 sm:pb-0 sm:pr-10 sm:pl-10'
       labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: >-
-        text-black font-1 text-5xl mb-5 font-bold sm:text-black sm:font-1
-        sm:text-3xl sm:mb-5 sm:font-bold
+      headlineStyles: text-black font-1 text-5xl mb-5 font-bold
       subheadStyles: 'text-black font-1 text-xl mb-5 '
       textStyles: 'text-black font-2 text-sm mb-8 '
       contentOrder: labelHeadingsContent
     image:
       src: >-
-        https://res.cloudinary.com/protocolai/image/upload/v1665598194/libp2p/libp2p-hero_ygpbg9.svg
+        https://res.cloudinary.com/protocolai/image/upload/v1664549728/libp2p/libp2p-hero_y8ygx4.png
     label: ''
     headline: libp2p Connectivity
     subhead: >-
@@ -31,19 +29,44 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: 'pt-5 pb-10 pr-20 pl-20 sm:pt-5 sm:pb-10 sm:pr-5 sm:pl-5'
-      width: normal
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: >-
-        text-black font-1 text-4xl mb-0 font-bold sm:text-black sm:font-1
-        sm:text-2xl sm:mb-0 sm:font-bold
-      subheadStyles: 'text-white font-1 text-2xl mb-20 '
-      textStyles: 'text-white font-1 text-base mb-0 '
+      padding: pt-5 pb-5 pr-20 pl-20
+      contentWidth: w-full
+      columns: '1'
+      labelStyles: 'text-black font-1 text-sm mb-0 '
+      headlineStyles: text-black font-1 text-4xl mb-0 font-bold
+      subheadStyles: 'text-black font-1 text-3xl mb-0 '
+      textStyles: 'text-black font-1 undefined mb-0 '
       contentOrder: labelHeadingsContent
+    cardStyle:
+      fillStyles: bg-gray
+      padding: pt-4 pb-4 pr-4 pl-4
+      type: solid
+      borderStyles: border-gray undefined-0
+      labelStyles: 'text-black font-1 text-sm mb-0 '
+      headlineStyles: 'text-black font-1 text-2xl mb-0 '
+      subheadStyles: 'text-black font-1 undefined mb-0 '
+      textStyles: 'text-black font-1 text-sm mb-0 '
+      buttonType: primary
     label: ''
     headline: Types of Connectivity
     subhead: ''
     body: ''
+    _template: textCards
+  - style:
+      textAlignment: text-left
+      minHeight: min-h-0
+      padding: 'pt-20 pb-10 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
+      width: normal
+      labelStyles: 'text-white font-1 text-sm mb-0 '
+      headlineStyles: text-black font-1 text-3xl mb-7 font-bold
+      subheadStyles: 'text-white font-1 text-2xl mb-20 '
+      textStyles: 'text-white font-1 text-base mb-0 '
+      contentOrder: labelHeadingsContent
+    label: ''
+    headline: Standalone ⇄ Standalone
+    subhead: ''
+    body: ''
+    navigationLabel: Standalone to Standalone
     _template: banner
   - cardStyle:
       padding: undefined undefined undefined undefined
@@ -222,8 +245,9 @@ blocks:
       TCP and QUIC by themselves are enough for establishing communication
       between public nodes; however, not all nodes are located in a publicly
       reachable position. Nodes in home or corporate networks are private and
-      usually separated from the public internet by a NAT or a firewall. Mobile
-      phones are also usually behind a so-called "carrier-grade NAT".
+      usually separated from the public internet by a Network address
+      translation (NAT) mapping or a firewall. Mobile phones are also usually
+      behind a so-called "carrier-grade NATs".
 
 
       Nodes behind firewalls/NATs can dial any node on the public internet, but
@@ -305,7 +329,7 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: 'pt-20 pb-20 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-5 sm:pl-5'
+      padding: 'pt-20 pb-20 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '1'
       labelStyles: 'text-black font-1 text-base mb-0 '
@@ -647,7 +671,7 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: 'pt-20 pb-10 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-5 sm:pl-5'
+      padding: 'pt-20 pb-10 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
       width: normal
       labelStyles: 'text-black font-1 text-sm mb-0 '
       headlineStyles: text-black font-1 text-3xl mb-7 font-bold
@@ -764,8 +788,7 @@ blocks:
     workNotStarted: ''
     headline: Get Involved
     body: >
-      [Libp2p WebRTC Specification
-      PR](https://github.com/libp2p/specs/pull/412)&#x20;
+      [https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412)
 
 
       [Go implementation](https://github.com/libp2p/specs/pull/412)
