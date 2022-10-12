@@ -788,13 +788,10 @@ blocks:
       *   js-libp2p
     workNotStarted: ''
     headline: Get Involved
-    body: >
-      [https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412
-      "Specification")
-
+    body: |
+      [Specification](https://github.com/libp2p/specs/pull/412)
 
       [Go implementation](https://github.com/libp2p/specs/pull/412)
-
 
       [Rust implementation](https://github.com/libp2p/specs/pull/412)
     _template: support
