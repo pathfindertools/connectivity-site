@@ -652,12 +652,13 @@ blocks:
     _template: sidebarCards
   - possible: |
       *   Chrome
+      *   go-libp2p
     notPossible: |
       *   node.js-libp2p
     workInProgress: |
-      *   go-libp2p
       *   Firefox
       *   Safari
+      *   [js-libp2p](https://github.com/libp2p/js-libp2p-webtransport)
     workNotStarted: |
       *   rust-libp2p
     headline: Get Involved
