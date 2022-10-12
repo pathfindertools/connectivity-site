@@ -296,10 +296,9 @@ blocks:
       go-libp2p
 
       rust-libp2p
-
-      js-libp2p
     notPossible: ''
-    workInProgress: ''
+    workInProgress: |
+      js-libp2p
     workNotStarted: ''
     headline: Further Reading
     body: >
