@@ -764,7 +764,8 @@ blocks:
     workNotStarted: ''
     headline: Get Involved
     body: >
-      [https://github.com/libp2p/specs/pull/412](https://github.com/libp2p/specs/pull/412)
+      [Libp2p WebRTC Specification
+      PR](https://github.com/libp2p/specs/pull/412)&#x20;
 
 
       [Go implementation](https://github.com/libp2p/specs/pull/412)
