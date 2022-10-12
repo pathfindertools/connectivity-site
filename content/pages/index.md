@@ -307,7 +307,8 @@ blocks:
       Paper](https://research.protocol.ai/publications/decentralized-hole-punching/)
 
 
-      Circuit v2 Spec
+      [Circuit v2
+      Spec](https://github.com/libp2p/specs/blob/master/relay/circuit-v2.md)
     _template: support
   - style:
       textAlignment: text-left
