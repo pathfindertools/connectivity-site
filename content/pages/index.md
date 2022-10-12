@@ -682,7 +682,9 @@ blocks:
     label: ''
     headline: Browser ⇄ Browser
     subhead: ''
-    body: ''
+    body: >
+      Connectivity between libp2p nodes running in the browser has been possible
+      but via less than ideal means. js-libp2p has relied on&#x20;
     navigationLabel: Browser to Browser
     _template: banner
   - cardStyle:
@@ -787,12 +789,18 @@ blocks:
       *   js-libp2p
     workNotStarted: ''
     headline: Get Involved
-    body: |
+    body: >
       [Specification](https://github.com/libp2p/specs/pull/412)
+
 
       [Go implementation](https://github.com/libp2p/specs/pull/412)
 
+
       [Rust implementation](https://github.com/libp2p/specs/pull/412)
+
+
+      [JS
+      implementation](https://github.com/little-bear-labs/js-libp2p-webrtc/pull/4)
     _template: support
 meta:
   pageTitle: libp2p Connectivity
