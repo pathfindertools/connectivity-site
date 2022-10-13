@@ -633,7 +633,8 @@ blocks:
   - possible: |
       *   go-libp2p
       *   Chrome
-    notPossible: ''
+    notPossible: |
+      *   node.js-libp2p
     workInProgress: |
       *   [js-libp2p](https://github.com/libp2p/js-libp2p-webtransport)
       *   Firefox
