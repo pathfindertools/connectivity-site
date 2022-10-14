@@ -191,11 +191,15 @@ blocks:
     navigationLabel: quic
     _template: sidebarCards
   - possible: |
-      *   go-libp2
+      *   go-libp2p
+    notPossible: >
       *   node.js-libp2p
-    notPossible: |
+      ([https://github.com/nodejs/node/pull/44325](https://github.com/nodejs/node/pull/44325))
+
       *   Chrome
+
       *   Firefox
+
       *   Safari
     workInProgress: |
       *   [rust-libp2p](https://github.com/libp2p/rust-libp2p/pull/2289)
