@@ -294,13 +294,12 @@ blocks:
     navigationLabel: hole-punching
     _template: sidebarCards
   - possible: |
-      go-libp2p
-
-      rust-libp2p
+      *   go-libp2p
+      *   rust-libp2p
     notPossible: ''
     workInProgress: ''
     workNotStarted: |
-      js-libp2p
+      *   js-libp2p
     headline: Further Reading
     body: >
       [DINPS
@@ -491,12 +490,12 @@ blocks:
   - possible: |
       *   go-libp2p
       *   rust-libp2p
+      *   js-libp2p (both node.js and browser)
       *   Chrome
       *   Firefox
       *   Safari
     notPossible: ''
-    workInProgress: |
-      *   node.js-libp2p2
+    workInProgress: ''
     workNotStarted: ''
     headline: Get Involved
     body: >
