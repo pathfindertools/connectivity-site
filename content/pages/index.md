@@ -636,14 +636,14 @@ blocks:
   - possible: |
       *   go-libp2p
       *   Chrome
-    notPossible: |
-      *   node.js-libp2p
+    notPossible: ''
     workInProgress: |
       *   [js-libp2p](https://github.com/libp2p/js-libp2p-webtransport)
       *   Firefox
       *   Safari
     workNotStarted: |
       *   rust-libp2p
+      *   node.js-libp2p
     headline: Get Involved
     body: |
       This is a very new protocol, and we can use your help.
