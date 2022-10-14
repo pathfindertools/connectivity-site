@@ -298,9 +298,9 @@ blocks:
 
       rust-libp2p
     notPossible: ''
-    workInProgress: |
+    workInProgress: ''
+    workNotStarted: |
       js-libp2p
-    workNotStarted: ''
     headline: Further Reading
     body: >
       [DINPS
