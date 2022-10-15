@@ -192,18 +192,14 @@ blocks:
     _template: sidebarCards
   - possible: |
       *   go-libp2p
-    notPossible: >
-      *   node.js-libp2p
-      ([https://github.com/nodejs/node/pull/44325](https://github.com/nodejs/node/pull/44325))
-
+    notPossible: |
       *   Chrome
-
       *   Firefox
-
       *   Safari
     workInProgress: |
       *   [rust-libp2p](https://github.com/libp2p/rust-libp2p/pull/2289)
-    workNotStarted: ''
+    workNotStarted: |
+      *   [node.js-libp2p](https://github.com/nodejs/node/pull/44325)
     headline: ''
     body: ''
     _template: support
