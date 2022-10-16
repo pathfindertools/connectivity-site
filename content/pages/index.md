@@ -72,7 +72,7 @@ blocks:
       https://res.cloudinary.com/protocolai/image/upload/v1663347575/libp2p/tpc_kku6wb.svg
     headline: TCP
     subhead: Standalone ⇄ Standalone
-    body: "The [Transmission Control Protocol\_(TCP)](https://datatracker.ietf.org/doc/html/rfc9293) is the one of the foundations of the Internet protocol suite and was developed in the 1970s. TCP carried, up to the introduction of QUIC, the vast majority of traffic on the internet. It was also the first transport that was adopted in libp2p. To learn why it is not supported in browsers, see the [Browser Node Connectivity section](#browser-connectivity \"\") further below.\n"
+    body: "The [Transmission Control Protocol\_(TCP)](https://datatracker.ietf.org/doc/html/rfc9293) is the one of the foundations of the Internet protocol suite and was developed in the 1970s. TCP carried, up to the introduction of QUIC, the vast majority of traffic on the internet. It was also the first transport that was adopted in libp2p. To learn why it is not supported in browsers, see the [Browser Node Connectivity section](#browser-connectivity) further below.\n"
     cards:
       - cardType: basic
         headline: TCP in libp2p
@@ -196,6 +196,19 @@ blocks:
         language: javascript
     navigationLabel: quic
     _template: sidebarCards
+  - possible: |
+      *   go-libp2p
+    notPossible: |
+      *   Chrome
+      *   Firefox
+      *   Safari
+    workInProgress: |
+      *   [rust-libp2p](https://github.com/libp2p/rust-libp2p/pull/2289)
+    workNotStarted: |
+      *   node.js-libp2p
+    headline: ''
+    body: ''
+    _template: support
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
@@ -240,8 +253,8 @@ blocks:
         subhead: ''
         text: >
           When a libp2p node boots up, one of the first things it does is to
-          start [AutoNAT](https://github.com/libp2p/specs/tree/master/autonat
-          "") to determine its position in the network: is it a public node,
+          start [AutoNAT](https://github.com/libp2p/specs/tree/master/autonat)
+          to determine its position in the network: is it a public node,
           reachable from the public internet, or is it a private node, located
           behind a firewall or a NAT?
 
@@ -287,19 +300,6 @@ blocks:
         language: javascript
     navigationLabel: hole punching
     _template: sidebarCards
-  - possible: |
-      *   go-libp2p
-    notPossible: |
-      *   Chrome
-      *   Firefox
-      *   Safari
-    workInProgress: |
-      *   [rust-libp2p](https://github.com/libp2p/rust-libp2p/pull/2289)
-    workNotStarted: |
-      *   node.js-libp2p
-    headline: ''
-    body: ''
-    _template: support
   - possible: |
       *   go-libp2p
       *   rust-libp2p
