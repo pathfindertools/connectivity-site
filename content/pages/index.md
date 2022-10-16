@@ -345,7 +345,7 @@ blocks:
       browser has been a goal of the libp2p project for some time. Yet seamless
       connectivity had been out of reach until recent changes in libp2p and in
       browsers. Here we outline transports, existing and bleeding-edge, that
-      enable browsers to standalone node and browser to browser connectivity.
+      enable browser to standalone node and browser to browser connectivity.
     items:
       - cardType: pullquote
         headline: Streams vs. Request-Response
