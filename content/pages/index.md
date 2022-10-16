@@ -693,9 +693,6 @@ blocks:
       - cardType: basic
         headline: Browser to Browser
         text: >
-          Browser to Browser is not yet supported.
-
-
           Connecting one browser to another browser usually requires hole
           punching, as browsers are usually used by people in home or corporate
           networks (i.e. behind their home router or a corporate firewall,
@@ -714,7 +711,13 @@ blocks:
           use WebSocket, WebTransport or WebRTC for that purpose.
 
 
-          Read about libp2p's [decentralized hole punching.](#hole-punching)
+          **Note:** libp2p is actively bringing WebRTC support for Browser to
+          Standalone Node, but Browser to Browser work has not yet started and
+          is still in the specification phase.
+
+
+          Further reading about libp2p's [decentralized hole
+          punching.](#hole-punching "")
         language: javascript
       - cardType: basic
         headline: Securing the WebRTC Connection
