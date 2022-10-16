@@ -309,12 +309,13 @@ blocks:
     workNotStarted: ''
     headline: Further Reading
     body: >
-      [DINPS
-      Paper](https://research.protocol.ai/publications/decentralized-hole-punching/)
+      *   [AutoNat Spec](https://github.com/libp2p/specs/tree/master/autonat)
 
-
-      [Circuit v2
+      *   [Circuit v2
       Spec](https://github.com/libp2p/specs/blob/master/relay/circuit-v2.md)
+
+      *   [DINPS
+      Paper](https://research.protocol.ai/publications/decentralized-hole-punching/)
     _template: support
   - style:
       textAlignment: text-left
