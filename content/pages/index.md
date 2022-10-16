@@ -22,7 +22,7 @@ blocks:
     subhead: >-
       libp2p enables universal connectivity between nodes across different
       network positions by supporting a wide range of transport protocols.
-    body: "A primary goal of the libp2p project is universal connectivity. However, libp2p nodes may run on host machines or in browsers; they may be publically reachable or private. Thus, connectivity across these barriers has been historically out of reach.\n\nSupport for new protocols and our own advancements in libp2p helped us overcome these hurdles.\n\nFor developers using libp2p to build an application, we hope this site will help you learn more about how libp2p achieves universal connectivity across networks, how it will improve in the future, and how you can get involved! \U0001F680\n"
+    body: "A primary goal of the libp2p project is universal connectivity. However, libp2p nodes may run on host machines or in browsers; they may be publically reachable or private. Thus, connectivity across these barriers has been historically out of reach.\n\nSupport for new transport protocols and our own advancements in libp2p helped us overcome these hurdles.\n\nFor developers using libp2p to build an application, we hope this site will help you about the transports that enable universal connectivity, how libp2p will improve in the future, and how you can get involved! \U0001F680\n"
     buttons:
       - label: Connect With Developers
         link: 'https://libp2p.io/#community'
@@ -31,22 +31,28 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: 'pt-10 pb-0 pr-20 pl-20 sm:pt-10 sm:pb-0 sm:pr-5 sm:pl-5'
+      padding: 'pt-20 pb-0 pr-20 pl-20 sm:pt-0 sm:pb-0 sm:pr-0 sm:pl-0'
       width: normal
-      labelStyles: 'text-white font-1 text-sm mb-0 '
-      headlineStyles: >-
-        text-black font-1 text-4xl mb-7 font-bold sm:text-black sm:font-1
-        sm:text-3xl sm:mb-0 sm:font-bold
-      subheadStyles: >-
-        text-black font-1 text-3xl mb-0 font-bold sm:text-black sm:font-1
-        sm:text-xl sm:mb-0 sm:font-bold
-      textStyles: 'text-white font-1 text-base mb-0 '
+      labelStyles: 'text-black font-1 text-sm mb-0 '
+      headlineStyles: text-black font-1 text-4xl mb-5 font-bold
+      subheadStyles: 'text-black font-1 text-2xl mb-0 '
+      textStyles: 'text-black font-2 text-lg mb-0 '
       contentOrder: labelHeadingsContent
     label: ''
-    headline: Standalone ⇄ Standalone
+    headline: Standalone Node Connectivity
     subhead: ''
-    body: ''
-    navigationLabel: Standalone to Standalone
+    body: >
+      Standalone nodes are libp2p nodes that run directly on a host machine,
+      without being constrained by a browser environment. Examples are
+      applications using go-libp2p, rust-libp2p, or js-libp2p (when using
+      Node.js).
+
+
+      If a node is on a dedicated connection, or running in a data center,
+      without a router/NAT/ firewall in between, we call it a "public node".
+      Public standalone nodes can use two types of transport protocols, TCP or
+      QUIC, to connect to each with other.
+    navigationLabel: standalone connectivity
     _template: banner
   - cardStyle:
       padding: undefined undefined undefined undefined
@@ -59,14 +65,14 @@ blocks:
     style:
       navColor: accent1
       labelStyles: 'text-black undefined undefined undefined '
-      headlineStyles: 'text-black font-1 text-3xl mb-5 '
+      headlineStyles: text-black font-1 text-3xl mb-7 font-bold
       subheadStyles: text-black font-1 text-2xl mb-5 font-bold
       textStyles: 'text-black font-2 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1663347575/libp2p/tpc_kku6wb.svg
-    headline: ''
-    subhead: TCP
-    body: "The [Transmission Control Protocol\_(TCP)](https://datatracker.ietf.org/doc/html/rfc9293) is the one of the foundations of the Internet protocol suite and was developed in the 1970s. TCP carried, up to the introduction of QUIC, the vast majority of traffic on the internet. It was also the first transport that was adopted in libp2p. To learn why it is not supported in browsers, see the [Browser → Standalone Node section](#browser-to-standalone) further below.\n"
+    headline: TCP
+    subhead: Standalone ⇄ Standalone
+    body: "The [Transmission Control Protocol\_(TCP)](https://datatracker.ietf.org/doc/html/rfc9293) is the one of the foundations of the Internet protocol suite and was developed in the 1970s. TCP carried, up to the introduction of QUIC, the vast majority of traffic on the internet. It was also the first transport that was adopted in libp2p. To learn why it is not supported in browsers, see the [Browser Node Connectivity section](#browser-connectivity \"\") further below.\n"
     cards:
       - cardType: basic
         headline: TCP in libp2p
@@ -136,13 +142,13 @@ blocks:
     style:
       navColor: accent2
       labelStyles: 'text-black undefined undefined undefined '
-      headlineStyles: 'text-black font-1 text-3xl mb-5 '
+      headlineStyles: text-black font-1 text-3xl mb-7 font-bold
       subheadStyles: text-black font-1 text-2xl mb-5 font-bold
       textStyles: 'text-black font-2 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1663347570/libp2p/quic_yhwi6l.svg
-    headline: ''
-    subhead: QUIC
+    headline: QUIC
+    subhead: Standalone ⇄ Standalone
     body: >
       [QUIC](https://datatracker.ietf.org/doc/html/rfc9000) is a new UDP-based
       transport protocol. QUIC connections are always encrypted (using TLS 1.3)
@@ -190,19 +196,6 @@ blocks:
         language: javascript
     navigationLabel: quic
     _template: sidebarCards
-  - possible: |
-      *   go-libp2p
-    notPossible: |
-      *   Chrome
-      *   Firefox
-      *   Safari
-    workInProgress: |
-      *   [rust-libp2p](https://github.com/libp2p/rust-libp2p/pull/2289)
-    workNotStarted: |
-      *   [node.js-libp2p](https://github.com/nodejs/node/pull/44325)
-    headline: ''
-    body: ''
-    _template: support
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
@@ -214,24 +207,28 @@ blocks:
     style:
       navColor: accent3
       labelStyles: 'text-black undefined undefined undefined '
-      headlineStyles: 'text-black font-1 text-3xl mb-5 '
+      headlineStyles: text-black font-1 text-3xl mb-7 font-bold
       subheadStyles: text-black font-1 text-2xl mb-5 font-bold
       textStyles: 'text-black font-2 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1663347566/libp2p/hole-punching_gbdmww.svg
-    headline: ''
-    subhead: Hole Punching
+    headline: Hole Punching
+    subhead: Public Node ⇄ Private Node
     body: >
-      TCP and QUIC by themselves are enough for establishing communication
-      between public nodes; however, not all nodes are located in a publicly
-      reachable position. Nodes in home or corporate networks are private and
-      usually separated from the public internet by a Network address
-      translation (NAT) mapping or a firewall. Mobile phones are also usually
-      behind a so-called "carrier-grade NATs".
+      TCP and QUIC transports are enough for establishing communication between
+      public nodes; however, not all nodes are located in publicly reachable
+      positions.
 
 
-      Nodes behind firewalls/NATs can dial any node on the public internet, but
-      they cannot receive incoming connections from outside their local network.
+      Nodes in home or corporate networks are private and usually separated from
+      the public internet by a network address translation (NAT) mapping or a
+      firewall. Mobile phones are also usually behind a so-called "carrier-grade
+      NATs".
+
+
+      These private nodes behind firewalls/NATs can dial any node on the public
+      internet, but they cannot receive incoming connections from outside their
+      local network.
 
 
       Therefore, we introduced a [novel decentralized hole punching
@@ -240,10 +237,11 @@ blocks:
     cards:
       - cardType: basic
         headline: libp2p Relays
+        subhead: ''
         text: >
           When a libp2p node boots up, one of the first things it does is to
-          start [AutoNAT](https://github.com/libp2p/specs/tree/master/autonat)
-          to determine its position in the network: is it a public node,
+          start [AutoNAT](https://github.com/libp2p/specs/tree/master/autonat
+          "") to determine its position in the network: is it a public node,
           reachable from the public internet, or is it a private node, located
           behind a firewall or a NAT?
 
@@ -287,15 +285,28 @@ blocks:
           worth it: direct connections have a lower possible, and can use the
           full bandwidth of the link.
         language: javascript
-    navigationLabel: hole-punching
+    navigationLabel: hole punching
     _template: sidebarCards
+  - possible: |
+      *   go-libp2p
+    notPossible: |
+      *   Chrome
+      *   Firefox
+      *   Safari
+    workInProgress: |
+      *   [rust-libp2p](https://github.com/libp2p/rust-libp2p/pull/2289)
+    workNotStarted: |
+      *   node.js-libp2p
+    headline: ''
+    body: ''
+    _template: support
   - possible: |
       *   go-libp2p
       *   rust-libp2p
     notPossible: ''
-    workInProgress: ''
-    workNotStarted: |
+    workInProgress: |
       *   js-libp2p
+    workNotStarted: ''
     headline: Further Reading
     body: >
       [DINPS
@@ -308,11 +319,11 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: 'pt-20 pb-20 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
+      padding: 'pt-20 pb-0 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
       contentWidth: w-full
       columns: '1'
       labelStyles: 'text-black font-1 text-base mb-0 '
-      headlineStyles: text-black font-1 text-3xl mb-7 font-bold
+      headlineStyles: text-black font-1 text-4xl mb-7 font-bold
       subheadStyles: 'text-gray-light font-2 text-xl mb-4 '
       textStyles: 'text-black font-2 text-lg mb-14 '
       contentOrder: labelHeadingsContent
@@ -323,49 +334,41 @@ blocks:
       borderStyles: border-gray undefined-0
       labelStyles: 'text-black font-1 text-sm mb-0 '
       headlineStyles: text-black font-2 text-lg mb-3 font-bold
-      subheadStyles: 'text-black font-1 undefined mb-0 '
+      subheadStyles: text-black font-2 text-sm mb-3 font-bold
       textStyles: 'text-black font-2 text-base mb-0 '
       buttonType: primary
     label: ''
-    headline: Browser → Standalone Node
+    headline: Browser Node Connectivity
     subhead: ''
     body: >
       Enabling users and app developers to run fully functioning nodes in the
       browser has been a goal of the libp2p project for some time. Yet seamless
-      connectivity had been out of reach until significant changes in browsers
-      as of late. Here we outline existing ways of establishing connectivity and
-      modern advances such as WebTransport.
-
-
-      Browsers mostly use HTTP(S), making use of an underlying TCP connection
-      for HTTP/1.1 and HTTP/2, or a QUIC connection for HTTP/3. To keep their
-      users secure, they enforce strict rules, like certificate requirements and
-      blocking of cross-origin policies. For security reasons, it's not possible
-      for a browser to dial a raw TCP or QUIC connection from within the
-      browser, and all connections have to meet [Secure
-      Context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure\_Contexts)
-      requirements such as messages delivered over TLS.
-
-
-      Traditionally, WebSocket could be used to gain access to the underlying to
-      the underlying TCP connection, after a so-called WebSocket Upgrade.
-      Similarly, WebTransport aims to allow access to the underlying QUIC
-      connection for HTTP/3.
+      connectivity had been out of reach until recent changes in libp2p and in
+      browsers. Here we outline transports, existing and bleeding-edge, that
+      enable browsers to standalone node and browser to browser connectivity.
     items:
       - cardType: pullquote
         headline: Streams vs. Request-Response
-        subhead: ''
+        subhead: Advantages of libp2p over HTTP
         text: >
-          HTTP is a request-response scheme. The client (browser) sends a
-          request, and then waits for a response.
+          Browsers are built on top of
+          [HTTP(S)](https://www.rfc-editor.org/rfc/rfc9110.html), a stateless
+          request-response protocol. The client (browser) sends a request, and
+          then waits for a response. This unidirectional, synchronous model
+          results in slow data transfer.
 
 
-          libp2p on the other hand is built on top of a stream abstraction. A
-          stream is more flexible than a request-response scheme: it allows
-          continuous bidirectional communication, both parties can send and
-          receive data at any time.
+          libp2p is built on top of a stream abstraction. A stream is more
+          flexible than a request-response scheme: it allows continuous
+          bidirectional communication, both parties can send and receive data at
+          any time.
         language: javascript
-    navigationLabel: Browser to Standalone
+      - cardType: pullquote
+        headline: Security
+        subhead: Why browsers do not support raw TCP or QUIC transports
+        text: "Connections are handled at the transport layer and not by HTTP(S). An underlying TCP connection is used by HTTP/1.1 and HTTP/2, or a QUIC connection for HTTP/3. To keep users secure, browsers enforce strict rules, like certificate requirements and blocking cross-origin policies.\n\nFor security reasons, it's not possible for a browser to dial a raw TCP or QUIC connection from within the browser, as all connections have to meet\_[Secure Context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure\\_Contexts)\_requirements such as for messages delivered over TLS.\n"
+        language: javascript
+    navigationLabel: browser connectivity
     _template: textCards
   - cardStyle:
       padding: undefined undefined undefined undefined
@@ -378,17 +381,17 @@ blocks:
     style:
       navColor: primary
       labelStyles: 'text-black undefined undefined undefined '
-      headlineStyles: text-black font-1 text-3xl mb-5 font-bold
+      headlineStyles: text-black font-1 text-3xl mb-7 font-bold
       subheadStyles: text-black font-1 text-2xl mb-5 font-bold
       textStyles: 'text-black font-2 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1663347583/libp2p/websocket_pbu8af.svg
-    headline: ''
-    subhead: WebSocket
+    headline: WebSocket
+    subhead: Browser → Standalone
     body: >
-      [WebSocket](https://www.rfc-editor.org/rfc/rfc6455) allows “hijacking” of
-      a HTTP/1.1 connection. Later on, it was later also [standardized for
-      HTTP/2](https://www.rfc-editor.org/rfc/rfc8441).
+      The [WebSocket Protocol](https://www.rfc-editor.org/rfc/rfc6455) allows
+      “hijacking” of a HTTP/1.1 connection. Later on, it was later also
+      [standardized for HTTP/2](https://www.rfc-editor.org/rfc/rfc8441).
 
 
       After an HTTP-based "Upgrade request", the browser gains access to the
@@ -515,13 +518,13 @@ blocks:
     style:
       navColor: accent1
       labelStyles: 'text-black undefined undefined undefined '
-      headlineStyles: text-black font-1 text-3xl mb-5 font-bold
+      headlineStyles: text-black font-1 text-3xl mb-7 font-bold
       subheadStyles: text-black font-1 text-2xl mb-5 font-bold
       textStyles: 'text-black font-2 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1663347588/libp2p/webtransport_ko6iua.svg
-    headline: ''
-    subhead: WebTransport
+    headline: 'WebTransport '
+    subhead: Browser → Standalone
     body: >
       While WebSocket allows the browser to “hijack” a TCP connection,
       WebTransport does the same thing with a QUIC connection.
@@ -535,7 +538,7 @@ blocks:
 
       WebTransport is interesting for libp2p, because in contrast with
       WebSocket, there's a way around the strict certificate requirements,
-      allowing the use in a p2p setting.
+      allowing its use in a p2p setting.
     cards:
       - cardType: basic
         headline: WebTransport Upgrade
@@ -648,42 +651,6 @@ blocks:
 
       [Go implementation](https://github.com/marten-seemann/webtransport-go)
     _template: support
-  - style:
-      textAlignment: text-left
-      minHeight: min-h-0
-      padding: 'pt-20 pb-10 pr-20 pl-20 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'
-      width: normal
-      labelStyles: 'text-black font-1 text-sm mb-0 '
-      headlineStyles: text-black font-1 text-3xl mb-7 font-bold
-      subheadStyles: 'text-black font-1 text-3xl mb-0 '
-      textStyles: 'text-black font-2 text-base mb-5 '
-      contentOrder: labelHeadingsContent
-    label: ''
-    headline: Browser ⇄ Browser
-    subhead: ''
-    body: >
-      Connectivity between libp2p nodes purely running in browser enables novel
-      applications; for example, a p2p decentralized game running only in the
-      browser.
-
-
-      This type of connectvity has been possible but through less than ideal
-      means. Users of js-libp2p could use connection establishment libraries
-      like [webrtc-star](https://github.com/libp2p/js-libp2p-webrtc-star) and
-      [webrtc-direct](https://github.com/libp2p/js-libp2p-webrtc-direct);
-      however, both have shortcomings. The former requires a rendezvouz server
-      where all peers must signal they want to connect with each other and the
-      latter only works for Browser ⇄ Node and Node ⇄ Node use cases.
-      Additionally, neither library is implemented in Go, Rust, or other
-      languages.
-
-
-      Therefore, the libp2p project is working to enable seamless Browser ⇄
-      Browser connectivity by adding native support for WebRTC beginning with
-      Go, Rust, and JS. This first class support employs our newer advancements
-      like Circuit Relay v2, DCUtR, and authentication via Noise.
-    navigationLabel: Browser to Browser
-    _template: banner
   - cardStyle:
       padding: undefined undefined undefined undefined
       borderStyles: border-white undefined-0
@@ -695,18 +662,18 @@ blocks:
     style:
       navColor: accent2
       labelStyles: 'text-black undefined undefined undefined '
-      headlineStyles: 'text-black font-1 text-3xl mb-5 '
+      headlineStyles: text-black font-1 text-3xl mb-7 font-bold
       subheadStyles: text-black font-1 text-2xl mb-5 font-bold
       textStyles: 'text-black font-2 text-base mb-14 '
     imageSrc: >-
       https://res.cloudinary.com/protocolai/image/upload/v1663347579/libp2p/webrtc_agqcgn.svg
-    headline: ''
-    subhead: WebRTC
+    headline: WebRTC
+    subhead: Browser → Standalone and Browser ⇄ Browser
     body: >
-      First, let's describe the tranport protocol we're employing. Usually used
-      for video conferencing, Web Real-Time Communication (WebRTC) is a suite of
-      protocols that allows browsers to connect to servers, and to other
-      browsers, and even punch through NATs.
+      Usually used for video conferencing, [Web Real-Time Communication
+      (WebRTC)](https://www.w3.org/TR/webrtc/) is a suite of protocols that
+      allows browsers to connect to servers, and to other browsers, and even
+      punch through NATs.
 
 
       In addition to enabling audio and video communication (for which packets
@@ -725,6 +692,9 @@ blocks:
       - cardType: basic
         headline: Browser to Browser
         text: >
+          Browser to Browser is not yet supported.
+
+
           Connecting one browser to another browser usually requires hole
           punching, as browsers are usually used by people in home or corporate
           networks (i.e. behind their home router or a corporate firewall,
@@ -732,7 +702,7 @@ blocks:
 
 
           Fortunately, WebRTC was built exactly for this use case, and provides
-          hole-punching capabilites using the ICE protocol. The browser's WebRTC
+          hole punching capabilites using the ICE protocol. The browser's WebRTC
           stack will handle this for us, as long as we manage to exchange the
           SDP in the first place. We use a special WebRTC coordination protocol
           run over relayed connections to do that.
@@ -741,6 +711,9 @@ blocks:
           In order to establish a relayed connection, we first need to connect
           to a relay node. Since the relay server will be a public node, we can
           use WebSocket, WebTransport or WebRTC for that purpose.
+
+
+          Read about libp2p's [decentralized hole punching.](#hole-punching)
         language: javascript
       - cardType: basic
         headline: Securing the WebRTC Connection
@@ -779,16 +752,23 @@ blocks:
         language: javascript
     navigationLabel: webrtc
     _template: sidebarCards
-  - possible: ''
+  - possible: |
+      *   Chrome
+      *   Firefox
+      *   Safari
     notPossible: ''
     workInProgress: >
+      Browser → Standalone
+
+
       *   [go-libp2p](https://github.com/libp2p/go-libp2p/pull/1655)
 
       *   [rust-libp2p](https://github.com/libp2p/rust-libp2p/pull/2622)
 
       *  
       [js-libp2p](https://github.com/little-bear-labs/js-libp2p-webrtc/pull/4)
-    workNotStarted: ''
+    workNotStarted: |
+      Browser ⇄ Browser
     headline: Get Involved
     body: |
       [Specification](https://github.com/libp2p/specs/pull/412)
