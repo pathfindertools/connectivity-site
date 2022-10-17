@@ -98,16 +98,6 @@
             "link": "#webrtc"
           }
         ]
-      },
-      {
-        "label": "Browser ⇄ Browser",
-        "link": "/",
-        "subNavItems": [
-          {
-            "label": "WebRTC",
-            "link": "#webrtc"
-          }
-        ]
       }
     ],
     "navAlignment": "text-right",
