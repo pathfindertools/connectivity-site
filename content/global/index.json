@@ -64,7 +64,7 @@
   "nav": {
     "navItems": [
       {
-        "label": "Standalone ⇄ Standalone",
+        "label": "Standalone Node Connectivity",
         "link": "/",
         "subNavItems": [
           {
@@ -82,7 +82,7 @@
         ]
       },
       {
-        "label": "Browser to Standalone",
+        "label": "Browser Node Connectivity",
         "link": "/",
         "subNavItems": [
           {
@@ -92,6 +92,10 @@
           {
             "label": "WebTransport",
             "link": "#webtransport"
+          },
+          {
+            "label": "WebRTC",
+            "link": "#webrtc"
           }
         ]
       },
