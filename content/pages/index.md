@@ -678,7 +678,7 @@ blocks:
 
 
       In addition to enabling audio and video communication (for which packets
-      are sent using an unreliably transport), WebRTC also establishes
+      are sent using an unreliable transport), WebRTC also establishes
       stream-based communication and exposes reliable streams, called WebRTC
       Data Channels.
     cards:
@@ -717,7 +717,7 @@ blocks:
 
 
           Further reading about libp2p's [decentralized hole
-          punching.](#hole-punching "")
+          punching.](#hole-punching)
         language: javascript
       - cardType: basic
         headline: Securing the WebRTC Connection
