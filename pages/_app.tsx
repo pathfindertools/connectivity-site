@@ -4,7 +4,7 @@ import PlausibleProvider from 'next-plausible';
 
 const App = ({ Component, pageProps }) => {
   return (
-    <PlausibleProvider domain="libp2p-microgen.vercel.app">
+    <PlausibleProvider domain="connectivity.libp2p.io">
       <TinaProvider>
         <Component {...pageProps} />
       </TinaProvider>
