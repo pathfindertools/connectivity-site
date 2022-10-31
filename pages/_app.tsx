@@ -4,11 +4,11 @@ import PlausibleProvider from 'next-plausible';
 
 const App = ({ Component, pageProps }) => {
   return (
-    <TinaProvider>
-      <PlausibleProvider domain="https://libp2p-microgen.vercel.app/">
+    <PlausibleProvider domain="libp2p-microgen.vercel.app">
+      <TinaProvider>
         <Component {...pageProps} />
-      </PlausibleProvider>
-    </TinaProvider>
+      </TinaProvider>
+    </PlausibleProvider>
   );
 };
 
