@@ -160,6 +160,14 @@ export const Layout = ({
           <div className="flex flex-col flex-1">{children}</div>
           {/* Footer Blocks */}
           <Blocks { ...globalData } />
+          <div className="px-10 pb-10 pt-20">
+            <ul className="justify-center flex gap-6 mx-auto text-sm pb-4">
+              <li><a className="hover:underline text-accent2" target="_blank" href="https://discuss.ipfs.tech/tos">Terms of Use</a></li>
+              <li><a className="hover:underline text-accent2" target="_blank" href="https://discuss.ipfs.tech/privacy">Privacy Policy</a></li>
+              <li><a className="hover:underline text-accent2" target="_blank" href="https://ipfs.tech/legal/">DMCA Policy</a></li>
+            </ul>
+            <p className="mx-auto text-center text-sm">Made with love by <a className="hover:underline text-accent2" href="https://protocol.ai/" target="_blank">Protocol Labs</a></p>
+          </div>
         </div>
       </ThemeContext.Provider>
     </>
