@@ -22,7 +22,7 @@ blocks:
     subhead: >-
       libp2p enables universal connectivity between nodes across different
       network positions by supporting a wide range of transport protocols.
-    body: "A primary goal of the libp2p project is universal connectivity. However, libp2p nodes may run on host machines or in browsers; they may be publically reachable or private. Thus, connectivity across these barriers has been historically out of reach.\n\nSupport for new transport protocols and our own advancements in libp2p helped us overcome these hurdles.\n\nFor developers using libp2p to build an application, we hope this site will help you learn about the transports that enable universal connectivity, how libp2p will improve in the future, and how you can get involved! \U0001F680\n"
+    body: "The libp2p project aims to provide universal peer-to-peer connectivity, but this has been challenging due to the diverse environments in which libp2p nodes may operate, such as host machines or browsers tabs, and whether they are publicly reachable or located in private subnets.\n\nHowever, these obstacles have been overcome by implementing new transport protocols and advancements in libp2p. This website serves as a resource for developers using libp2p to build peer-to-peer applications, offering information on the transport protocols that enable universal connectivity, future developments in libp2p, and ways to get involved in the project! \U0001F680\n"
     buttons:
       - label: Connect With Developers
         link: 'https://libp2p.io/#community'
@@ -75,7 +75,7 @@ blocks:
     body: "The [Transmission Control Protocol\_(TCP)](https://datatracker.ietf.org/doc/html/rfc9293) is the one of the foundations of the Internet protocol suite and was developed in the 1970s. TCP carried, up to the introduction of QUIC, the vast majority of traffic on the internet. It was also the first transport that was adopted in libp2p. To learn why it is not supported in browsers, see the [Browser Node Connectivity section](#browser-connectivity) further below.\n"
     cards:
       - cardType: basic
-        headline: TCP in libp2p
+        headline: ➤ TCP in libp2p
         text: >
           Establishing a libp2p connection on top of TCP takes a few steps,
           upgrading the underlying connection:
@@ -87,9 +87,9 @@ blocks:
           2.  Negotiate a security protocol ([Noise](https://noiseprotocol.org)
           or [TLS 1.3](https://datatracker.ietf.org/doc/rfc8446)), and then
           perform the chosen cryptographic handshake. The connection is now
-          encrypted and the peers have verified each others' peer IDs.
+          encrypted and the peers have verified each others' [peer IDs](peer-id).
 
-          3.  Apply a stream multiplexer (yamux or mplex).
+          3.  Apply a [stream multiplexer](mux) ([yamux](yamux) or [mplex](mplex)).
 
 
           Setting up a the libp2p takes quite a few network roundtrips, but is
@@ -97,7 +97,7 @@ blocks:
         language: javascript
         code: ''
       - cardType: basic
-        headline: Counting Round Trips
+        headline: ➤ Counting Round Trips
         text: >
           1.  TCP Handshake (1 RTT)
 
@@ -165,7 +165,7 @@ blocks:
       option.
     cards:
       - cardType: basic
-        headline: QUIC in libp2p
+        headline: ➤ QUIC in libp2p
         text: >
           Since QUIC provides encryption and stream multiplexing at the
           transport layer, no "upgrading" is required: As soon as the QUIC
@@ -173,14 +173,14 @@ blocks:
           connection.
 
 
-          To verify the remote’s peer ID, it is [added to the TLS
+          To verify the remote’s [peer ID](peer-id), it is [added to the TLS
           certificate](https://github.com/libp2p/specs/blob/master/tls/tls.md)
           (including a signature using the host’s key) which is used during the
           handshake. Once the handshake is complete, both sides have
           cryptographically verified each other’s identity.
         language: javascript
       - cardType: basic
-        headline: Counting Round Trips
+        headline: ➤ Counting Round Trips
         text: >
           1.  QUIC handshake (1-RTT)
 
@@ -188,7 +188,7 @@ blocks:
           That’s all there is. QUIC verifies the client’s address (that’s what
           TCP’s 3-way handshake is there for) and performs the TLS 1.3 handshake
           in parallel. And since QUIC comes with transport-level stream
-          multiplexing, we don’t need to set up a separate stream multiplexer.
+          multiplexing, we don’t need to set up a separate [stream multiplexer](mux).
 
 
           For resumed connections, QUIC even supports a 0-RTT handshake,
@@ -197,10 +197,10 @@ blocks:
     navigationLabel: quic
     _template: sidebarCards
   - possible: >
-      *  
+      *
       [go-libp2p](https://github.com/libp2p/go-libp2p/tree/master/p2p/transport/quic)
 
-      *  
+      *
       [rust-libp2p](https://github.com/libp2p/rust-libp2p/tree/master/transports/quic
       "")
     notPossible: |
@@ -210,8 +210,11 @@ blocks:
     workInProgress: ''
     workNotStarted: |
       *   [node.js-libp2p](https://github.com/nodejs/node/pull/44325)
-    headline: ''
-    body: ''
+    headline: Further Reading
+    body: >
+      *   [libp2p QUIC Documentation](https://docs.libp2p.io/concepts/transports/quic/)
+
+      *   [libp2p QUIC Specification](https://github.com/libp2p/specs/blob/master/quic/)
     _template: support
   - cardStyle:
       padding: undefined undefined undefined undefined
@@ -253,7 +256,7 @@ blocks:
       in libp2p to enable connectivity between public and private nodes.
     cards:
       - cardType: basic
-        headline: libp2p Relays
+        headline: ➤ libp2p Relays
         subhead: ''
         text: >
           When a libp2p node boots up, one of the first things it does is to
@@ -275,7 +278,7 @@ blocks:
           connection time for relayed connections as well as their bandwidth.
         language: javascript
       - cardType: basic
-        headline: Obtaining a Direct Connection
+        headline: ➤ Obtaining a Direct Connection
         text: >
           Obtaining a reservation with a relay is only half the story. After
           all, relayed connections are limited both in terms of time and
@@ -313,10 +316,20 @@ blocks:
     workNotStarted: ''
     headline: Further Reading
     body: >
-      *   [AutoNat Spec](https://github.com/libp2p/specs/tree/master/autonat)
+      *   [libp2p AutoNAT Documentation](https://docs.libp2p.io/concepts/nat/autonat/)
 
-      *   [Circuit v2
-      Spec](https://github.com/libp2p/specs/blob/master/relay/circuit-v2.md)
+      *   [libp2p Circuit Relay Documentation](https://docs.libp2p.io/concepts/nat/circuit-relay/)
+
+      *   [libp2p DCUtR documentation](https://docs.libp2p.io/concepts/nat/dcutr/)
+
+      *   [libp2p Hole Punching Documentation](https://docs.libp2p.io/concepts/nat/hole-punching/)
+
+      *   [libp2p AutoNAT Specification](https://github.com/libp2p/specs/tree/master/autonat)
+
+      *   [libp2p Circuit v2
+      Specification](https://github.com/libp2p/specs/blob/master/relay/circuit-v2.md)
+
+      *   [libp2p DCUtR Specification](https://github.com/libp2p/specs/blob/master/relay/DCUtR.md)
 
       *   [DINPS
       Paper](https://research.protocol.ai/publications/decentralized-hole-punching/)
@@ -371,7 +384,7 @@ blocks:
       - cardType: pullquote
         headline: Security
         subhead: Why browsers do not support raw TCP or QUIC transports
-        text: "Connections are handled at the transport layer and not by HTTP(S). An underlying TCP connection is used by HTTP/1.1 and HTTP/2, or a QUIC connection for HTTP/3. To keep users secure, browsers enforce strict rules, like certificate requirements and blocking cross-origin policies.\n\nFor security reasons, it's not possible for a browser to dial a raw TCP or QUIC connection from within the browser, as all connections have to meet\_[Secure Context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure\\_Contexts)\_requirements such as for messages delivered over TLS.\n"
+        text: "Connections are handled at the transport layer and not by HTTP(S). An underlying TCP connection is used by HTTP/1.1 and HTTP/2, or a QUIC connection for HTTP/3. To keep users secure, browsers enforce strict rules, like certificate requirements and blocking cross-origin policies.\n\nFor security reasons, it's not possible for a browser to dial a raw TCP or QUIC connection from within the browser, as all connections have to meet\_[Secure Context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure\\_Contexts)\_requirements such as for messages delivered over TLS. Therefore, we need different transports for secure browser connections like WebSocket, WebTransport, and WebRTC\n"
         language: javascript
     navigationLabel: browser connectivity
     _template: textCards
@@ -399,11 +412,11 @@ blocks:
       [standardized for HTTP/2](https://www.rfc-editor.org/rfc/rfc8441).
 
 
-      After an HTTP-based "Upgrade request", the browser gains access to the
+      After an HTTP-based ["Upgrade request"](upgrade-request), the browser gains access to the
       underlying TCP connection.
     cards:
       - cardType: basic
-        headline: WebSocket Upgrade
+        headline: ➤ WebSocket Upgrade
         text: >
           The browser first establishes the TCP connection and sends an HTTP
           request.
@@ -419,8 +432,9 @@ blocks:
           Host: server.example.com
           Upgrade: websocket
           Connection: Upgrade
+        nextCard: ➤ WebSocket in libp2p
       - cardType: basic
-        headline: WebSocket in libp2p
+        headline: ➤ WebSocket in libp2p
         text: >
           1.  TCP handshake (1 RTT)
 
@@ -449,12 +463,13 @@ blocks:
           above, there’ll be another roundtrip for the TLS handshake, increasing
           the handshake latency to 6 RTTs.
         language: javascript
+        nextCard: TLS Certificate Verification in the Browser
       - cardType: basic
-        headline: TLS Certificate Verification in the Browser
+        headline: ➤ TLS Certificate Verification in the Browser
         text: "When establishing a connection to a web server, the client asks the server for a TLS certificate. Conceptually, the TLS certificate says “the domain\_[libp2p.io](http://libp2p.io/)\_belongs to the owner of this certificate”, together with a (cryptographic) signature.\n\nOf course, the browser can’t just trust any signature. If an attacker wanted to impersonate libp2p.io, she could just sign her own certificate. Browsers are shipped with a list of signatories, called Certificate Authorities (CA) that they trust.\n\nThis is a problem for libp2p. Most nodes on the network don’t even have a domain name, let alone a certificate signed by a CA. Only a handful of nodes fulfil these properties, making WebSocket a niche transport in the libp2p ecosytem.\n"
         language: javascript
       - cardType: basic
-        headline: ACME to the rescue?
+        headline: ➤ ACME to the rescue?
         text: >
           ACME is a protocol which allows a server to obtain a certificate from
           a CA without any manual involvement. There've been
@@ -532,7 +547,7 @@ blocks:
     subhead: Browser → Standalone
     body: >
       While WebSocket allows the browser to “hijack” a TCP connection,
-      WebTransport does the same thing with a QUIC connection.
+      [WebTransport](webtransport) does the same thing with a QUIC connection.
 
 
       The protocol is brand-new, in fact, there’s not even an RFC yet: It’s
@@ -546,7 +561,7 @@ blocks:
       allowing its use in a p2p setting.
     cards:
       - cardType: basic
-        headline: WebTransport Upgrade
+        headline: ➤ WebTransport Upgrade
         text: >
           The browser first establishes a HTTP/3 connection to the server. It
           then opens a new stream, and sends an Extended CONNECT request, and
@@ -566,7 +581,7 @@ blocks:
           path: /chat
           Origin: mywebsite.com
       - cardType: basic
-        headline: Certificate Hashes
+        headline: ➤ Certificate Hashes
         subhead: ''
         text: >
           In WebTransport, the browser has two ways to verify the TLS
@@ -594,13 +609,13 @@ blocks:
           connection.
         language: javascript
       - cardType: basic
-        headline: Securing the WebTransport Connection
+        headline: ➤ Securing the WebTransport Connection
         text: >
           What does the certificate hash actually secure? By itself, not much.
           In particular, an attacker could have injected a multiaddress
           containing the hash of its own certificate. Furthermore, after
           completing the WebTransport handshake, the server doesn’t have any way
-          to know the client’s peer ID.
+          to know the client’s [peer ID](peer-id).
 
 
           libp2p therefore runs a Noise handshake on top of the first
@@ -619,7 +634,7 @@ blocks:
           there is no need for any double encryption.
         language: javascript
       - cardType: basic
-        headline: Counting Round Trips
+        headline: ➤ Counting Round Trips
         text: >
           1.  QUIC Handshake (1 RTT)
 
@@ -638,7 +653,7 @@ blocks:
     navigationLabel: webtransport
     _template: sidebarCards
   - possible: >
-      *  
+      *
       [go-libp2p](https://github.com/libp2p/go-libp2p/tree/master/p2p/transport/webtransport)
 
       *   [js-libp2p](https://github.com/libp2p/js-libp2p-webtransport)
@@ -649,16 +664,18 @@ blocks:
       *   [Firefox](https://bugzilla.mozilla.org/show\_bug.cgi?id=1692754)
       *   Safari
     workNotStarted: >
-      *  
+      *
       [rust-libp2p](https://github.com/libp2p/rust-libp2p/blob/master/ROADMAP.md#webtransport)
 
       *   node.js-libp2p
     headline: Further Reading
     body: >
-      *   [WebTransport libp2p Blog
+      *   [libp2p WebTransport Documentation](https://docs.libp2p.io/concepts/transports/webtransport/)
+
+      *   [libp2p WebTransport Blog
       Article](https://blog.libp2p.io/2022-12-19-libp2p-webtransport/)
 
-      *   [libp2p
+      *   [libp2p WebTransport
       Specification](https://github.com/libp2p/specs/tree/master/webtransport
       "")
 
@@ -698,15 +715,15 @@ blocks:
       Data Channels.
     cards:
       - cardType: basic
-        headline: Connection Establishment
-        text: "In order to connect, two WebRTC nodes need to exchange SDP (Session Description Protocol) packets. These packets contain all the information that’s needed to establish the connection: (public) IP addresses, supported WebRTC features, audio and video codecs etc.\n\nWebRTC specifies the format of this packet, but it doesn’t specify\_*how*\_they are exchanged. This is left to the application, or libp2p in our case.\n"
+        headline: ➤ Connection Establishment
+        text: "In order to connect, two WebRTC nodes need to exchange [SDP (Session Description Protocol) packets](https://webrtchacks.com/sdp-anatomy/). These packets contain all the information that’s needed to establish the connection: (public) IP addresses, supported WebRTC features, audio and video codecs etc.\n\nWebRTC specifies the format of this packet, but it doesn’t specify\_*how*\_they are exchanged. This is left to the application, or libp2p in our case.\n"
         language: javascript
       - cardType: basic
-        headline: Browser to Standalone Node
+        headline: ➤ Browser to Standalone Node
         text: "This is useful in cases where WebSocket and WebTransport are not available. In this case, we don't need to actually exchange the SDP, but only\_*pretend*\_that we did that, and actually construct the SDP from the node's advertised multiaddress(es). This saves one round-trip.\n"
         language: javascript
       - cardType: basic
-        headline: Browser to Browser
+        headline: ➤ Browser to Browser
         text: >
           Connecting one browser to another browser usually requires hole
           punching, as browsers are usually used by people in home or corporate
@@ -735,17 +752,17 @@ blocks:
           punching.](#hole-punching)
         language: javascript
       - cardType: basic
-        headline: Securing the WebRTC Connection
+        headline: ➤ Securing the WebRTC Connection
         text: >
           As WebRTC is built to facilitate video conferencing between browsers,
           browsers accept self-signed certificates by default. However, they
           don’t provide any way to encode any additional information (like the
-          libp2p peer identity) into the certificate, thus libp2p nodes need to
+          libp2p [peer identity](peer-id)) into the certificate, thus libp2p nodes need to
           run a second handshake on top of a WebRTC stream, similar to
           WebTransport.
         language: javascript
       - cardType: basic
-        headline: Counting Roundtrips
+        headline: ➤ Counting Roundtrips
         text: >
           For the browser to public node use case:
 
@@ -772,7 +789,7 @@ blocks:
     navigationLabel: webrtc
     _template: sidebarCards
   - possible: >
-      *  
+      *
       [rust-libp2p](https://github.com/libp2p/rust-libp2p/tree/master/transports/webrtc
       "")
 
@@ -793,10 +810,25 @@ blocks:
       *   [Tracking Issue](https://github.com/libp2p/specs/issues/475)
     headline: Further Reading
     body: |
-      [Specification](https://github.com/libp2p/specs/pull/412)
+      *  [libp2p WebRTC Documentation](https://docs.libp2p.io/concepts/transports/webrtc/)
+      *  [libp2p WebRTC Browser to Server Blog Post](https://blog.libp2p.io/libp2p-webrtc-browser-to-server/)
+      *  [libp2p WebRTC Specification](https://github.com/libp2p/specs/pull/412)
     _template: support
 meta:
   pageTitle: libp2p Connectivity
   pageDescription: ''
 ---
 
+[peer-id]: https://docs.libp2p.io/concepts/fundamentals/peers/#peer-id
+[mux]: https://docs.libp2p.io/concepts/multiplex/overview/
+[mplex]: https://docs.libp2p.io/concepts/multiplex/mplex/
+[yamux]: https://docs.libp2p.io/concepts/multiplex/yamux/
+
+[quic]: https://docs.libp2p.io/concepts/transports/quic/
+[webtransport]: https://docs.libp2p.io/concepts/transports/webtransport/
+[webrtc]: https://docs.libp2p.io/concepts/transports/webrtc/
+
+[noise]: https://docs.libp2p.io/concepts/secure-comm/noise/
+[tls]: https://docs.libp2p.io/concepts/secure-comm/noise/
+
+[upgrade-request]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Protocol_upgrade_mechanism
