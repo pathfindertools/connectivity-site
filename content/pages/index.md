@@ -197,10 +197,10 @@ blocks:
     navigationLabel: quic
     _template: sidebarCards
   - possible: >
-      *  
+      *
       [go-libp2p](https://github.com/libp2p/go-libp2p/tree/master/p2p/transport/quic)
 
-      *  
+      *
       [rust-libp2p](https://github.com/libp2p/rust-libp2p/tree/master/transports/quic)
     notPossible: |
       *   Chrome
@@ -637,11 +637,11 @@ blocks:
     navigationLabel: webtransport
     _template: sidebarCards
   - possible: >
-      *  
+      *
       [go-libp2p](https://github.com/libp2p/go-libp2p/tree/master/p2p/transport/webtransport
       "")
 
-      *  
+      *
       [js-libp2p](https://github.com/libp2p/js-libp2p/tree/master/packages/transport-webtransport
       "")
 
@@ -780,10 +780,10 @@ blocks:
       Browser → Standalone
 
 
-      *  
+      *
       [rust-libp2p](https://github.com/libp2p/rust-libp2p/tree/master/transports/webrtc)
 
-      *  
+      *
       [js-libp2p](https://github.com/libp2p/js-libp2p/tree/master/packages/transport-webrtc)
 
       *   Chrome
@@ -796,7 +796,7 @@ blocks:
       Browser ⇄ Browser
 
 
-      *  
+      *
       [js-libp2p](https://github.com/libp2p/js-libp2p/tree/master/packages/transport-webrtc)
     notPossible: ''
     workInProgress: |
