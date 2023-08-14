@@ -201,8 +201,7 @@ blocks:
       [go-libp2p](https://github.com/libp2p/go-libp2p/tree/master/p2p/transport/quic)
 
       *  
-      [rust-libp2p](https://github.com/libp2p/rust-libp2p/tree/master/transports/quic
-      "")
+      [rust-libp2p](https://github.com/libp2p/rust-libp2p/tree/master/transports/quic)
     notPossible: |
       *   Chrome
       *   Firefox
@@ -309,7 +308,7 @@ blocks:
       *   rust-libp2p
     notPossible: ''
     workInProgress: |
-      *   js-libp2p
+      *   [js-libp2p](https://github.com/libp2p/js-libp2p/issues/1461)
     workNotStarted: ''
     headline: Further Reading
     body: >
@@ -639,9 +638,15 @@ blocks:
     _template: sidebarCards
   - possible: >
       *  
-      [go-libp2p](https://github.com/libp2p/go-libp2p/tree/master/p2p/transport/webtransport)
+      [go-libp2p](https://github.com/libp2p/go-libp2p/tree/master/p2p/transport/webtransport
+      "")
 
-      *   [js-libp2p](https://github.com/libp2p/js-libp2p-webtransport)
+      *  
+      [js-libp2p](https://github.com/libp2p/js-libp2p/tree/master/packages/transport-webtransport
+      "")
+
+      *   [rust-libp2p (Wasm
+      environment)](https://github.com/libp2p/rust-libp2p/pull/4015)
 
       *   [Chrome](https://chromestatus.com/feature/4854144902889472)
     notPossible: ''
@@ -649,8 +654,9 @@ blocks:
       *   [Firefox](https://bugzilla.mozilla.org/show\_bug.cgi?id=1692754)
       *   Safari
     workNotStarted: >
-      *  
-      [rust-libp2p](https://github.com/libp2p/rust-libp2p/blob/master/ROADMAP.md#webtransport)
+      *   [rust-libp2p (non Wasm
+      environment)](https://github.com/libp2p/rust-libp2p/blob/master/ROADMAP.md#webtransport
+      "")
 
       *   node.js-libp2p
     headline: Further Reading
@@ -659,11 +665,10 @@ blocks:
       Article](https://blog.libp2p.io/2022-12-19-libp2p-webtransport/)
 
       *   [libp2p
-      Specification](https://github.com/libp2p/specs/tree/master/webtransport
-      "")
+      Specification](https://github.com/libp2p/specs/tree/master/webtransport)
 
       *   [webtransport-go
-      implementation](https://github.com/marten-seemann/webtransport-go "")
+      implementation](https://github.com/marten-seemann/webtransport-go)
 
       *   [Can I Use WebTransport?](https://caniuse.com/webtransport)
     _template: support
@@ -772,28 +777,49 @@ blocks:
     navigationLabel: webrtc
     _template: sidebarCards
   - possible: >
+      Browser → Standalone
+
+
       *  
-      [rust-libp2p](https://github.com/libp2p/rust-libp2p/tree/master/transports/webrtc
-      "")
+      [rust-libp2p](https://github.com/libp2p/rust-libp2p/tree/master/transports/webrtc)
+
+      *  
+      [js-libp2p](https://github.com/libp2p/js-libp2p/tree/master/packages/transport-webrtc)
 
       *   Chrome
 
       *   Firefox
 
       *   Safari
+
+
+      Browser ⇄ Browser
+
+
+      *  
+      [js-libp2p](https://github.com/libp2p/js-libp2p/tree/master/packages/transport-webrtc)
     notPossible: ''
     workInProgress: |
       Browser → Standalone
 
-      *   [go-libp2p](https://github.com/libp2p/go-libp2p/pull/1655)
-      *   [js-libp2p](https://github.com/libp2p/js-libp2p-webrtc "")
+      *   [go-libp2p](https://github.com/libp2p/go-libp2p/pull/2337)
+
+      Browser ⇄ Browser
+
+      *   [go-libp2p](https://github.com/libp2p/go-libp2p/pull/2177 "")
     workNotStarted: |
       Browser ⇄ Browser
 
-      *   [Tracking Issue](https://github.com/libp2p/specs/issues/475)
+      *   rust-libp2p
     headline: Further Reading
-    body: |
-      [Specification](https://github.com/libp2p/specs/pull/412)
+    body: >
+      [Browser -> Standalone
+      specification](https://github.com/libp2p/specs/blob/master/webrtc/webrtc-direct.md
+      "")
+
+
+      [Browser ⇄ Browser specification
+      ](https://github.com/libp2p/specs/blob/master/webrtc/webrtc.md)
     _template: support
 meta:
   pageTitle: libp2p Connectivity
