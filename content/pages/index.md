@@ -394,7 +394,7 @@ blocks:
     subhead: Browser → Standalone
     body: >
       The [WebSocket Protocol](https://www.rfc-editor.org/rfc/rfc6455) allows
-      “hijacking” of a HTTP/1.1 connection. Later on, it was later also
+      “hijacking” of a HTTP/1.1 connection. It was later
       [standardized for HTTP/2](https://www.rfc-editor.org/rfc/rfc8441).
 
 
