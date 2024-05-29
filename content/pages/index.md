@@ -394,7 +394,7 @@ blocks:
     subhead: Browser → Standalone
     body: >
       The [WebSocket Protocol](https://www.rfc-editor.org/rfc/rfc6455) allows
-      “hijacking” of a HTTP/1.1 connection. Later on, it was later also
+      “hijacking” of a HTTP/1.1 connection. It was later
       [standardized for HTTP/2](https://www.rfc-editor.org/rfc/rfc8441).
 
 
@@ -642,16 +642,16 @@ blocks:
       "")
 
       *
-      [js-libp2p](https://github.com/libp2p/js-libp2p/tree/master/packages/transport-webtransport
+      [js-libp2p (browser)](https://github.com/libp2p/js-libp2p/tree/master/packages/transport-webtransport
       "")
 
       *   [rust-libp2p (Wasm
       environment)](https://github.com/libp2p/rust-libp2p/pull/4015)
 
       *   [Chrome](https://chromestatus.com/feature/4854144902889472)
+      *   [Firefox](https://github.com/libp2p/js-libp2p/issues/1999)
     notPossible: ''
     workInProgress: |
-      *   [Firefox](https://bugzilla.mozilla.org/show\_bug.cgi?id=1692754)
       *   Safari
     workNotStarted: >
       *   [rust-libp2p (non Wasm
