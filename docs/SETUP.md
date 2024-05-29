@@ -36,8 +36,9 @@ Under the Tina Cloud configuration for your project add the Vercel URL to "Site 
 
 ```
 http://localhost:3000,https://your-project.vercel.app
-``` 
- To test that Tina is allowing edits go back to your Vercel site and add /admin to the end of your URL.
+```
+
+To test that Tina is allowing edits go back to your Vercel site and add /admin to the end of your URL.
 
 ```
 https://your-project.vercel.app/admin
@@ -53,7 +54,9 @@ When you're ready you can setup a production site on Fleek running off the "prod
 
 ## Upgrading MicroGen
 
-You can upgrade your project to the latest version of MicroGen by checking out the MicroGen [repo](https://github.com/filecoin-project/microgen-tina) and then merging it into your project. Be careful not to overwrite your projects ```/content/index.md``` file.
+You can upgrade your project to the latest version of MicroGen by checking out the MicroGen [repo](https://github.com/filecoin-project/microgen-tina) and then merging it into your project. Be careful not to overwrite your projects `/content/index.md` file.
+
+
 ```
 cd path/to/your-project
 git remote add microgen-tina /path/to/microgen-tina
