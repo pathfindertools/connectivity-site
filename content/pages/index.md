@@ -649,6 +649,7 @@ blocks:
       environment)](https://github.com/libp2p/rust-libp2p/pull/4015)
 
       *   [Chrome](https://chromestatus.com/feature/4854144902889472)
+
       *   [Firefox](https://github.com/libp2p/js-libp2p/issues/1999)
     notPossible: ''
     workInProgress: |
