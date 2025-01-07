@@ -733,8 +733,7 @@ blocks:
 
 
           **Note:** libp2p is actively bringing WebRTC support for Browser to
-          Standalone Node, but Browser to Browser work has not yet started and
-          is still in the specification phase.
+          Standalone Node.
 
 
           Further reading about libp2p's [decentralized hole
