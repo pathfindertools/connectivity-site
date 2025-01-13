@@ -697,47 +697,43 @@ blocks:
       allows browsers to connect to servers, and to other browsers, and even
       punch through NATs.
 
-
       In addition to enabling audio and video communication (for which packets
       are sent using an unreliable transport), WebRTC also establishes
       stream-based communication and exposes reliable streams, called WebRTC
       Data Channels.
+
+      WebRTC in libp2p comes in two flavors:
+
+      *   Private → Public (WebRTC Direct) most commonly used for browser to node communication
+
+      *   Private → Private (WebRTC) most commonly used for browser to browser communication
     cards:
       - cardType: basic
         headline: Connection Establishment
         text: "In order to connect, two WebRTC nodes need to exchange SDP (Session Description Protocol) packets. These packets contain all the information that’s needed to establish the connection: (public) IP addresses, supported WebRTC features, audio and video codecs etc.\n\nWebRTC specifies the format of this packet, but it doesn’t specify\_*how*\_they are exchanged. This is left to the application, or libp2p in our case.\n"
         language: javascript
       - cardType: basic
-        headline: Browser to Standalone Node
-        text: "This is useful in cases where WebSocket and WebTransport are not available. In this case, we don't need to actually exchange the SDP, but only\_*pretend*\_that we did that, and actually construct the SDP from the node's advertised multiaddress(es). This saves one round-trip.\n"
+        headline: WebRTC Direct (Browser → Node)
+        text: "This is useful in cases where WebSocket and WebTransport are not available. In this case, we don't need to actually exchange the SDP and therefore don't need a signaling channel, but only\_*pretend*\_that we did that, and actually construct the SDP from the node's advertised multiaddress(es). This saves one round-trip.\n"
         language: javascript
       - cardType: basic
-        headline: Browser to Browser
+        headline: WebRTC (Browser → Browser)
         text: >
           Connecting one browser to another browser usually requires hole
           punching, as browsers are usually used by people in home or corporate
           networks (i.e. behind their home router or a corporate firewall,
           respectively), or on mobile devices (i.e. behind a carrier-grade NAT).
 
-
           Fortunately, WebRTC was built exactly for this use case, and provides
           hole punching capabilites using the ICE protocol. The browser's WebRTC
           stack will handle this for us, as long as we manage to exchange the
-          SDP in the first place. We use a special WebRTC coordination protocol
+          SDP in the first place. We use a libp2p specific signaling protocol
           run over relayed connections to do that.
 
-
           In order to establish a relayed connection, we first need to connect
-          to a relay node. Since the relay server will be a public node, we can
+          to a Circuit Relay node. Since the relay server will be a public node, we can
           use WebSocket, WebTransport or WebRTC for that purpose.
 
-
-          **Note:** libp2p is actively bringing WebRTC support for Browser to
-          Standalone Node.
-
-
-          Further reading about libp2p's [decentralized hole
-          punching.](#hole-punching)
         language: javascript
       - cardType: basic
         headline: Securing the WebRTC Connection
@@ -750,17 +746,22 @@ blocks:
           WebTransport.
         language: javascript
       - cardType: basic
-        headline: Counting Roundtrips
+        headline: Counting Roundtrips (WebRTC Direct)
         text: >
           For the browser to public node use case:
 
 
-          1.  Establishing the WebRTC connection: 1 RTT, plus the time STUN
-          takes
+          1.  Stun Binding Request (1 RTT)
 
-          2.  libp2p handshake (1 RTT)
+          2.  DTLS handshake (3 RTT)
 
+          3.  libp2p Noise handshake (1 RTT)
 
+          4. TODO: fix
+
+      - cardType: basic
+        headline: Counting Roundtrips (WebRTC)
+        text: >
           For the browser to browser use case:
 
 
@@ -777,14 +778,11 @@ blocks:
     navigationLabel: webrtc
     _template: sidebarCards
   - possible: >
-      Browser → Standalone
+      WebRTC Direct (Private → Public):
 
+      *   [go-libp2p](https://github.com/libp2p/go-libp2p/tree/master/p2p/transport/webrtc)
 
-      *
-      [rust-libp2p](https://github.com/libp2p/rust-libp2p/tree/master/transports/webrtc)
-
-      *
-      [js-libp2p](https://github.com/libp2p/js-libp2p/tree/master/packages/transport-webrtc)
+      *   [rust-libp2p](https://github.com/libp2p/rust-libp2p/tree/master/transports/webrtc)
 
       *   Chrome
 
@@ -793,33 +791,40 @@ blocks:
       *   Safari
 
 
-      Browser ⇄ Browser
+      WebRTC (Private → Private):
 
+      * [js-libp2p](https://github.com/libp2p/js-libp2p/tree/master/packages/transport-webrtc)
 
-      *
-      [js-libp2p](https://github.com/libp2p/js-libp2p/tree/master/packages/transport-webrtc)
+      *   Chrome
+
+      *   Firefox
+
+      *   Safari
     notPossible: ''
     workInProgress: |
-      Browser → Standalone
+      WebRTC Direct (Private → Public)
+      * [js-libp2p Node.js](https://github.com/libp2p/js-libp2p/issues/2581)
 
-      *   [go-libp2p](https://github.com/libp2p/go-libp2p/pull/2337)
+      Private ⇄ Private:
 
-      Browser ⇄ Browser
-
-      *   [go-libp2p](https://github.com/libp2p/go-libp2p/pull/2177 "")
+      *   [go-libp2p](https://github.com/libp2p/go-libp2p/pull/2576 "")
     workNotStarted: |
-      Browser ⇄ Browser
+      Private ⇄ Private
 
       *   rust-libp2p
     headline: Further Reading
     body: >
-      [Browser -> Standalone
-      specification](https://github.com/libp2p/specs/blob/master/webrtc/webrtc-direct.md
-      "")
+      [WebRTC Direct (Private → Public) specification](https://github.com/libp2p/specs/blob/master/webrtc/webrtc-direct.md)
 
 
-      [Browser ⇄ Browser specification
-      ](https://github.com/libp2p/specs/blob/master/webrtc/webrtc.md)
+      [WebRTC Direct (Private → Public) blog post](https://blog.libp2p.io/libp2p-webrtc-browser-to-server/)
+
+
+      [WebRTC Private → Private specification](https://github.com/libp2p/specs/blob/master/webrtc/webrtc.md)
+
+
+      [Browser-to-Browser WebRTC with js-libp2p guide](https://blog.libp2p.io/libp2p-webrtc-browser-to-browser/)
+
     _template: support
 meta:
   pageTitle: libp2p Connectivity
